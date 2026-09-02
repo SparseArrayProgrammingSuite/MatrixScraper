@@ -1,0 +1,34 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Virtual environments and local env files
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# SuiteSparse downloads and scraper outputs
+data/
+.saps/
+scrape-matrices-*.log
+scrape_matrices.jsonl
+*.jsonl
+
+# Build/package artifacts
+build/
+dist/
+*.egg-info/
+
+# OS/editor noise
+.DS_Store
+*.swp
+*.swo

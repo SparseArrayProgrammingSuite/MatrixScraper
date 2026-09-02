@@ -1,0 +1,26 @@
+[project]
+name = "matrix-scraper"
+version = "0.1.0"
+description = "SuiteSparse matrix convergence scraper for SAPS solver benchmarks."
+readme = "README.md"
+requires-python = ">=3.11,<3.15"
+dependencies = [
+    "array-api-compat>=1.15,<2.0",
+    "numpy>=1.19,<2.4",
+    "saps @ git+https://github.com/SparseAutoschedulingBenchmark/SparseAutoschedulingBenchmark.git@wma/fix-runner",
+    "scipy>=1.16,<1.18",
+    "ssgetpy==1.0rc2",
+]
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+ruff = ">=0.14,<1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.8"]
+build-backend = "poetry.core.masonry.api"

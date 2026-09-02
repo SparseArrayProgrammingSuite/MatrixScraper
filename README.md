@@ -1,0 +1,41 @@
+# Matrix Scraper
+
+Tooling for probing SuiteSparse matrices against the solver implementations in
+the SAPS benchmark repository. `saps` is installed from GitHub through Poetry.
+The scraper also uses SAPS' framework definitions from a local
+`SparseAutoschedulingBenchmark` checkout; set `SAPS_REPO_DIR` if that checkout is
+not next to this repository.
+SuiteSparse entries are filtered by solver: LSQR only accepts `least squares
+problem` entries, while the other solvers use the accepted problem-family
+allowlist.
+
+Install:
+
+```bash
+poetry install
+```
+
+Run locally:
+
+```bash
+poetry run python scrape_matrices.py
+```
+
+Solver convergence uses relative tolerance `1e-6`. The iteration limit is `100`,
+except Jacobi uses `1000`.
+
+Run on Slurm:
+
+```bash
+sbatch --array=0-31 scrape-matrices.slurm
+```
+
+Pass extra scraper arguments through `SAPS_SCRAPE_ARGS`, for example:
+
+```bash
+SAPS_SCRAPE_ARGS="--solver cg --solver gmres" \
+  sbatch --array=0-31 scrape-matrices.slurm
+```
+
+Each job writes JSONL to `.saps/outputs/matrix-scraper/results-<chunk>.jsonl`
+by default.
