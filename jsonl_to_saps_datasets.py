@@ -30,8 +30,8 @@ def _descriptor(solver: str, record: dict[str, Any]) -> str:
     name = json.dumps(record["matrix_name"])
     nnz = int(record["nnz"])
     if solver in {"jacobi_cg", "block_jacobi_cg"}:
-        return f'PreconditionedCGDataset({name}, "unknown"),'
-    return f"{DATASET_CLASSES[solver]}({name}, nnz={nnz}),"
+        return f'PreconditionedCGDataset({name}, "unknown")'
+    return f"{DATASET_CLASSES[solver]}({name}, nnz={nnz})"
 
 
 def main() -> int:
@@ -52,18 +52,19 @@ def main() -> int:
                 if not line.strip():
                     continue
                 record = json.loads(line)
-                label = f"{record['matrix_group']}/{record['matrix_name']}"
                 for solver, result in record.get("results", {}).items():
                     key = (solver, record["matrix_name"])
                     if key in seen or result.get("converged") is not True:
                         continue
                     seen.add(key)
+                    label = f"{record['matrix_group']}/{record['matrix_name']}"
                     descriptors[solver].append((label, _descriptor(solver, record)))
 
     for solver, items in descriptors.items():
-        print(f"# {solver} ({len(items)})")
-        for label, descriptor in sorted(items):
-            print(f"{descriptor}  # {label}")
+        print(f"{solver}_datasets = [")
+        for _label, descriptor in sorted(items):
+            print(f"    {descriptor},")
+        print("]")
         print()
 
     return 0
