@@ -22,6 +22,7 @@ from typing import Any
 
 import numpy as np
 import scipy.sparse as sps
+from scipy.io import mminfo
 
 import ssgetpy
 
@@ -114,6 +115,106 @@ ACCEPTED_MATRIX_KINDS = frozenset(
 def _matrix_kind(matrix: Any) -> str:
     return str(getattr(matrix, "kind", "")).strip().lower()
 
+
+@dataclass(frozen=True)
+class RHSVariant:
+    kind: str
+    index: int | None
+    count: int
+    shape: tuple[int, int] | None = None
+    error: str | None = None
+
+
+def _matrix_source_name(matrix: Any) -> str:
+    return f"{matrix.group}/{matrix.name}"
+
+
+def _record_key(matrix_group: str, matrix_name: str, rhs_index: int | None) -> tuple:
+    return (matrix_group, matrix_name, rhs_index)
+
+
+def _record_key_from_record(record: dict[str, Any]) -> tuple:
+    return _record_key(
+        str(record.get("matrix_group", "")),
+        str(record.get("matrix_name", "")),
+        record.get("rhs_index"),
+    )
+
+
+def _record_label(matrix: Any, variant: RHSVariant) -> str:
+    label = _matrix_source_name(matrix)
+    if variant.kind == "suitesparse":
+        return f"{label} rhs{variant.index}"
+    return label
+
+
+def _rhs_variants_from_shape(
+    rhs_shape: tuple[int, int],
+    expected_length: int,
+) -> list[RHSVariant]:
+    rows, cols = rhs_shape
+    if rows == expected_length:
+        return [
+            RHSVariant("suitesparse", index, cols, rhs_shape)
+            for index in range(cols)
+        ]
+    if cols == expected_length:
+        return [
+            RHSVariant("suitesparse", index, rows, rhs_shape)
+            for index in range(rows)
+        ]
+    if rows * cols == expected_length:
+        return [RHSVariant("suitesparse", 0, 1, rhs_shape)]
+    return [
+        RHSVariant(
+            "synthetic",
+            None,
+            0,
+            rhs_shape,
+            (
+                f"SuiteSparse RHS shape {rhs_shape} does not match matrix "
+                f"row count {expected_length}"
+            ),
+        )
+    ]
+
+
+def _solver_will_run(
+    solver_name: str,
+    matrix_kind: str,
+    rows: int,
+    cols: int,
+) -> bool:
+    return SOLVERS[solver_name].skip_reason(matrix_kind, rows, cols) is None
+
+
+def _rhs_variants(
+    matrix: Any,
+    solvers: Iterable[str],
+    suitesparse_data_dir: Path,
+) -> list[RHSVariant]:
+    rows = int(matrix.rows)
+    cols = int(matrix.cols)
+    matrix_kind = _matrix_kind(matrix)
+    if not any(_solver_will_run(solver, matrix_kind, rows, cols) for solver in solvers):
+        return [RHSVariant("synthetic", None, 0)]
+
+    matrix_dir, downloaded_matrix = saps_suitesparse_downloader.download_suitesparse_matrix(
+        _matrix_source_name(matrix),
+        data_dir=suitesparse_data_dir,
+    )
+    rhs_path = matrix_dir / f"{downloaded_matrix.name}_b.mtx"
+    if not rhs_path.exists():
+        return [RHSVariant("synthetic", None, 0)]
+
+    try:
+        rhs_rows, rhs_cols = (int(value) for value in mminfo(rhs_path)[:2])
+    except Exception as exc:  # noqa: BLE001
+        return [RHSVariant("synthetic", None, 0, error=str(exc))]
+
+    return _rhs_variants_from_shape((rhs_rows, rhs_cols), rows)
+
+
 @dataclass
 class SolverSpec:
     benchmark: Any
@@ -131,11 +232,17 @@ class SolverSpec:
     def accepts_matrix_kind(self, matrix_kind: str) -> bool:
         return matrix_kind in self.accepted_kinds
 
-    def make_dataset(self, matrix_name: str, nnz: int) -> Any:
+    def make_dataset(
+        self,
+        source_name: str,
+        nnz: int,
+        rhs_index: int | None,
+    ) -> Any:
         kwargs = dict(self.dataset_kwargs)
         if self.include_nnz:
             kwargs["nnz"] = nnz
-        return self.dataset_cls(matrix_name, **kwargs)
+        kwargs["rhs_index"] = rhs_index
+        return self.dataset_cls(source_name, **kwargs)
 
     def benchmark_meta(self, A: sps.spmatrix) -> dict[str, Any]:
         meta = {
@@ -184,10 +291,15 @@ def _saps_suitesparse_context(
         saps_preconditioned_cg: saps_preconditioned_cg.fetch_suitesparse_linear_system,
     }
 
-    def _fetch_suitesparse_linear_system(source_name: str):
+    def _fetch_suitesparse_linear_system(
+        source_name: str,
+        *,
+        rhs_index: int | None = None,
+    ):
         A, b, meta = saps_suitesparse_downloader.load_suitesparse_matrix(
             source_name,
             data_dir=suitesparse_data_dir,
+            rhs_index=rhs_index,
         )
         has_real_rhs = bool(meta["has_b_file"])
         if not has_real_rhs:
@@ -299,7 +411,8 @@ def _least_squares_residual(
 
 def _run_solver(
     solver_name: str,
-    matrix_name: str,
+    source_name: str,
+    rhs_index: int | None,
     matrix_kind: str,
     rows: int,
     cols: int,
@@ -318,7 +431,7 @@ def _run_solver(
 
     start = time.perf_counter()
     try:
-        dataset = spec.make_dataset(matrix_name, nnz)
+        dataset = spec.make_dataset(source_name, nnz, rhs_index)
         problem = spec.generator.generate(dataset)
         data = []
         for value in problem.inputs:
@@ -353,20 +466,20 @@ def _run_solver(
         }
 
 
-def _done_matrix_names(output_path: Path) -> set[str]:
+def _done_record_keys(output_path: Path) -> set[tuple]:
     if not output_path.exists():
         return set()
 
-    names = set()
+    keys = set()
     with output_path.open(encoding="utf-8") as f:
         for line in f:
             if not line.strip():
                 continue
             try:
-                names.add(json.loads(line)["matrix_name"])
+                keys.add(_record_key_from_record(json.loads(line)))
             except (KeyError, json.JSONDecodeError):
                 continue
-    return names
+    return keys
 
 
 def _chunk_items(items: list[Any], chunk_count: int, chunk_index: int) -> list[Any]:
@@ -395,6 +508,7 @@ def _search_matrices(args: argparse.Namespace) -> list[Any]:
 
 def _matrix_record(
     matrix: Any,
+    variant: RHSVariant,
     solvers: Iterable[str],
     xp: Any,
 ) -> dict[str, Any]:
@@ -404,10 +518,12 @@ def _matrix_record(
     nnz = int(matrix.nnz)
 
     results = {}
+    source_name = _matrix_source_name(matrix)
     for solver_name in solvers:
         results[solver_name] = _run_solver(
             solver_name,
-            matrix.name,
+            source_name,
+            variant.index,
             matrix_kind,
             rows,
             cols,
@@ -415,15 +531,23 @@ def _matrix_record(
             xp,
         )
 
-    return {
+    record = {
         "matrix_name": matrix.name,
         "matrix_group": matrix.group,
+        "source_name": source_name,
         "matrix_kind": matrix_kind,
         "shape": [rows, cols],
         "n": cols,
         "nnz": nnz,
+        "rhs_kind": variant.kind,
+        "rhs_index": variant.index,
+        "rhs_count": variant.count,
+        "rhs_shape": list(variant.shape) if variant.shape is not None else None,
         "results": results,
     }
+    if variant.error is not None:
+        record["rhs_error"] = variant.error
+    return record
 
 
 def main() -> int:
@@ -470,7 +594,7 @@ def main() -> int:
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.data_dir.mkdir(parents=True, exist_ok=True)
 
-    completed = set() if args.force else _done_matrix_names(args.output)
+    completed = set() if args.force else _done_record_keys(args.output)
     matrices = _search_matrices(args)
 
     with _saps_suitesparse_context(args.data_dir, args.seed), args.output.open(
@@ -478,25 +602,55 @@ def main() -> int:
         encoding="utf-8",
     ) as output:
         for matrix in matrices:
-            if matrix.name in completed:
-                print(f"Skipping {matrix.name}; already present in {args.output}")
-                continue
-
-            print(f"Checking {matrix.group}/{matrix.name}", flush=True)
             try:
-                record = _matrix_record(matrix, solvers, xp)
+                variants = _rhs_variants(matrix, solvers, args.data_dir)
             except Exception as exc:  # noqa: BLE001
-                print(f"Failed to check {matrix.group}/{matrix.name}: {exc}")
+                print(f"Failed to inspect {_matrix_source_name(matrix)}: {exc}")
                 record = {
                     "matrix_name": matrix.name,
                     "matrix_group": matrix.group,
+                    "source_name": _matrix_source_name(matrix),
                     "status": "error",
                     "error_type": type(exc).__name__,
                     "error": str(exc),
                 }
+                output.write(json.dumps(record, sort_keys=True) + "\n")
+                output.flush()
+                continue
 
-            output.write(json.dumps(record, sort_keys=True) + "\n")
-            output.flush()
+            for variant in variants:
+                key = _record_key(matrix.group, matrix.name, variant.index)
+                label = _record_label(matrix, variant)
+                if key in completed:
+                    print(f"Skipping {label}; already present in {args.output}")
+                    continue
+
+                print(f"Checking {label}", flush=True)
+                try:
+                    record = _matrix_record(matrix, variant, solvers, xp)
+                except Exception as exc:  # noqa: BLE001
+                    print(f"Failed to check {label}: {exc}")
+                    record = {
+                        "matrix_name": matrix.name,
+                        "matrix_group": matrix.group,
+                        "source_name": _matrix_source_name(matrix),
+                        "rhs_kind": variant.kind,
+                        "rhs_index": variant.index,
+                        "rhs_count": variant.count,
+                        "rhs_shape": (
+                            list(variant.shape)
+                            if variant.shape is not None
+                            else None
+                        ),
+                        "status": "error",
+                        "error_type": type(exc).__name__,
+                        "error": str(exc),
+                    }
+                    if variant.error is not None:
+                        record["rhs_error"] = variant.error
+
+                output.write(json.dumps(record, sort_keys=True) + "\n")
+                output.flush()
 
     return 0
 
