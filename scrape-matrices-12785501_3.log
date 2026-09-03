@@ -1,0 +1,61 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-03-2026 12:08:53
+Job ID:    12785586
+User ID:   wahrens6
+Account:   gts-wahrens6
+Job name:  saps-scrape-matrices
+Partition: cpu-small
+QOS:       inferno
+---------------------------------------
+Selected 91 of 2904 SuiteSparse search results for chunk 4/32.
+Checking AG-Monien/L
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:510: RuntimeWarning: divide by zero encountered in divide
+  output = r / M
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:510: RuntimeWarning: invalid value encountered in divide
+  output = r / M
+Checking ANSYS/Delor295K
+Checking Averous/epb3
+Checking Bai/mhd1280a
+Checking Bai/rdb450
+Checking Bodendiek/CurlCurl_1
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:328: RuntimeWarning: overflow encountered in multiply
+  return xp.sqrt(xp.sum(xp.multiply(v, v)))
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:346: RuntimeWarning: invalid value encountered in add
+  x = x + r / d
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
+  sqnorm = x.dot(x)
+Checking Boeing/pcrystk02
+Checking CPM/cz1268
+Checking Cunningham/m3plates
+Checking DIMACS10/coAuthorsCiteseer
+Checking DIMACS10/ga2010
+Checking DIMACS10/mi2010
+Checking DIMACS10/road_usa
+Checking DIMACS10/wy2010
+Checking DRIVCAV/cavity17
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:472: RuntimeWarning: invalid value encountered in vecdot
+  alpha = rho / xp.vecdot(p, Ap)
+Checking FIDAP/ex10
+Checking FIDAP/ex8
+Checking GHS_indef/a0nsdsil
+Checking GHS_indef/dawson5
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:346: RuntimeWarning: overflow encountered in divide
+  x = x + r / d
+Checking GHS_psdef/bmwcra_1
+/var/lib/slurm/slurmd/job12785586/slurm_script: line 49: 3901668 Killed                  poetry run python scrape_matrices.py "${scrape_args[@]}"
+[2026-09-03T12:16:15.648] error: Detected 1 oom_kill event in StepId=12785586.batch. Some of the step tasks have been OOM Killed.
+---------------------------------------
+Begin Slurm Epilog: Sep-03-2026 12:16:16
+Job ID:        12785586
+Array Job ID:  12785501_3
+User ID:       wahrens6
+Account:       gts-wahrens6
+Job name:      saps-scrape-matrices
+Resources:     cpu=16,mem=128G,node=1
+Rsrc Used:     cput=01:59:28,vmem=0,walltime=00:07:28,mem=134218560K,energy_used=0
+Partition:     cpu-small
+QOS:           inferno
+Nodes:         atl1-1-02-003-12-2
+---------------------------------------
