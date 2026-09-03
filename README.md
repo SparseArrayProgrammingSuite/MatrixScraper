@@ -5,9 +5,11 @@ the SAPS benchmark repository. `saps` is installed from GitHub through Poetry.
 The scraper also uses SAPS' framework definitions from a local
 `SparseAutoschedulingBenchmark` checkout; set `SAPS_REPO_DIR` if that checkout is
 not next to this repository.
-SuiteSparse entries are filtered by solver: LSQR only accepts `least squares
-problem` entries, while the other solvers use the accepted problem-family
-allowlist.
+Every searched SuiteSparse entry gets a JSONL record. Per-solver results record
+whether the solver ran, skipped the matrix, errored, converged, or failed to
+converge.
+The scraper asks `ssgetpy` for the full SuiteSparse index by default. Use
+Slurm chunking only to divide that full index across jobs.
 
 Install:
 
@@ -37,5 +39,5 @@ SAPS_SCRAPE_ARGS="--solver cg --solver gmres" \
   sbatch --array=0-31 scrape-matrices.slurm
 ```
 
-Each job writes JSONL to `.saps/outputs/matrix-scraper/results-<chunk>.jsonl`
-by default.
+Each job writes JSONL to `results-<chunk>.jsonl` in the directory where you ran
+`sbatch`. Use `SAPS_SCRAPE_OUTPUT_DIR` to override that location.

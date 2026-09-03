@@ -398,24 +398,20 @@ def _chunk_items(items: list[Any], chunk_count: int, chunk_index: int) -> list[A
     return chunk
 
 
-def _search_matrices(
-    args: argparse.Namespace,
-    solvers: Iterable[str],
-) -> list[Any]:
-    specs = [SOLVERS[solver_name] for solver_name in solvers]
-    matrices = list(ssgetpy.search())
-    accepted_matrices = []
-    for matrix in matrices:
-        matrix_kind = _matrix_kind(matrix)
-        for spec in specs:
-            if spec.accepts_matrix_kind(matrix_kind):
-                accepted_matrices.append(matrix)
-                break
-    matrices = accepted_matrices
+def _search_matrices(args: argparse.Namespace) -> list[Any]:
+    matrices = list(ssgetpy.search(limit=-1))
+    found_count = len(matrices)
     matrices.sort(key=lambda matrix: (matrix.group, matrix.name))
     if args.shuffle:
         random.Random(args.seed).shuffle(matrices)
-    return _chunk_items(matrices, args.chunk_count, args.chunk_index)
+    chunk = _chunk_items(matrices, args.chunk_count, args.chunk_index)
+    print(
+        "Selected "
+        f"{len(chunk)} of {found_count} SuiteSparse search results "
+        f"for chunk {args.chunk_index + 1}/{args.chunk_count}.",
+        flush=True,
+    )
+    return chunk
 
 
 def _matrix_record(
@@ -496,7 +492,7 @@ def main() -> int:
     args.data_dir.mkdir(parents=True, exist_ok=True)
 
     completed = set() if args.force else _done_matrix_names(args.output)
-    matrices = _search_matrices(args, solvers)
+    matrices = _search_matrices(args)
 
     xp = _load_scipy_framework()
     with _saps_suitesparse_context(args.data_dir, args.seed), args.output.open(
@@ -512,6 +508,7 @@ def main() -> int:
             try:
                 record = _matrix_record(matrix, solvers, xp)
             except Exception as exc:  # noqa: BLE001
+                print(f"Failed to check {matrix.group}/{matrix.name}: {exc}")
                 record = {
                     "matrix_name": matrix.name,
                     "matrix_group": matrix.group,
