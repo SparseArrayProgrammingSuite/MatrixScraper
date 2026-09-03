@@ -28,28 +28,54 @@ def _paths(args: list[str]) -> list[Path]:
     return [Path(path) for path in sorted(glob.glob("results-*.jsonl"))]
 
 
-def _descriptor(solver: str, record: dict[str, Any]) -> str:
+def _result_setting(result: dict[str, Any], new_name: str, old_name: str) -> Any:
+    if new_name in result:
+        return result[new_name]
+    return result[old_name]
+
+
+def _descriptor(solver: str, record: dict[str, Any], result: dict[str, Any]) -> str:
     source_name = record.get(
         "source_name",
         f"{record['matrix_group']}/{record['matrix_name']}",
     )
     name = json.dumps(source_name)
-    nnz = int(record["nnz"])
     rhs_index = record.get("rhs_index")
-    rhs_arg = (
-        f", rhs_index={int(rhs_index)}"
-        if record.get("rhs_kind") == "suitesparse" and rhs_index is not None
+    args = [
+        f"max_iter={int(_result_setting(result, 'max_iter', 'max_iters'))}",
+        f"rel_tol={_result_setting(result, 'rel_tol', 'tolerance')!r}",
+    ]
+    if record.get("rhs_kind") == "suitesparse" and rhs_index is not None:
+        args.append(f"rhs_index={int(rhs_index)}")
+    args_str = (
+        ", " + ", ".join(args)
+        if args
         else ""
     )
-    if solver in {"jacobi_cg", "block_jacobi_cg"}:
-        return f'PreconditionedCGDataset({name}, "unknown"{rhs_arg})'
-    return f"{DATASET_CLASSES[solver]}({name}, nnz={nnz}{rhs_arg})"
+    return f"{DATASET_CLASSES[solver]}({name}{args_str})"
+
+
+def _format_solver_settings(settings: set[tuple[Any, Any]]) -> str:
+    settings_dicts = [
+        {"max_iter": max_iter, "rel_tol": rel_tol}
+        for max_iter, rel_tol in sorted(settings, key=lambda item: repr(item))
+    ]
+    if len(settings_dicts) == 1:
+        return json.dumps(settings_dicts[0], sort_keys=True)
+    return json.dumps(settings_dicts, sort_keys=True)
 
 
 def _passes_rhs_filter(record: dict[str, Any]) -> bool:
     if record.get("rhs_kind") != "suitesparse":
         return True
     return int(record["rhs_index"]) < MAX_SUITESPARSE_RHS_PER_MATRIX
+
+
+def _solver_settings(result: dict[str, Any]) -> tuple[Any, Any]:
+    return (
+        _result_setting(result, "max_iter", "max_iters"),
+        _result_setting(result, "rel_tol", "tolerance"),
+    )
 
 
 def main() -> int:
@@ -62,6 +88,9 @@ def main() -> int:
     descriptors: dict[str, list[tuple[str, str]]] = {
         solver: [] for solver in DATASET_CLASSES
     }
+    solver_settings: dict[str, set[tuple[Any, Any]]] = {
+        solver: set() for solver in DATASET_CLASSES
+    }
     seen: set[tuple[str, str, Any]] = set()
 
     for path in _paths(args.jsonl):
@@ -73,6 +102,7 @@ def main() -> int:
                 if not _passes_rhs_filter(record):
                     continue
                 for solver, result in record.get("results", {}).items():
+                    solver_settings[solver].add(_solver_settings(result))
                     source_name = record.get(
                         "source_name",
                         f"{record['matrix_group']}/{record['matrix_name']}",
@@ -88,9 +118,13 @@ def main() -> int:
                     label = source_name
                     if record.get("rhs_kind") == "suitesparse":
                         label = f"{label} rhs{record.get('rhs_index')}"
-                    descriptors[solver].append((label, _descriptor(solver, record)))
+                    descriptors[solver].append(
+                        (label, _descriptor(solver, record, result))
+                    )
 
     for solver, items in descriptors.items():
+        print(f"{solver}_settings = {_format_solver_settings(solver_settings[solver])}")
+        print()
         print(f"{solver}_datasets = [")
         for _label, descriptor in sorted(items):
             print(f"    {descriptor},")

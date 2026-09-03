@@ -22,7 +22,7 @@ Run locally:
 poetry run python scrape_matrices.py
 ```
 
-Solver convergence uses relative tolerance `1e-6`. The iteration limit is `100`,
+Solver convergence uses `rel_tol=1e-6`. The `max_iter` value is `100`,
 except Jacobi uses `1000`.
 
 Run on Slurm:

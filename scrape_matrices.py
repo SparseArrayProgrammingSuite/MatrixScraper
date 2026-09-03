@@ -16,7 +16,7 @@ import random
 import sys
 import time
 from collections.abc import Iterable, Iterator
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
@@ -224,11 +224,9 @@ class SolverSpec:
     dataset_cls: type[Any]
     square_required: bool = True
     residual_kind: str = "linear"
-    tolerance: float = 1e-6
-    max_iters: int = 100
+    rel_tol: float = 1e-6
+    max_iter: int = 100
     accepted_kinds: frozenset[str] = ACCEPTED_MATRIX_KINDS
-    include_nnz: bool = True
-    dataset_kwargs: dict[str, Any] = field(default_factory=dict)
     restart_limit: int | None = None
 
     def accepts_matrix_kind(self, matrix_kind: str) -> bool:
@@ -237,19 +235,19 @@ class SolverSpec:
     def make_dataset(
         self,
         source_name: str,
-        nnz: int,
         rhs_index: int | None,
     ) -> Any:
-        kwargs = dict(self.dataset_kwargs)
-        if self.include_nnz:
-            kwargs["nnz"] = nnz
-        kwargs["rhs_index"] = rhs_index
+        kwargs = {
+            "rhs_index": rhs_index,
+            "max_iter": self.max_iter,
+            "rel_tol": self.rel_tol,
+        }
         return self.dataset_cls(source_name, **kwargs)
 
     def benchmark_meta(self, A: sps.spmatrix) -> dict[str, Any]:
         meta = {
-            "tolerance": self.tolerance,
-            "max_iters": self.max_iters,
+            "rel_tol": self.rel_tol,
+            "max_iter": self.max_iter,
         }
         if self.restart_limit is not None:
             meta["restart"] = min(self.restart_limit, A.shape[0])
@@ -257,8 +255,8 @@ class SolverSpec:
 
     def result_settings(self) -> dict[str, Any]:
         return {
-            "tolerance": self.tolerance,
-            "max_iters": self.max_iters,
+            "rel_tol": self.rel_tol,
+            "max_iter": self.max_iter,
         }
 
     def skip_reason(self, matrix_kind: str, rows: int, cols: int) -> str | None:
@@ -326,7 +324,7 @@ SOLVERS = {
         benchmark=JacobiBenchmark(),
         generator=JacobiGenerator(),
         dataset_cls=JacobiDataset,
-        max_iters=1000,
+        max_iter=1000,
     ),
     "cg": SolverSpec(
         benchmark=CGBenchmark(),
@@ -337,15 +335,11 @@ SOLVERS = {
         benchmark=JacobiPreconditionedCGBenchmark(),
         generator=JacobiCGGenerator(),
         dataset_cls=PreconditionedCGDataset,
-        include_nnz=False,
-        dataset_kwargs={"condition_number": "unknown"},
     ),
     "block_jacobi_cg": SolverSpec(
         benchmark=PreconditionedCGBenchmark(),
         generator=BlockJacobiCGGenerator(),
         dataset_cls=PreconditionedCGDataset,
-        include_nnz=False,
-        dataset_kwargs={"condition_number": "unknown"},
     ),
     "lsqr": SolverSpec(
         benchmark=LSQRBenchmark(),
@@ -418,7 +412,6 @@ def _run_solver(
     matrix_kind: str,
     rows: int,
     cols: int,
-    nnz: int,
     xp: Any,
 ) -> dict[str, Any]:
     spec = SOLVERS[solver_name]
@@ -433,7 +426,7 @@ def _run_solver(
 
     start = time.perf_counter()
     try:
-        dataset = spec.make_dataset(source_name, nnz, rhs_index)
+        dataset = spec.make_dataset(source_name, rhs_index)
         problem = spec.generator.generate(dataset)
         data = []
         for value in problem.inputs:
@@ -446,9 +439,9 @@ def _run_solver(
         elapsed = time.perf_counter() - start
         x = np.asarray(output[0], dtype=np.float64).reshape(-1)
         residual = (
-            _least_squares_residual(run_A, run_b, x, spec.tolerance)
+            _least_squares_residual(run_A, run_b, x, spec.rel_tol)
             if spec.residual_kind == "least_squares"
-            else _linear_residual(run_A, run_b, x, spec.tolerance)
+            else _linear_residual(run_A, run_b, x, spec.rel_tol)
         )
         return {
             "status": "ok",
@@ -529,7 +522,6 @@ def _matrix_record(
             matrix_kind,
             rows,
             cols,
-            nnz,
             xp,
         )
 
