@@ -19,6 +19,8 @@ DATASET_CLASSES = {
     "gmres": "GMRESDataset",
 }
 
+MAX_SUITESPARSE_RHS_PER_MATRIX = 100
+
 
 def _paths(args: list[str]) -> list[Path]:
     if args:
@@ -44,6 +46,12 @@ def _descriptor(solver: str, record: dict[str, Any]) -> str:
     return f"{DATASET_CLASSES[solver]}({name}, nnz={nnz}{rhs_arg})"
 
 
+def _passes_rhs_filter(record: dict[str, Any]) -> bool:
+    if record.get("rhs_kind") != "suitesparse":
+        return True
+    return int(record["rhs_index"]) < MAX_SUITESPARSE_RHS_PER_MATRIX
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Print SAPS dataset descriptors for converged scraper results."
@@ -62,6 +70,8 @@ def main() -> int:
                 if not line.strip():
                     continue
                 record = json.loads(line)
+                if not _passes_rhs_filter(record):
+                    continue
                 for solver, result in record.get("results", {}).items():
                     source_name = record.get(
                         "source_name",
