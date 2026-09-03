@@ -1,82 +1,0 @@
----------------------------------------
-Begin Slurm Prolog: Sep-03-2026 13:09:23
-Job ID:    12788191
-User ID:   wahrens6
-Account:   gts-wahrens6
-Job name:  saps-scrape-matrices
-Partition: cpu-medium
-QOS:       inferno
----------------------------------------
-Selected 91 of 2904 SuiteSparse search results for chunk 11/32.
-Checking AG-Monien/brack2
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:512: RuntimeWarning: divide by zero encountered in divide
-  output = r / M
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:512: RuntimeWarning: invalid value encountered in divide
-  output = r / M
-Checking Alemdar/Alemdar
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
-  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:328: RuntimeWarning: overflow encountered in multiply
-  return xp.sqrt(xp.sum(xp.multiply(v, v)))
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:346: RuntimeWarning: invalid value encountered in add
-  x = x + r / d
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
-  sqnorm = x.dot(x)
-Checking Bai/bfwb782
-Checking Bai/mhdb416
-Checking Bai/rw5151
-Checking Boeing/bcsstk37
-Checking Bomhof/circuit_4
-circuit_4:   0%|          | 0/2288524 [00:00<?, ?B/s]circuit_4:   9%|▊         | 196608/2288524 [00:00<00:01, 1808915.05B/s]circuit_4:  43%|████▎     | 983040/2288524 [00:00<00:00, 5216065.23B/s]circuit_4:  96%|█████████▌| 2195456/2288524 [00:00<00:00, 8292648.48B/s]circuit_4: 2293760B [00:00, 7261863.04B/s]                              
-Checking CPM/cz628
-cz628:   0%|          | 0/51125 [00:00<?, ?B/s]cz628: 65536B [00:00, 1641013.15B/s]           
-Checking Cylshell/s3rmq4m1
-s3rmq4m1:   0%|          | 0/1159453 [00:00<?, ?B/s]s3rmq4m1:  24%|██▍       | 278528/1159453 [00:00<00:00, 2564176.46B/s]s3rmq4m1: 1163264B [00:00, 5873749.45B/s]                             
-Checking DIMACS10/data
-Checking DIMACS10/hugetrace-00000
-Checking DIMACS10/ne2010
-Checking DIMACS10/uk
-Checking DNVS/ship_003
-ship_003:   0%|          | 0/23840665 [00:00<?, ?B/s]ship_003:   0%|          | 98304/23840665 [00:00<00:25, 934687.57B/s]ship_003:   2%|▏         | 524288/23840665 [00:00<00:08, 2840422.77B/s]ship_003:   6%|▌         | 1441792/23840665 [00:00<00:03, 5681356.46B/s]ship_003:  11%|█▏        | 2686976/23840665 [00:00<00:02, 8322654.87B/s]ship_003:  16%|█▌        | 3784704/23840665 [00:00<00:02, 9019145.88B/s]ship_003:  21%|██▏       | 5079040/23840665 [00:00<00:01, 10314127.95B/s]ship_003:  27%|██▋       | 6422528/23840665 [00:00<00:01, 11299329.42B/s]ship_003:  32%|███▏      | 7634944/23840665 [00:00<00:01, 11385168.09B/s]ship_003:  37%|███▋      | 8781824/23840665 [00:00<00:01, 11355510.96B/s]ship_003:  42%|████▏     | 10092544/23840665 [00:01<00:01, 11863031.10B/s]ship_003:  48%|████▊     | 11354112/23840665 [00:01<00:01, 12089196.70B/s]ship_003:  53%|█████▎    | 12681216/23840665 [00:01<00:00, 12406180.57B/s]ship_003:  59%|█████▉    | 14090240/23840665 [00:01<00:00, 12860911.49B/s]ship_003:  65%|██████▌   | 15564800/23840665 [00:01<00:00, 13398510.76B/s]ship_003:  72%|███████▏  | 17088512/23840665 [00:01<00:00, 13767093.01B/s]ship_003:  79%|███████▊  | 18759680/23840665 [00:01<00:00, 14623910.74B/s]ship_003:  85%|████████▍ | 20234240/23840665 [00:01<00:00, 14359822.41B/s]ship_003:  91%|█████████ | 21676032/23840665 [00:01<00:00, 14373627.26B/s]ship_003:  97%|█████████▋| 23117824/23840665 [00:01<00:00, 14278612.13B/s]ship_003: 23855104B [00:01, 11992028.07B/s]                               
-Checking DRIVCAV/cavity24
-cavity24:   0%|          | 0/1451843 [00:00<?, ?B/s]cavity24:   9%|▉         | 131072/1451843 [00:00<00:01, 1195867.45B/s]cavity24:  55%|█████▌    | 802816/1451843 [00:00<00:00, 4245097.08B/s]cavity24: 1458176B [00:00, 5653310.01B/s]                             
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:474: RuntimeWarning: invalid value encountered in vecdot
-  alpha = rho / xp.vecdot(p, Ap)
-Checking FIDAP/ex18
-ex18:   0%|          | 0/558502 [00:00<?, ?B/s]ex18:  23%|██▎       | 131072/558502 [00:00<00:00, 1102678.52B/s]ex18: 573440B [00:00, 2940230.05B/s]                             
-Checking FlowIPM22/Spielman_k600
-Checking GHS_indef/blockqp1
-blockqp1:   0%|          | 0/916448 [00:00<?, ?B/s]blockqp1:  25%|██▌       | 229376/916448 [00:00<00:00, 1905517.01B/s]blockqp1:  70%|██████▉   | 638976/916448 [00:00<00:00, 3022818.02B/s]blockqp1: 917504B [00:00, 3118044.64B/s]                             
-Checking GHS_indef/laser
-laser:   0%|          | 0/14710 [00:00<?, ?B/s]laser: 16384B [00:00, 2091853.42B/s]           
-Checking GHS_psdef/ford1
-ford1:   0%|          | 0/157575 [00:00<?, ?B/s]ford1: 163840B [00:00, 2339243.10B/s]           
-Checking Gleich/minnesota
-Checking Grund/bayer06
-bayer06:   0%|          | 0/134047 [00:00<?, ?B/s]bayer06: 147456B [00:00, 2351536.60B/s]           
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:368: RuntimeWarning: divide by zero encountered in scalar divide
-  alpha = rr / xp.vecdot(p, Ap)[()]
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:382: RuntimeWarning: invalid value encountered in add
-  p = r + beta * p
-Checking Gset/G26
-Checking Gset/G55
-Checking HB/ash608
-Checking HB/bcsstk20
-bcsstk20:   0%|          | 0/15437 [00:00<?, ?B/s]bcsstk20: 16384B [00:00, 1102598.90B/s]           
-Checking HB/bcsstm24
-bcsstm24:   0%|          | 0/27121 [00:00<?, ?B/s]bcsstm24: 32768B [00:00, 222033850.52B/s]         
-Checking HB/can_73
-can_73:   0%|          | 0/910 [00:00<?, ?B/s]can_73: 16384B [00:00, 156893782.50B/s]       
-Checking HB/dwt_758
-dwt_758:   0%|          | 0/6884 [00:00<?, ?B/s]dwt_758: 16384B [00:00, 153391689.14B/s]        
-Checking HB/gre_512
-Checking HB/lock_700
-lock_700:   0%|          | 0/24347 [00:00<?, ?B/s]lock_700: 32768B [00:00, 1863149.56B/s]           
-Checking HB/orani678
-orani678:   0%|          | 0/588776 [00:00<?, ?B/s]orani678:  22%|██▏       | 131072/588776 [00:00<00:00, 1087191.57B/s]orani678:  42%|████▏     | 245760/588776 [00:00<00:00, 1075331.08B/s]orani678:  86%|████████▋ | 507904/588776 [00:00<00:00, 1618584.90B/s]orani678: 589824B [00:00, 1683246.58B/s]                             
-Checking HB/str_400
-str_400:   0%|          | 0/16317 [00:00<?, ?B/s]str_400: 16384B [00:00, 1293786.63B/s]           
-Checking Hamm/hcircuit
-hcircuit:   0%|          | 0/3504589 [00:00<?, ?B/s]hcircuit:   3%|▎         | 98304/3504589 [00:00<00:03, 921930.59B/s]hcircuit:  11%|█         | 393216/3504589 [00:00<00:01, 2082245.24B/s]hcircuit:  22%|██▏       | 770048/3504589 [00:00<00:00, 2749985.87B/s]hcircuit:  35%|███▍      | 1212416/3504589 [00:00<00:00, 3189828.43B/s]hcircuit:  49%|████▉     | 1720320/3504589 [00:00<00:00, 3820193.27B/s]hcircuit:  65%|██████▌   | 2293760/3504589 [00:00<00:00, 4375070.77B/s]hcircuit:  79%|███████▉  | 2785280/3504589 [00:00<00:00, 4539311.95B/s]hcircuit: 3506176B [00:00, 5357616.83B/s]                              hcircuit: 3506176B [00:00, 4187098.16B/s]
-Checking Hollinger/g7jac140sc
-g7jac140sc:   0%|          | 0/5640712 [00:00<?, ?B/s]g7jac140sc:   5%|▍         | 278528/5640712 [00:00<00:02, 2454328.90B/s]g7jac140sc:  18%|█▊        | 1032192/5640712 [00:00<00:00, 5197380.43B/s]g7jac140sc:  32%|███▏      | 1818624/5640712 [00:00<00:00, 6346456.89B/s]g7jac140sc:  46%|████▋     | 2621440/5640712 [00:00<00:00, 6850911.77B/s]g7jac140sc:  62%|██████▏   | 3522560/5640712 [00:00<00:00, 7594249.08B/s]g7jac140sc:  80%|███████▉  | 4489216/5640712 [00:00<00:00, 8281352.53B/s]g7jac140sc:  97%|█████████▋| 5488640/5640712 [00:00<00:00, 8818031.77B/s]g7jac140sc: 5652480B [00:00, 7669539.80B/s]                              

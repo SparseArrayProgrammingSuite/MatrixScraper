@@ -1,0 +1,70 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-03-2026 14:18:01
+Job ID:    12790762
+User ID:   wahrens6
+Account:   gts-wahrens6
+Job name:  saps-scrape-matrices
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+Selected 91 of 2904 SuiteSparse search results for chunk 8/32.
+Checking AG-Monien/bfly
+Checking ATandT/onetone2
+Checking Bai/bfwa782
+Checking Bai/mhd4800a
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: divide by zero encountered in divide
+  output = r / M
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: invalid value encountered in divide
+  output = r / M
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:490: RuntimeWarning: invalid value encountered in vecdot
+  alpha = rho / xp.vecdot(p, Ap)
+Checking Bai/rdb968
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:336: RuntimeWarning: overflow encountered in multiply
+  return xp.sqrt(xp.sum(xp.multiply(v, v)))
+Checking Boeing/bcsstk34
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
+  sqnorm = x.dot(x)
+Checking Bomhof/circuit_1 rhs0
+Checking CPM/cz308
+Checking Cylshell/s1rmt3m1
+Checking DIMACS10/cs4
+Checking DIMACS10/hugebubbles-00000
+Checking DIMACS10/mt2010
+Checking DIMACS10/t60k
+Checking DNVS/halfb
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: invalid value encountered in add
+  x = x + r / d
+Checking DRIVCAV/cavity21 rhs0
+Checking FIDAP/ex13
+Checking FlowIPM22/Spielman_k300
+Checking GHS_indef/aug2dc
+Checking GHS_indef/helm2d03
+Checking GHS_psdef/crankseg_2
+Checking GenBank/kmer_V1r
+Checking Grund/bayer03 rhs0
+Checking Gset/G23
+Checking Gset/G52
+Checking HB/ash219
+Checking HB/bcsstk17
+Checking HB/bcsstm21
+Checking HB/can_62
+Checking HB/dwt_607
+Checking HB/gre_216a
+Checking HB/lock1074
+Checking HB/nos5
+Checking HB/steam3
+Checking Hamm/add20 rhs0
+Checking Hollinger/g7jac120
+Checking Hollinger/mark3jac120
+Checking JGD_BIBD/bibd_18_9
+Checking JGD_Franz/Franz9
+Checking JGD_GL7d/GL7d23
+Checking JGD_Homology/ch7-7-b1
+Checking JGD_Homology/mk10-b4
+Checking JGD_Homology/n3c5-b4
+Checking JGD_Homology/n4c6-b15
+Checking JGD_Margulies/flower_5_1
+Checking JGD_SL6/D_5
+Checking Janna/Geo_1438

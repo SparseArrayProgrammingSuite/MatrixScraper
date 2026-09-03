@@ -1,0 +1,76 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-03-2026 14:18:01
+Job ID:    12790766
+User ID:   wahrens6
+Account:   gts-wahrens6
+Job name:  saps-scrape-matrices
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+Selected 91 of 2904 SuiteSparse search results for chunk 12/32.
+Checking AG-Monien/cage
+Checking Andrews/Andrews
+Checking Bai/bwm200
+Checking Bai/odepa400
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:490: RuntimeWarning: divide by zero encountered in scalar divide
+  alpha = rho / xp.vecdot(p, Ap)
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:502: RuntimeWarning: invalid value encountered in vecdot
+  new_rho = xp.vecdot(r, z)
+Checking Bai/tols1090
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: divide by zero encountered in divide
+  output = r / M
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: invalid value encountered in divide
+  output = r / M
+Checking Boeing/bcsstk38
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:336: RuntimeWarning: overflow encountered in multiply
+  return xp.sqrt(xp.sum(xp.multiply(v, v)))
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
+  sqnorm = x.dot(x)
+Checking Botonakis/FEM_3D_thermal1
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: overflow encountered in divide
+  x = x + r / d
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: invalid value encountered in add
+  x = x + r / d
+Checking Cannizzo/sts4098 rhs0
+Checking Cylshell/s3rmt3m1
+Checking DIMACS10/de2010
+Checking DIMACS10/hugetrace-00010
+Checking DIMACS10/netherlands_osm
+Checking DIMACS10/ut2010
+Checking DNVS/shipsec1
+Checking DRIVCAV/cavity25 rhs0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:490: RuntimeWarning: invalid value encountered in vecdot
+  alpha = rho / xp.vecdot(p, Ap)
+Checking FIDAP/ex19
+Checking FlowIPM22/uni_chimera_i1
+Checking GHS_indef/bloweya
+Checking GHS_indef/linverse
+Checking GHS_psdef/ford2
+Checking Gleich/usroads
+Checking Grund/bayer07
+Checking Gset/G27
+Checking Gset/G56
+Checking HB/ash85
+Checking HB/bcsstk21
+Checking HB/bcsstm25
+Checking HB/can_838
+Checking HB/dwt_869
+Checking HB/hor_131
+Checking HB/lshp1009
+Checking HB/orsirr_1
+Checking HB/str_600
+Checking Hamm/memplus rhs0
+Checking Hollinger/g7jac160
+Checking IBM_Austin/coupled
+Checking JGD_BIBD/bibd_49_3
+Checking JGD_G5/IG5-13
+Checking JGD_Groebner/HFE18_96_in
+Checking JGD_Homology/ch7-8-b2
+Checking JGD_Homology/mk11-b4
+Checking JGD_Homology/n3c6-b1
+Checking JGD_Homology/n4c6-b5
+Checking JGD_Margulies/flower_8_1
+Checking JGD_SL6/D_9
+Checking Janna/ML_Geer

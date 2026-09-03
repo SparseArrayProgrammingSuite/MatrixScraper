@@ -1,0 +1,163 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-03-2026 14:18:01
+Job ID:    12790765
+User ID:   wahrens6
+Account:   gts-wahrens6
+Job name:  saps-scrape-matrices
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+Selected 91 of 2904 SuiteSparse search results for chunk 11/32.
+Checking AG-Monien/brack2
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: divide by zero encountered in divide
+  output = r / M
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: invalid value encountered in divide
+  output = r / M
+Checking Alemdar/Alemdar
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:336: RuntimeWarning: overflow encountered in multiply
+  return xp.sqrt(xp.sum(xp.multiply(v, v)))
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: invalid value encountered in add
+  x = x + r / d
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
+  sqnorm = x.dot(x)
+Checking Bai/bfwb782
+Checking Bai/mhdb416
+Checking Bai/rw5151
+Checking Boeing/bcsstk37
+Checking Bomhof/circuit_4 rhs0
+Checking CPM/cz628
+Checking Cylshell/s3rmq4m1
+Checking DIMACS10/data
+Checking DIMACS10/hugetrace-00000
+Checking DIMACS10/ne2010
+Checking DIMACS10/uk
+Checking DNVS/ship_003
+Checking DRIVCAV/cavity24 rhs0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:490: RuntimeWarning: invalid value encountered in vecdot
+  alpha = rho / xp.vecdot(p, Ap)
+Checking FIDAP/ex18
+Checking FlowIPM22/Spielman_k600
+Checking GHS_indef/blockqp1
+Checking GHS_indef/laser
+Checking GHS_psdef/ford1
+Checking Gleich/minnesota
+Checking Grund/bayer06
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:376: RuntimeWarning: divide by zero encountered in scalar divide
+  alpha = rr / xp.vecdot(p, Ap)[()]
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:390: RuntimeWarning: invalid value encountered in add
+  p = r + beta * p
+Checking Gset/G26
+Checking Gset/G55
+Checking HB/ash608
+Checking HB/bcsstk20
+Checking HB/bcsstm24
+Checking HB/can_73
+Checking HB/dwt_758
+Checking HB/gre_512
+Checking HB/lock_700
+Checking HB/orani678 rhs0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:377: RuntimeWarning: invalid value encountered in multiply
+  x = x + alpha * p
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:378: RuntimeWarning: invalid value encountered in multiply
+  r = r - alpha * Ap
+Checking HB/orani678 rhs1
+Checking HB/orani678 rhs2
+Checking HB/orani678 rhs3
+Checking HB/orani678 rhs4
+Checking HB/orani678 rhs5
+Checking HB/orani678 rhs6
+Checking HB/orani678 rhs7
+Checking HB/orani678 rhs8
+Checking HB/orani678 rhs9
+Checking HB/orani678 rhs10
+Checking HB/orani678 rhs11
+Checking HB/orani678 rhs12
+Checking HB/orani678 rhs13
+Checking HB/orani678 rhs14
+Checking HB/orani678 rhs15
+Checking HB/orani678 rhs16
+Checking HB/orani678 rhs17
+Checking HB/orani678 rhs18
+Checking HB/orani678 rhs19
+Checking HB/orani678 rhs20
+Checking HB/orani678 rhs21
+Checking HB/orani678 rhs22
+Checking HB/orani678 rhs23
+Checking HB/orani678 rhs24
+Checking HB/orani678 rhs25
+Checking HB/orani678 rhs26
+Checking HB/orani678 rhs27
+Checking HB/orani678 rhs28
+Checking HB/orani678 rhs29
+Checking HB/orani678 rhs30
+Checking HB/orani678 rhs31
+Checking HB/orani678 rhs32
+Checking HB/orani678 rhs33
+Checking HB/orani678 rhs34
+Checking HB/orani678 rhs35
+Checking HB/orani678 rhs36
+Checking HB/orani678 rhs37
+Checking HB/orani678 rhs38
+Checking HB/orani678 rhs39
+Checking HB/orani678 rhs40
+Checking HB/orani678 rhs41
+Checking HB/orani678 rhs42
+Checking HB/orani678 rhs43
+Checking HB/orani678 rhs44
+Checking HB/orani678 rhs45
+Checking HB/orani678 rhs46
+Checking HB/orani678 rhs47
+Checking HB/orani678 rhs48
+Checking HB/orani678 rhs49
+Checking HB/orani678 rhs50
+Checking HB/orani678 rhs51
+Checking HB/orani678 rhs52
+Checking HB/orani678 rhs53
+Checking HB/orani678 rhs54
+Checking HB/orani678 rhs55
+Checking HB/orani678 rhs56
+Checking HB/orani678 rhs57
+Checking HB/orani678 rhs58
+Checking HB/orani678 rhs59
+Checking HB/orani678 rhs60
+Checking HB/orani678 rhs61
+Checking HB/orani678 rhs62
+Checking HB/orani678 rhs63
+Checking HB/orani678 rhs64
+Checking HB/orani678 rhs65
+Checking HB/orani678 rhs66
+Checking HB/orani678 rhs67
+Checking HB/orani678 rhs68
+Checking HB/orani678 rhs69
+Checking HB/orani678 rhs70
+Checking HB/orani678 rhs71
+Checking HB/orani678 rhs72
+Checking HB/orani678 rhs73
+Checking HB/orani678 rhs74
+Checking HB/orani678 rhs75
+Checking HB/orani678 rhs76
+Checking HB/orani678 rhs77
+Checking HB/orani678 rhs78
+Checking HB/orani678 rhs79
+Checking HB/orani678 rhs80
+Checking HB/orani678 rhs81
+Checking HB/orani678 rhs82
+Checking HB/orani678 rhs83
+Checking HB/orani678 rhs84
+Checking HB/orani678 rhs85
+Checking HB/str_400
+Checking Hamm/hcircuit rhs0
+Checking Hollinger/g7jac140sc
+Checking Hollinger/mark3jac140sc
+Checking JGD_BIBD/bibd_22_8
+Checking JGD_G5/IG5-12
+Checking JGD_GL7d/GL7d26
+Checking JGD_Homology/ch7-8-b1
+Checking JGD_Homology/mk11-b3
+Checking JGD_Homology/n3c5-b7
+Checking JGD_Homology/n4c6-b4
+Checking JGD_Margulies/flower_7_4
+Checking JGD_SL6/D_8
+Checking Janna/Long_Coup_dt6

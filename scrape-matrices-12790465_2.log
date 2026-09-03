@@ -1,0 +1,16 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-03-2026 14:17:26
+Job ID:    12790533
+User ID:   wahrens6
+Account:   gts-wahrens6
+Job name:  saps-scrape-matrices
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+Selected 91 of 2904 SuiteSparse search results for chunk 3/32.
+Checking AG-Monien/3elt_dual
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: divide by zero encountered in divide
+  output = r / M
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: invalid value encountered in divide
+  output = r / M
+Checking AMD/G3_circuit

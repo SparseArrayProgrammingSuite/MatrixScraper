@@ -1,0 +1,78 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-03-2026 14:18:01
+Job ID:    12790767
+User ID:   wahrens6
+Account:   gts-wahrens6
+Job name:  saps-scrape-matrices
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+Selected 91 of 2904 SuiteSparse search results for chunk 13/32.
+Checking AG-Monien/cca
+Checking Andrianov/ex3sta1
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:336: RuntimeWarning: overflow encountered in multiply
+  return xp.sqrt(xp.sum(xp.multiply(v, v)))
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: invalid value encountered in add
+  x = x + r / d
+Checking Bai/bwm2000
+Checking Bai/odepb400
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: invalid value encountered in divide
+  output = r / M
+Checking Bai/tols2000
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:376: RuntimeWarning: divide by zero encountered in scalar divide
+  alpha = rr / xp.vecdot(p, Ap)[()]
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:377: RuntimeWarning: invalid value encountered in multiply
+  x = x + alpha * p
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:378: RuntimeWarning: invalid value encountered in multiply
+  r = r - alpha * Ap
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: divide by zero encountered in divide
+  output = r / M
+Checking Boeing/bcsstk39
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
+  sqnorm = x.dot(x)
+Checking Botonakis/FEM_3D_thermal2
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: overflow encountered in divide
+  x = x + r / d
+Checking Castrillon/denormal
+Checking Cylshell/s3rmt3m3
+Checking DIMACS10/delaunay_n10
+Checking DIMACS10/hugetrace-00020
+Checking DIMACS10/nh2010
+Checking DIMACS10/va2010
+Checking DNVS/shipsec5
+Checking DRIVCAV/cavity26 rhs0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:490: RuntimeWarning: invalid value encountered in vecdot
+  alpha = rho / xp.vecdot(p, Ap)
+Checking FIDAP/ex2
+Checking FlowIPM22/uni_chimera_i2
+Checking GHS_indef/bloweybl
+Checking GHS_indef/mario001
+Checking GHS_psdef/gridgena
+Checking Gleich/usroads-48
+Checking Grund/bayer08
+Checking Gset/G28
+Checking Gset/G57
+Checking HB/ash958
+Checking HB/bcsstk22
+Checking HB/bcsstm26
+Checking HB/can_96
+Checking HB/dwt_87
+Checking HB/ibm32
+Checking HB/lshp1270
+Checking HB/orsirr_2
+Checking HB/watt_1
+Checking Hamm/scircuit rhs0
+Checking Hollinger/g7jac160sc
+Checking IBM_EDA/ckt11752_dc_1 rhs0
+Checking JGD_BIBD/bibd_81_2
+Checking JGD_G5/IG5-14
+Checking JGD_Groebner/c8_mat11
+Checking JGD_Homology/ch7-8-b3
+Checking JGD_Homology/mk11-b4b
+Checking JGD_Homology/n3c6-b10
+Checking JGD_Homology/n4c6-b6
+Checking JGD_Margulies/flower_8_4
+Checking JGD_SPG/08blocks
+Checking Janna/ML_Laplace

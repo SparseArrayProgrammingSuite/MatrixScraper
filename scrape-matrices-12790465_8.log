@@ -1,0 +1,74 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-03-2026 14:18:01
+Job ID:    12790763
+User ID:   wahrens6
+Account:   gts-wahrens6
+Job name:  saps-scrape-matrices
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+Selected 91 of 2904 SuiteSparse search results for chunk 9/32.
+Checking AG-Monien/big_dual
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: divide by zero encountered in divide
+  output = r / M
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: invalid value encountered in divide
+  output = r / M
+Checking ATandT/pre2
+Checking Bai/bfwb398
+Checking Bai/mhd4800b
+Checking Bai/rw136
+Checking Boeing/bcsstk35
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:336: RuntimeWarning: overflow encountered in multiply
+  return xp.sqrt(xp.sum(xp.multiply(v, v)))
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
+  sqnorm = x.dot(x)
+Checking Bomhof/circuit_2 rhs0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:490: RuntimeWarning: invalid value encountered in vecdot
+  alpha = rho / xp.vecdot(p, Ap)
+Checking CPM/cz40948
+Checking Cylshell/s2rmq4m1
+Checking DIMACS10/ct2010
+Checking DIMACS10/hugebubbles-00010
+Checking DIMACS10/nc2010
+Checking DIMACS10/tn2010
+m_t1:   0%|          | 0/60024274 [00:00<?, ?B/s]m_t1:   0%|          | 262144/60024274 [00:00<00:24, 2427628.14B/s]m_t1:   2%|▏         | 1458176/60024274 [00:00<00:07, 7793200.19B/s]m_t1:   4%|▍         | 2572288/60024274 [00:00<00:06, 9022456.32B/s]m_t1:   6%|▋         | 3899392/60024274 [00:00<00:05, 10639816.65B/s]m_t1:   9%|▉         | 5275648/60024274 [00:00<00:04, 11725139.26B/s]m_t1:  11%|█         | 6701056/60024274 [00:00<00:04, 12410773.40B/s]m_t1:  14%|█▍        | 8323072/60024274 [00:00<00:03, 13631886.83B/s]m_t1:  16%|█▋        | 9830400/60024274 [00:00<00:03, 14051482.94B/s]m_t1:  19%|█▉        | 11583488/60024274 [00:00<00:03, 15099254.73B/s]m_t1:  22%|██▏       | 13254656/60024274 [00:01<00:03, 15562445.01B/s]m_t1:  25%|██▌       | 15106048/60024274 [00:01<00:02, 16425254.86B/s]m_t1:  28%|██▊       | 16777216/60024274 [00:01<00:02, 15152113.78B/s]m_t1:  31%|███       | 18317312/60024274 [00:01<00:02, 15154632.40B/s]m_t1:  33%|███▎      | 19857408/60024274 [00:01<00:02, 15152905.06B/s]m_t1:  36%|███▌      | 21413888/60024274 [00:01<00:02, 15240747.22B/s]m_t1:  38%|███▊      | 22986752/60024274 [00:01<00:02, 15352673.77B/s]m_t1:  41%|████      | 24608768/60024274 [00:01<00:02, 15577023.94B/s]m_t1:  44%|████▎     | 26230784/60024274 [00:01<00:02, 15750119.25B/s]m_t1:  46%|████▋     | 27901952/60024274 [00:01<00:02, 16028505.39B/s]m_t1:  49%|████▉     | 29655040/60024274 [00:02<00:01, 16444758.47B/s]m_t1:  53%|█████▎    | 31571968/60024274 [00:02<00:01, 17206429.36B/s]m_t1:  56%|█████▌    | 33423360/60024274 [00:02<00:01, 17579583.69B/s]m_t1:  59%|█████▉    | 35274752/60024274 [00:02<00:01, 17853565.07B/s]m_t1:  62%|██████▏   | 37191680/60024274 [00:02<00:01, 18221757.71B/s]m_t1:  65%|██████▌   | 39092224/60024274 [00:02<00:01, 18454322.00B/s]m_t1:  68%|██████▊   | 41074688/60024274 [00:02<00:01, 18824025.49B/s]m_t1:  72%|███████▏  | 42991616/60024274 [00:02<00:00, 18908062.76B/s]m_t1:  75%|███████▍  | 44892160/60024274 [00:02<00:00, 18931089.71B/s]m_t1:  78%|███████▊  | 46907392/60024274 [00:02<00:00, 19258702.72B/s]m_t1:  81%|████████▏ | 48857088/60024274 [00:03<00:00, 19327528.25B/s]m_t1:  85%|████████▍ | 50806784/60024274 [00:03<00:00, 19358204.34B/s]m_t1:  88%|████████▊ | 52805632/60024274 [00:03<00:00, 19532002.99B/s]m_t1:  91%|█████████ | 54771712/60024274 [00:03<00:00, 19480523.78B/s]m_t1:  95%|█████████▍| 56819712/60024274 [00:03<00:00, 19746907.90B/s]m_t1:  98%|█████████▊| 58802176/60024274 [00:03<00:00, 19593909.82B/s]m_t1: 60030976B [00:03, 16539559.37B/s]                               
+Checking DNVS/m_t1
+Checking DRIVCAV/cavity22 rhs0
+Checking FIDAP/ex14
+Checking FlowIPM22/Spielman_k400
+Checking GHS_indef/aug3d
+Checking GHS_indef/helm3d01
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: overflow encountered in divide
+  x = x + r / d
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: invalid value encountered in add
+  x = x + r / d
+cvxbqp1:   0%|          | 0/1142941 [00:00<?, ?B/s]cvxbqp1:  14%|█▍        | 163840/1142941 [00:00<00:00, 1532702.36B/s]cvxbqp1:  96%|█████████▌| 1097728/1142941 [00:00<00:00, 5950329.90B/s]cvxbqp1: 1146880B [00:00, 5461493.56B/s]                              
+Checking GHS_psdef/cvxbqp1
+Checking GenBank/kmer_V2a
+Checking Grund/bayer04 rhs0
+Checking Gset/G24
+Checking Gset/G53
+Checking HB/ash292
+Checking HB/bcsstk18
+Checking HB/bcsstm22
+Checking HB/can_634
+Checking HB/dwt_66
+Checking HB/gre_216b
+Checking HB/lock2232
+Checking HB/nos6
+Checking HB/str_0
+Checking Hamm/add32 rhs0
+Checking Hollinger/g7jac120sc
+Checking Hollinger/mark3jac120sc
+Checking JGD_BIBD/bibd_19_9
+Checking JGD_G5/IG5-10
+Checking JGD_GL7d/GL7d24
+Checking JGD_Homology/ch7-7-b2
+Checking JGD_Homology/mk11-b1
+Checking JGD_Homology/n3c5-b5
+Checking JGD_Homology/n4c6-b2
+Checking JGD_Margulies/flower_5_4
+Checking JGD_SL6/D_6
+Checking Janna/Hook_1498

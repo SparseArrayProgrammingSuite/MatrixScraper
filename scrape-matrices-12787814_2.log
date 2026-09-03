@@ -1,54 +1,0 @@
----------------------------------------
-Begin Slurm Prolog: Sep-03-2026 13:03:32
-Job ID:    12788001
-User ID:   wahrens6
-Account:   gts-wahrens6
-Job name:  saps-scrape-matrices
-Partition: cpu-medium
-QOS:       inferno
----------------------------------------
-Selected 91 of 2904 SuiteSparse search results for chunk 3/32.
-Checking AG-Monien/3elt_dual
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:512: RuntimeWarning: divide by zero encountered in divide
-  output = r / M
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:512: RuntimeWarning: invalid value encountered in divide
-  output = r / M
-Checking AMD/G3_circuit
-Checking Averous/epb2
-epb2:   0%|          | 0/1604248 [00:00<?, ?B/s]epb2:  13%|█▎        | 212992/1604248 [00:00<00:00, 1788967.65B/s]epb2:  34%|███▎      | 540672/1604248 [00:00<00:00, 2367094.16B/s]epb2:  55%|█████▌    | 884736/1604248 [00:00<00:00, 2805658.26B/s]epb2:  82%|████████▏ | 1310720/1604248 [00:00<00:00, 3285259.70B/s]epb2: 1605632B [00:00, 3185419.47B/s]                              
-Checking Bai/lop163
-Checking Bai/rdb3200l
-rdb3200l:   0%|          | 0/65377 [00:00<?, ?B/s]rdb3200l: 65536B [00:00, 1502401.67B/s]           
-Checking Bodendiek/CurlCurl_0
-CurlCurl_0:   0%|          | 0/300847 [00:00<?, ?B/s]CurlCurl_0:  93%|█████████▎| 278528/300847 [00:00<00:00, 2389475.10B/s]CurlCurl_0: 311296B [00:00, 2614906.85B/s]                             
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
-  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:328: RuntimeWarning: overflow encountered in multiply
-  return xp.sqrt(xp.sum(xp.multiply(v, v)))
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:346: RuntimeWarning: invalid value encountered in add
-  x = x + r / d
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
-  sqnorm = x.dot(x)
-Checking Boeing/nasa4704
-Checking CPM/cz10228
-cz10228:   0%|          | 0/893387 [00:00<?, ?B/s]cz10228:  24%|██▍       | 212992/893387 [00:00<00:00, 1869585.10B/s]cz10228:  64%|██████▍   | 573440/893387 [00:00<00:00, 2827728.15B/s]cz10228: 901120B [00:00, 3141242.48B/s]                             
-Checking Cunningham/k3plates
-k3plates:   0%|          | 0/4343344 [00:00<?, ?B/s]k3plates:   6%|▋         | 278528/4343344 [00:00<00:01, 2243121.44B/s]k3plates:  16%|█▌        | 688128/4343344 [00:00<00:01, 3225354.68B/s]k3plates:  25%|██▌       | 1097728/4343344 [00:00<00:00, 3594566.34B/s]k3plates:  40%|███▉      | 1720320/4343344 [00:00<00:00, 4556539.49B/s]k3plates:  56%|█████▌    | 2424832/4343344 [00:00<00:00, 5336229.79B/s]k3plates:  77%|███████▋  | 3325952/4343344 [00:00<00:00, 6533839.98B/s]k3plates: 100%|█████████▉| 4341760/4343344 [00:00<00:00, 7686674.07B/s]k3plates: 4358144B [00:00, 5938843.70B/s]                              
-Checking DIMACS10/co2010
-Checking DIMACS10/fl2010
-Checking DIMACS10/me2010
-Checking DIMACS10/road_central
-Checking DIMACS10/wv2010
-Checking DRIVCAV/cavity16
-cavity16:   0%|          | 0/982922 [00:00<?, ?B/s]cavity16:  10%|█         | 98304/982922 [00:00<00:00, 973880.98B/s]cavity16:  27%|██▋       | 262144/982922 [00:00<00:00, 1275649.75B/s]cavity16:  63%|██████▎   | 622592/982922 [00:00<00:00, 2292202.84B/s]cavity16: 983040B [00:00, 2401645.26B/s]                             
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:474: RuntimeWarning: invalid value encountered in vecdot
-  alpha = rho / xp.vecdot(p, Ap)
-Checking FIDAP/ex1
-ex1:   0%|          | 0/29106 [00:00<?, ?B/s]ex1: 32768B [00:00, 2063585.98B/s]           
-Checking FIDAP/ex7
-ex7:   0%|          | 0/407331 [00:00<?, ?B/s]ex7:  68%|██████▊   | 278528/407331 [00:00<00:00, 2659543.56B/s]ex7: 409600B [00:00, 3338074.78B/s]                             
-Checking GAP/GAP-web
-Checking GHS_indef/darcy003
-darcy003:   0%|          | 0/7881253 [00:00<?, ?B/s]darcy003:   1%|          | 98304/7881253 [00:00<00:08, 969796.78B/s]darcy003:   9%|▉         | 704512/7881253 [00:00<00:01, 3714933.81B/s]darcy003:  23%|██▎       | 1802240/7881253 [00:00<00:00, 6898231.92B/s]darcy003:  38%|███▊      | 3014656/7881253 [00:00<00:00, 8892388.54B/s]darcy003:  53%|█████▎    | 4210688/7881253 [00:00<00:00, 9967665.84B/s]darcy003:  71%|███████   | 5603328/7881253 [00:00<00:00, 10912028.62B/s]darcy003:  90%|████████▉ | 7061504/7881253 [00:00<00:00, 12050082.40B/s]darcy003: 7897088B [00:00, 9959982.34B/s]                               
-Checking GHS_psdef/bmw7st_1
-bmw7st_1:   0%|          | 0/48253938 [00:00<?, ?B/s]bmw7st_1:   0%|          | 131072/48253938 [00:00<00:36, 1304107.90B/s]bmw7st_1:   1%|▏         | 671744/48253938 [00:00<00:12, 3693937.47B/s]bmw7st_1:   5%|▍         | 2277376/48253938 [00:00<00:04, 9314288.43B/s]bmw7st_1:   8%|▊         | 3833856/48253938 [00:00<00:03, 11773220.16B/s]bmw7st_1:  11%|█         | 5357568/48253938 [00:00<00:03, 12988660.54B/s]bmw7st_1:  14%|█▍        | 6881280/48253938 [00:00<00:03, 13743952.88B/s]bmw7st_1:  18%|█▊        | 8519680/48253938 [00:00<00:02, 14538667.29B/s]bmw7st_1:  21%|██        | 10125312/48253938 [00:00<00:02, 14990669.74B/s]bmw7st_1:  24%|██▍       | 11780096/48253938 [00:00<00:02, 15458651.21B/s]bmw7st_1:  28%|██▊       | 13418496/48253938 [00:01<00:02, 15720465.19B/s]bmw7st_1:  31%|███       | 14991360/48253938 [00:01<00:02, 15630227.52B/s]bmw7st_1:  35%|███▍      | 16662528/48253938 [00:01<00:01, 15922567.61B/s]bmw7st_1:  38%|███▊      | 18399232/48253938 [00:01<00:01, 16315707.22B/s]bmw7st_1:  42%|████▏     | 20201472/48253938 [00:01<00:01, 16814467.70B/s]bmw7st_1:  45%|████▌     | 21889024/48253938 [00:01<00:01, 16692473.68B/s]bmw7st_1:  49%|████▉     | 23592960/48253938 [00:01<00:01, 16769507.27B/s]bmw7st_1:  53%|█████▎    | 25395200/48253938 [00:01<00:01, 16908870.40B/s]bmw7st_1:  57%|█████▋    | 27279360/48253938 [00:01<00:01, 17442089.36B/s]bmw7st_1:  60%|██████    | 29065216/48253938 [00:01<00:01, 17525368.27B/s]bmw7st_1:  64%|██████▍   | 30900224/48253938 [00:02<00:00, 17742475.68B/s]bmw7st_1:  68%|██████▊   | 32768000/48253938 [00:02<00:00, 17999792.37B/s]bmw7st_1:  72%|███████▏  | 34619392/48253938 [00:02<00:00, 18127767.03B/s]bmw7st_1:  76%|███████▌  | 36519936/48253938 [00:02<00:00, 18340099.17B/s]bmw7st_1:  79%|███████▉  | 38354944/48253938 [00:02<00:00, 17878072.10B/s]bmw7st_1:  83%|████████▎ | 40157184/48253938 [00:02<00:00, 17608429.00B/s]bmw7st_1:  87%|████████▋ | 41926656/48253938 [00:02<00:00, 17483101.11B/s]bmw7st_1:  91%|█████████ | 43679744/48253938 [00:02<00:00, 17272989.48B/s]bmw7st_1:  94%|█████████▍| 45514752/48253938 [00:02<00:00, 17578676.35B/s]bmw7st_1:  98%|█████████▊| 47349760/48253938 [00:02<00:00, 17796401.44B/s]bmw7st_1: 48267264B [00:02, 16121908.61B/s]                               
