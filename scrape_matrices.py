@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# ruff: noqa: E402
 """Probe SuiteSparse matrices by running SAPS solver benchmarks on them.
 
 This script intentionally calls the SAPS benchmark implementations instead of
@@ -13,7 +12,6 @@ import argparse
 import contextlib
 import json
 import math
-import os
 import random
 import sys
 import time
@@ -27,18 +25,7 @@ import scipy.sparse as sps
 
 import ssgetpy
 
-SAPS_REPO_NAME = "SparseAutoschedulingBenchmark"
-SCRIPT_DIR = Path(__file__).resolve().parent
-SAPS_REPO_DIR = Path(
-    os.environ.get("SAPS_REPO_DIR", SCRIPT_DIR.parent / SAPS_REPO_NAME)
-)
-SAPS_SRC_DIR = SAPS_REPO_DIR / "src"
-SAPS_SCIPY_FRAMEWORK = SAPS_REPO_DIR / "frameworks" / "saps_scipy.py"
-
-
-if (SAPS_SRC_DIR / "saps").exists():
-    sys.path.insert(0, str(SAPS_SRC_DIR))
-
+import saps
 import saps.benchmarks.GMRES as saps_gmres
 import saps.benchmarks.cg as saps_cg
 import saps.benchmarks.jacobi as saps_jacobi
@@ -126,13 +113,29 @@ def _matrix_kind(matrix: Any) -> str:
     return str(getattr(matrix, "kind", "")).strip().lower()
 
 
-def _load_scipy_framework() -> Any:
-    if not SAPS_SCIPY_FRAMEWORK.exists():
+def _saps_checkout_dir() -> Path:
+    saps_file = getattr(saps, "__file__", None)
+    if saps_file is None:
+        raise FileNotFoundError("Could not locate the Poetry-installed saps package.")
+
+    package_dir = Path(saps_file).resolve().parent
+    src_dir = package_dir.parent
+    if src_dir.name != "src":
         raise FileNotFoundError(
-            "Could not find the SAPS SciPy framework. Set SAPS_REPO_DIR to the "
-            f"{SAPS_REPO_NAME} checkout."
+            "The Poetry-installed saps package is not an editable checkout with "
+            f"a src/saps layout: {package_dir}"
         )
-    return load_framework(SAPS_SCIPY_FRAMEWORK)
+    return src_dir.parent
+
+
+def _load_scipy_framework() -> Any:
+    framework_path = _saps_checkout_dir() / "frameworks" / "saps_scipy.py"
+    if not framework_path.exists():
+        raise FileNotFoundError(
+            "Could not find frameworks/saps_scipy.py in the Poetry-installed "
+            f"saps checkout: {framework_path}"
+        )
+    return load_framework(framework_path)
 
 
 @dataclass

@@ -2,9 +2,8 @@
 
 Tooling for probing SuiteSparse matrices against the solver implementations in
 the SAPS benchmark repository. `saps` is installed from GitHub through Poetry.
-The scraper also uses SAPS' framework definitions from a local
-`SparseAutoschedulingBenchmark` checkout; set `SAPS_REPO_DIR` if that checkout is
-not next to this repository.
+The scraper uses SAPS' SciPy framework from that Poetry-installed `saps`
+checkout.
 Every searched SuiteSparse entry gets a JSONL record. Per-solver results record
 whether the solver ran, skipped the matrix, errored, converged, or failed to
 converge.
