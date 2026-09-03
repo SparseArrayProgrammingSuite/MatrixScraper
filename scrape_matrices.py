@@ -33,7 +33,6 @@ import saps.benchmarks.lsqr as saps_lsqr
 import saps.benchmarks.preconditioned_cg as saps_preconditioned_cg
 import saps.downloaders.suitesparse as saps_suitesparse_downloader
 from binsparse.conversions import from_scipy
-from saps.framework import load_framework
 from saps.benchmarks.GMRES import GMRESBenchmark, GMRESDataset, GMRESGenerator
 from saps.benchmarks.cg import CGBenchmark, CGDataset, CGGenerator
 from saps.benchmarks.jacobi import JacobiBenchmark, JacobiDataset, JacobiGenerator
