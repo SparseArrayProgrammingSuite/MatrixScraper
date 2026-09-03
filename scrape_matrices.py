@@ -45,6 +45,9 @@ from saps.benchmarks.preconditioned_cg import (
     PreconditionedCGBenchmark,
     PreconditionedCGDataset,
 )
+from . import saps_scipy
+xp = saps_scipy.xp
+
 
 
 SOLVER_NAMES = (
@@ -111,32 +114,6 @@ ACCEPTED_MATRIX_KINDS = frozenset(
 
 def _matrix_kind(matrix: Any) -> str:
     return str(getattr(matrix, "kind", "")).strip().lower()
-
-
-def _saps_checkout_dir() -> Path:
-    saps_file = getattr(saps, "__file__", None)
-    if saps_file is None:
-        raise FileNotFoundError("Could not locate the Poetry-installed saps package.")
-
-    package_dir = Path(saps_file).resolve().parent
-    src_dir = package_dir.parent
-    if src_dir.name != "src":
-        raise FileNotFoundError(
-            "The Poetry-installed saps package is not an editable checkout with "
-            f"a src/saps layout: {package_dir}"
-        )
-    return src_dir.parent
-
-
-def _load_scipy_framework() -> Any:
-    framework_path = _saps_checkout_dir() / "frameworks" / "saps_scipy.py"
-    if not framework_path.exists():
-        raise FileNotFoundError(
-            "Could not find frameworks/saps_scipy.py in the Poetry-installed "
-            f"saps checkout: {framework_path}"
-        )
-    return load_framework(framework_path)
-
 
 @dataclass
 class SolverSpec:
@@ -497,7 +474,6 @@ def main() -> int:
     completed = set() if args.force else _done_matrix_names(args.output)
     matrices = _search_matrices(args)
 
-    xp = _load_scipy_framework()
     with _saps_suitesparse_context(args.data_dir, args.seed), args.output.open(
         "a",
         encoding="utf-8",
