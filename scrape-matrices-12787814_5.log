@@ -1,0 +1,42 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-03-2026 13:05:06
+Job ID:    12788022
+User ID:   wahrens6
+Account:   gts-wahrens6
+Job name:  saps-scrape-matrices
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+Selected 91 of 2904 SuiteSparse search results for chunk 6/32.
+Checking AG-Monien/airfoil1
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:512: RuntimeWarning: divide by zero encountered in divide
+  output = r / M
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:512: RuntimeWarning: invalid value encountered in divide
+  output = r / M
+Checking ANSYS/Delor64K
+Checking Bai/bfwa398
+Checking Bai/mhd3200a
+Checking Bai/rdb5000
+Checking Bodendiek/CurlCurl_3
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:328: RuntimeWarning: overflow encountered in multiply
+  return xp.sqrt(xp.sum(xp.multiply(v, v)))
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
+  sqnorm = x.dot(x)
+Checking Boeing/pct20stif
+pct20stif:   0%|          | 0/2998602 [00:00<?, ?B/s]pct20stif:  11%|█▏        | 344064/2998602 [00:00<00:00, 3042351.50B/s]pct20stif:  50%|█████     | 1507328/2998602 [00:00<00:00, 7524007.87B/s]pct20stif: 100%|█████████▉| 2998272/2998602 [00:00<00:00, 10616151.65B/s]pct20stif: 3014656B [00:00, 9327600.80B/s]                               
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:346: RuntimeWarning: invalid value encountered in add
+  x = x + r / d
+Checking CPM/cz20468
+cz20468:   0%|          | 0/1810106 [00:00<?, ?B/s]cz20468:   7%|▋         | 131072/1810106 [00:00<00:01, 1130991.65B/s]cz20468:  21%|██        | 376832/1810106 [00:00<00:00, 1765401.89B/s]cz20468:  43%|████▎     | 770048/1810106 [00:00<00:00, 2690810.06B/s]cz20468:  68%|██████▊   | 1228800/1810106 [00:00<00:00, 3403535.47B/s]cz20468:  96%|█████████▌| 1736704/1810106 [00:00<00:00, 3984338.26B/s]cz20468: 1818624B [00:00, 3414329.75B/s]                              
+Checking Cunningham/qa8fm
+qa8fm:   0%|          | 0/4401523 [00:00<?, ?B/s]qa8fm:   2%|▏         | 98304/4401523 [00:00<00:04, 921238.47B/s]qa8fm:   5%|▍         | 212992/4401523 [00:00<00:04, 996031.63B/s]qa8fm:   7%|▋         | 327680/4401523 [00:00<00:03, 1023531.68B/s]qa8fm:  10%|█         | 442368/4401523 [00:00<00:03, 1035945.20B/s]qa8fm:  13%|█▎        | 557056/4401523 [00:00<00:03, 1031702.66B/s]qa8fm:  15%|█▌        | 671744/4401523 [00:00<00:03, 1036084.10B/s]qa8fm:  22%|██▏       | 966656/4401523 [00:00<00:02, 1525001.89B/s]qa8fm:  31%|███       | 1359872/4401523 [00:00<00:01, 2218429.08B/s]qa8fm:  40%|███▉      | 1753088/4401523 [00:00<00:00, 2715536.11B/s]qa8fm:  50%|████▉     | 2195456/4401523 [00:01<00:00, 3208957.40B/s]qa8fm:  62%|██████▏   | 2736128/4401523 [00:01<00:00, 3798234.84B/s]qa8fm:  77%|███████▋  | 3375104/4401523 [00:01<00:00, 4492639.35B/s]qa8fm:  94%|█████████▍| 4128768/4401523 [00:01<00:00, 5208194.59B/s]qa8fm: 4407296B [00:01, 3072024.58B/s]                              
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:346: RuntimeWarning: overflow encountered in divide
+  x = x + r / d
+Checking DIMACS10/coPapersCiteseer
+Checking DIMACS10/great-britain_osm
+Checking DIMACS10/mo2010
+Checking DIMACS10/sd2010
+Checking DNVS/fcondp2
+fcondp2:   0%|          | 0/12222038 [00:00<?, ?B/s]fcondp2:   3%|▎         | 311296/12222038 [00:00<00:03, 3026945.83B/s]fcondp2:   9%|▊         | 1048576/12222038 [00:00<00:02, 5088939.51B/s]fcondp2:  16%|█▌        | 1900544/12222038 [00:00<00:01, 6503099.72B/s]fcondp2:  22%|██▏       | 2637824/12222038 [00:00<00:01, 6819868.57B/s]fcondp2:  31%|███       | 3751936/12222038 [00:00<00:01, 8265950.03B/s]fcondp2:  39%|███▉      | 4784128/12222038 [00:00<00:00, 8931049.14B/s]fcondp2:  50%|█████     | 6160384/12222038 [00:00<00:00, 10472502.64B/s]fcondp2:  59%|█████▉    | 7241728/12222038 [00:00<00:00, 10538433.88B/s]fcondp2:  69%|██████▊   | 8388608/12222038 [00:00<00:00, 10645475.97B/s]fcondp2:  79%|███████▉  | 9715712/12222038 [00:01<00:00, 11426036.86B/s]fcondp2:  89%|████████▉ | 10862592/12222038 [00:01<00:00, 11425693.46B/s]fcondp2: 12222464B [00:01, 9994287.77B/s]                                

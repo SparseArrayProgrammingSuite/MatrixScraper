@@ -1,0 +1,50 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-03-2026 13:09:31
+Job ID:    12788192
+User ID:   wahrens6
+Account:   gts-wahrens6
+Job name:  saps-scrape-matrices
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+Selected 91 of 2904 SuiteSparse search results for chunk 12/32.
+Checking AG-Monien/cage
+Checking Andrews/Andrews
+Checking Bai/bwm200
+bwm200:   0%|          | 0/2999 [00:00<?, ?B/s]bwm200: 16384B [00:00, 96245765.74B/s]         
+Checking Bai/odepa400
+odepa400:   0%|          | 0/3576 [00:00<?, ?B/s]odepa400: 16384B [00:00, 129659390.07B/s]        
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:474: RuntimeWarning: divide by zero encountered in scalar divide
+  alpha = rho / xp.vecdot(p, Ap)
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:486: RuntimeWarning: invalid value encountered in vecdot
+  new_rho = xp.vecdot(r, z)
+Checking Bai/tols1090
+tols1090:   0%|          | 0/23816 [00:00<?, ?B/s]tols1090: 32768B [00:00, 1818793.55B/s]           
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:512: RuntimeWarning: divide by zero encountered in divide
+  output = r / M
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:512: RuntimeWarning: invalid value encountered in divide
+  output = r / M
+Checking Boeing/bcsstk38
+bcsstk38:   0%|          | 0/1529699 [00:00<?, ?B/s]bcsstk38:  19%|█▉        | 294912/1529699 [00:00<00:00, 2947506.51B/s]bcsstk38:  90%|████████▉ | 1376256/1529699 [00:00<00:00, 7557655.91B/s]bcsstk38: 1540096B [00:00, 6699576.13B/s]                              
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:328: RuntimeWarning: overflow encountered in multiply
+  return xp.sqrt(xp.sum(xp.multiply(v, v)))
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
+  sqnorm = x.dot(x)
+Checking Botonakis/FEM_3D_thermal1
+FEM_3D_thermal1:   0%|          | 0/4153240 [00:00<?, ?B/s]FEM_3D_thermal1:   5%|▌         | 212992/4153240 [00:00<00:02, 1921032.68B/s]FEM_3D_thermal1:  15%|█▌        | 638976/4153240 [00:00<00:01, 3121112.29B/s]FEM_3D_thermal1:  26%|██▌       | 1064960/4153240 [00:00<00:00, 3605541.89B/s]FEM_3D_thermal1:  37%|███▋      | 1556480/4153240 [00:00<00:00, 3914550.47B/s]FEM_3D_thermal1:  49%|████▉     | 2031616/4153240 [00:00<00:00, 4190687.83B/s]FEM_3D_thermal1:  63%|██████▎   | 2605056/4153240 [00:00<00:00, 4608586.49B/s]FEM_3D_thermal1:  77%|███████▋  | 3211264/4153240 [00:00<00:00, 5064836.26B/s]FEM_3D_thermal1:  95%|█████████▌| 3948544/4153240 [00:00<00:00, 5765276.10B/s]FEM_3D_thermal1: 4161536B [00:00, 4799288.16B/s]                              
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:346: RuntimeWarning: overflow encountered in divide
+  x = x + r / d
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:346: RuntimeWarning: invalid value encountered in add
+  x = x + r / d
+Checking Cannizzo/sts4098
+sts4098:   0%|          | 0/340312 [00:00<?, ?B/s]sts4098:  63%|██████▎   | 212992/340312 [00:00<00:00, 2001867.07B/s]sts4098: 344064B [00:00, 2967211.01B/s]                             
+Checking Cylshell/s3rmt3m1
+s3rmt3m1:   0%|          | 0/1092334 [00:00<?, ?B/s]s3rmt3m1:  15%|█▍        | 163840/1092334 [00:00<00:00, 1327609.87B/s]s3rmt3m1:  39%|███▉      | 425984/1092334 [00:00<00:00, 1833715.07B/s]s3rmt3m1:  61%|██████▏   | 671744/1092334 [00:00<00:00, 2011140.90B/s]s3rmt3m1:  87%|████████▋ | 950272/1092334 [00:00<00:00, 2286817.56B/s]s3rmt3m1: 1097728B [00:00, 2246146.47B/s]                             
+Checking DIMACS10/de2010
+Checking DIMACS10/hugetrace-00010
+Checking DIMACS10/netherlands_osm
+Checking DIMACS10/ut2010
+Checking DNVS/shipsec1
+shipsec1:   0%|          | 0/22175245 [00:00<?, ?B/s]shipsec1:   1%|          | 131072/22175245 [00:00<00:18, 1198707.03B/s]shipsec1:   3%|▎         | 720896/22175245 [00:00<00:05, 3801362.44B/s]shipsec1:   9%|▉         | 1949696/22175245 [00:00<00:02, 7522070.27B/s]shipsec1:  15%|█▍        | 3227648/22175245 [00:00<00:01, 9525436.70B/s]shipsec1:  19%|█▉        | 4210688/22175245 [00:00<00:01, 9138164.83B/s]shipsec1:  27%|██▋       | 6029312/22175245 [00:00<00:01, 12056473.52B/s]shipsec1:  33%|███▎      | 7356416/22175245 [00:00<00:01, 12414967.30B/s]shipsec1:  39%|███▉      | 8683520/22175245 [00:00<00:01, 12672775.50B/s]shipsec1:  46%|████▌     | 10158080/22175245 [00:00<00:00, 13134513.29B/s]shipsec1:  53%|█████▎    | 11714560/22175245 [00:01<00:00, 13848621.25B/s]shipsec1:  59%|█████▉    | 13172736/22175245 [00:01<00:00, 14040025.16B/s]shipsec1:  66%|██████▌   | 14598144/22175245 [00:01<00:00, 14069143.50B/s]shipsec1:  72%|███████▏  | 16023552/22175245 [00:01<00:00, 13911938.27B/s]shipsec1:  79%|███████▊  | 17432576/22175245 [00:01<00:00, 13880490.21B/s]shipsec1:  85%|████████▍ | 18825216/22175245 [00:01<00:00, 13261683.86B/s]shipsec1:  91%|█████████ | 20168704/22175245 [00:01<00:00, 13012963.47B/s]shipsec1:  98%|█████████▊| 21659648/22175245 [00:01<00:00, 13542628.48B/s]shipsec1: 22183936B [00:01, 12228566.44B/s]                               

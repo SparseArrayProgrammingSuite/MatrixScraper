@@ -1,0 +1,47 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-03-2026 13:09:45
+Job ID:    12788204
+User ID:   wahrens6
+Account:   gts-wahrens6
+Job name:  saps-scrape-matrices
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+Selected 91 of 2904 SuiteSparse search results for chunk 13/32.
+Checking AG-Monien/cca
+Checking Andrianov/ex3sta1
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:328: RuntimeWarning: overflow encountered in multiply
+  return xp.sqrt(xp.sum(xp.multiply(v, v)))
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:346: RuntimeWarning: invalid value encountered in add
+  x = x + r / d
+Checking Bai/bwm2000
+Checking Bai/odepb400
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:512: RuntimeWarning: invalid value encountered in divide
+  output = r / M
+Checking Bai/tols2000
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:368: RuntimeWarning: divide by zero encountered in scalar divide
+  alpha = rr / xp.vecdot(p, Ap)[()]
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:369: RuntimeWarning: invalid value encountered in multiply
+  x = x + alpha * p
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:370: RuntimeWarning: invalid value encountered in multiply
+  r = r - alpha * Ap
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:512: RuntimeWarning: divide by zero encountered in divide
+  output = r / M
+Checking Boeing/bcsstk39
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
+  sqnorm = x.dot(x)
+Checking Botonakis/FEM_3D_thermal2
+FEM_3D_thermal2:   0%|          | 0/34619774 [00:00<?, ?B/s]FEM_3D_thermal2:   1%|          | 294912/34619774 [00:00<00:12, 2671178.37B/s]FEM_3D_thermal2:   3%|▎         | 1196032/34619774 [00:00<00:05, 6056860.07B/s]FEM_3D_thermal2:   7%|▋         | 2359296/34619774 [00:00<00:03, 8477510.41B/s]FEM_3D_thermal2:   9%|▉         | 3244032/34619774 [00:00<00:03, 8511491.30B/s]FEM_3D_thermal2:  13%|█▎        | 4390912/34619774 [00:00<00:03, 9545475.41B/s]FEM_3D_thermal2:  16%|█▌        | 5554176/34619774 [00:00<00:02, 10223506.55B/s]FEM_3D_thermal2:  19%|█▉        | 6586368/34619774 [00:00<00:02, 10026000.31B/s]FEM_3D_thermal2:  22%|██▏       | 7766016/34619774 [00:00<00:02, 10554811.12B/s]FEM_3D_thermal2:  26%|██▌       | 8978432/34619774 [00:00<00:02, 11008607.98B/s]FEM_3D_thermal2:  29%|██▉       | 10207232/34619774 [00:01<00:02, 11372042.43B/s]FEM_3D_thermal2:  33%|███▎      | 11452416/34619774 [00:01<00:01, 11674610.65B/s]FEM_3D_thermal2:  37%|███▋      | 12697600/34619774 [00:01<00:01, 11885891.59B/s]FEM_3D_thermal2:  40%|████      | 13975552/34619774 [00:01<00:01, 12109146.73B/s]FEM_3D_thermal2:  44%|████▍     | 15237120/34619774 [00:01<00:01, 12237046.99B/s]FEM_3D_thermal2:  48%|████▊     | 16531456/34619774 [00:01<00:01, 12432835.88B/s]FEM_3D_thermal2:  52%|█████▏    | 17858560/34619774 [00:01<00:01, 12669676.62B/s]FEM_3D_thermal2:  56%|█████▌    | 19300352/34619774 [00:01<00:01, 13148306.05B/s]FEM_3D_thermal2:  60%|█████▉    | 20676608/34619774 [00:01<00:01, 13304237.80B/s]FEM_3D_thermal2:  64%|██████▎   | 22052864/34619774 [00:01<00:00, 13401457.70B/s]FEM_3D_thermal2:  68%|██████▊   | 23429120/34619774 [00:02<00:00, 13480805.17B/s]FEM_3D_thermal2:  72%|███████▏  | 24788992/34619774 [00:02<00:00, 13259746.21B/s]FEM_3D_thermal2:  75%|███████▌  | 26116096/34619774 [00:02<00:00, 13218019.55B/s]FEM_3D_thermal2:  79%|███████▉  | 27443200/34619774 [00:02<00:00, 12974914.80B/s]FEM_3D_thermal2:  83%|████████▎ | 28753920/34619774 [00:02<00:00, 13011119.76B/s]FEM_3D_thermal2:  87%|████████▋ | 30064640/34619774 [00:02<00:00, 12944674.13B/s]FEM_3D_thermal2:  91%|█████████ | 31375360/34619774 [00:02<00:00, 12948479.76B/s]FEM_3D_thermal2:  94%|█████████▍| 32702464/34619774 [00:02<00:00, 13031348.45B/s]FEM_3D_thermal2:  98%|█████████▊| 34013184/34619774 [00:02<00:00, 13046238.95B/s]FEM_3D_thermal2: 34635776B [00:02, 11930359.88B/s]                               
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:346: RuntimeWarning: overflow encountered in divide
+  x = x + r / d
+Checking Castrillon/denormal
+Checking Cylshell/s3rmt3m3
+s3rmt3m3:   0%|          | 0/1177648 [00:00<?, ?B/s]s3rmt3m3:   8%|▊         | 98304/1177648 [00:00<00:01, 977702.88B/s]s3rmt3m3:  18%|█▊        | 212992/1177648 [00:00<00:00, 1039252.78B/s]s3rmt3m3:  28%|██▊       | 327680/1177648 [00:00<00:00, 1057469.82B/s]s3rmt3m3:  38%|███▊      | 442368/1177648 [00:00<00:00, 1064087.84B/s]s3rmt3m3:  74%|███████▎  | 868352/1177648 [00:00<00:00, 2168111.38B/s]s3rmt3m3: 1179648B [00:00, 2083039.61B/s]                             
+Checking DIMACS10/delaunay_n10
+Checking DIMACS10/hugetrace-00020
+Checking DIMACS10/nh2010
+Checking DIMACS10/va2010
+Checking DNVS/shipsec5
+shipsec5:   0%|          | 0/28712867 [00:00<?, ?B/s]shipsec5:   1%|          | 180224/28712867 [00:00<00:19, 1488383.47B/s]shipsec5:   3%|▎         | 737280/28712867 [00:00<00:08, 3489843.80B/s]shipsec5:   5%|▍         | 1409024/28712867 [00:00<00:05, 4593556.92B/s]shipsec5:   8%|▊         | 2162688/28712867 [00:00<00:04, 5656539.22B/s]shipsec5:  10%|▉         | 2785280/28712867 [00:00<00:04, 5678197.91B/s]shipsec5:  12%|█▏        | 3538944/28712867 [00:00<00:04, 6257541.98B/s]shipsec5:  15%|█▌        | 4374528/28712867 [00:00<00:03, 6904711.23B/s]shipsec5:  18%|█▊        | 5242880/28712867 [00:00<00:03, 7437764.52B/s]shipsec5:  21%|██▏       | 6127616/28712867 [00:00<00:02, 7855759.75B/s]shipsec5:  25%|██▍       | 7077888/28712867 [00:01<00:02, 8335690.29B/s]shipsec5:  28%|██▊       | 8093696/28712867 [00:01<00:02, 8818484.77B/s]shipsec5:  33%|███▎      | 9355264/28712867 [00:01<00:01, 9884412.31B/s]shipsec5:  36%|███▌      | 10403840/28712867 [00:01<00:01, 10052771.45B/s]shipsec5:  40%|████      | 11583488/28712867 [00:01<00:01, 10361800.39B/s]shipsec5:  45%|████▍     | 12845056/28712867 [00:01<00:01, 10993121.63B/s]shipsec5:  49%|████▉     | 14172160/28712867 [00:01<00:01, 11662643.78B/s]shipsec5:  53%|█████▎    | 15351808/28712867 [00:01<00:01, 11544839.35B/s]shipsec5:  58%|█████▊    | 16646144/28712867 [00:01<00:01, 11950664.28B/s]shipsec5:  62%|██████▏   | 17907712/28712867 [00:01<00:00, 12111636.16B/s]shipsec5:  67%|██████▋   | 19136512/28712867 [00:02<00:00, 12118415.86B/s]shipsec5:  71%|███████   | 20381696/28712867 [00:02<00:00, 12188634.15B/s]shipsec5:  76%|███████▌  | 21708800/28712867 [00:02<00:00, 12471179.18B/s]shipsec5:  80%|████████  | 23068672/28712867 [00:02<00:00, 12785770.64B/s]shipsec5:  85%|████████▌ | 24461312/28712867 [00:02<00:00, 13090083.74B/s]shipsec5:  90%|█████████ | 25903104/28712867 [00:02<00:00, 13480799.75B/s]shipsec5:  95%|█████████▌| 27361280/28712867 [00:02<00:00, 13782220.27B/s]shipsec5: 28721152B [00:02, 10379467.60B/s]                               
