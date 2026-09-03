@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #SBATCH --job-name=saps-scrape-matrices
-#SBATCH --mem=128G
+#SBATCH --mem=256G
 #SBATCH --cpus-per-task=16
 #SBATCH --time=24:00:00
 #SBATCH --output=scrape-matrices-%A_%a.log

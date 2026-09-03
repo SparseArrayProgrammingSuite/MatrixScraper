@@ -1141,7 +1141,7 @@ sparse = ">=0.17.0,<0.17.1"
 type = "git"
 url = "https://github.com/SparseAutoschedulingBenchmark/SparseAutoschedulingBenchmark.git"
 reference = "wma/fix-runner"
-resolved_reference = "eb8cac2c91410040f5a793b42477feb875420a66"
+resolved_reference = "c0c97e9dc6fa34630427a0e2d61cf4b41ed9e8df"
 
 [[package]]
 name = "scipy"
