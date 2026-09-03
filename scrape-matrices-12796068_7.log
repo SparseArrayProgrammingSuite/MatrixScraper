@@ -1,0 +1,213 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-03-2026 16:33:48
+Job ID:    12796119
+User ID:   wahrens6
+Account:   gts-wahrens6
+Job name:  saps-scrape-matrices
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+Selected 91 of 2904 SuiteSparse search results for chunk 8/32.
+Skipping AG-Monien/bfly; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping ATandT/onetone2; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Bai/bfwa782; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Bai/mhd4800a; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Bai/rdb968; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Boeing/bcsstk34; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Bomhof/circuit_1 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping CPM/cz308; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Cylshell/s1rmt3m1; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping DIMACS10/cs4; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping DIMACS10/hugebubbles-00000; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping DIMACS10/mt2010; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping DIMACS10/t60k; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping DNVS/halfb; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping DRIVCAV/cavity21 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping FIDAP/ex13; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping FlowIPM22/Spielman_k300; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping GHS_indef/aug2dc; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping GHS_indef/helm2d03; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping GHS_psdef/crankseg_2; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping GenBank/kmer_V1r; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Grund/bayer03 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Gset/G23; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Gset/G52; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping HB/ash219; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping HB/bcsstk17; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping HB/bcsstm21; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping HB/can_62; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping HB/dwt_607; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping HB/gre_216a; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping HB/lock1074; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping HB/nos5; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping HB/steam3; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Hamm/add20 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Hollinger/g7jac120; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Hollinger/mark3jac120; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping JGD_BIBD/bibd_18_9; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping JGD_Franz/Franz9; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping JGD_GL7d/GL7d23; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping JGD_Homology/ch7-7-b1; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping JGD_Homology/mk10-b4; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping JGD_Homology/n3c5-b4; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping JGD_Homology/n4c6-b15; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping JGD_Margulies/flower_5_1; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping JGD_SL6/D_5; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Janna/Geo_1438; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping LAW/webbase-2001; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping LPnetlib/lp_fit1p; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping LPnetlib/lp_pilot_ja; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping LPnetlib/lp_ship12s; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping LPnetlib/lpi_klein1; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping ML_Graph/Binaryalphadigs_10NN; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping ML_Graph/umistfacesnorm_10NN; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping MathWorks/Sieber; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Meszaros/cq9; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Meszaros/gams30a; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Meszaros/nemsafm; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Meszaros/r05; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Meszaros/stat96v2; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Mittelmann/pds-60; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Mycielski/mycielskian18; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Nasa/shuttle_eddy; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Newman/celegansneural; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Oberwolfach/chipcool0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Okunbor/aft02; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Pajek/Erdos971; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Pajek/GlossGT; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Pajek/internet; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Priebel/176bit; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Qaplib/lp_nug20; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Rajat/rajat28; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Rommes/mimo46x46_system; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping SNAP/ca-HepPh; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping SNAP/soc-Pokec; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Sandia/adder_dcop_04; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Sandia/adder_dcop_36; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Sandia/adder_dcop_68; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Sandia/fpga_dcop_29 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Sandia/oscil_dcop_04 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Sandia/oscil_dcop_36 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Schenk_AFE/af_3_k101 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Schenk_IBMNA/c-37 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Schenk_IBMNA/c-big rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Shen/shermanACa; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TKK/g3rmt3m3 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs1; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs2; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs3; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs4; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs5; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs6; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs7; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs8; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs9; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs10; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs11; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs12; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs13; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs14; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs15; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs16; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs17; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs18; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs19; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs20; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs21; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs22; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs23; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs24; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs25; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs26; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs27; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs28; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs29; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs30; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs31; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs32; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs33; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs34; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs35; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs36; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs37; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs38; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs39; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs40; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs41; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs42; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs43; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs44; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs45; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs46; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs47; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs48; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs49; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs50; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs51; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs52; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs53; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs54; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs55; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs56; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs57; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs58; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs59; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs60; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs61; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs62; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs63; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs64; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs65; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs66; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs67; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs68; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs69; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs70; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs71; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs72; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs73; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs74; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs75; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs76; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs77; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs78; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs79; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs80; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs81; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs82; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs83; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs84; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs85; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs86; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs87; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs88; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs89; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs90; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs91; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs92; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs93; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs94; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs95; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs96; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs97; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs98; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping TSOPF/TSOPF_RS_b300_c2 rhs99; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping VDOL/freeFlyingRobot_3 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping VDOL/lowThrust_6 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping VDOL/spaceStation_8 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping VanVelzen/std1_Jac3 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+Skipping Zitney/radfr1; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-7.jsonl
+---------------------------------------
+Begin Slurm Epilog: Sep-03-2026 16:33:56
+Job ID:        12796119
+Array Job ID:  12796068_7
+User ID:       wahrens6
+Account:       gts-wahrens6
+Job name:      saps-scrape-matrices
+Resources:     cpu=16,mem=256G,node=1
+Rsrc Used:     cput=00:03:44,vmem=0,walltime=00:00:14,mem=86884K,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-02-003-14-2
+---------------------------------------

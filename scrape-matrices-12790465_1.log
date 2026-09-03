@@ -1,189 +1,0 @@
----------------------------------------
-Begin Slurm Prolog: Sep-03-2026 14:17:26
-Job ID:    12790532
-User ID:   wahrens6
-Account:   gts-wahrens6
-Job name:  saps-scrape-matrices
-Partition: cpu-medium
-QOS:       inferno
----------------------------------------
-Selected 91 of 2904 SuiteSparse search results for chunk 2/32.
-Checking AG-Monien/3elt
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: divide by zero encountered in divide
-  output = r / M
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: invalid value encountered in divide
-  output = r / M
-Checking AMD/G2_circuit
-Checking Averous/epb1
-Checking Bai/dwg961b
-Checking Bai/rdb2048_noL
-Checking Bindel/ted_B_unscaled
-Checking Boeing/nasa2910
-Checking CEMW/vfem
-Checking Cote/vibrobox
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
-  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:336: RuntimeWarning: overflow encountered in multiply
-  return xp.sqrt(xp.sum(xp.multiply(v, v)))
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
-  sqnorm = x.dot(x)
-Checking DIMACS10/citationCiteseer
-Checking DIMACS10/fe_tooth
-Checking DIMACS10/md2010
-Checking DIMACS10/ri2010
-Checking DIMACS10/wing_nodal
-Checking DRIVCAV/cavity15 rhs0
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:490: RuntimeWarning: invalid value encountered in vecdot
-  alpha = rho / xp.vecdot(p, Ap)
-Checking FEMLAB/waveguide3D rhs0
-Checking FIDAP/ex6
-Checking GAP/GAP-urand
-Checking GHS_indef/d_pretok
-Checking GHS_psdef/audikw_1
-Checking Gaertner/pesa
-Checking Grueninger/windtunnel_evap3d rhs0
-Checking Gset/G18
-Checking Gset/G47
-Checking HB/1138_bus
-Checking HB/bcsstk11
-Checking HB/bcsstm10
-Checking HB/can_24
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: invalid value encountered in add
-  x = x + r / d
-Checking HB/dwt_419
-Checking HB/gemat12
-Checking HB/lns_131
-Checking HB/nnc261
-Checking HB/shl_0
-Checking HB/young2c
-Checking Hollinger/g7jac060
-Checking Hollinger/mark3jac060
-Checking JGD_BIBD/bibd_15_7
-Checking JGD_Franz/Franz3
-Checking JGD_GL7d/GL7d17
-Checking JGD_Homology/ch6-6-b5
-Checking JGD_Homology/klein-b2
-Checking JGD_Homology/n3c4-b2
-Checking JGD_Homology/n4c6-b1
-Checking JGD_Margulies/cat_ears_3_1
-Checking JGD_Relat/relat7
-Checking Janna/CoupCons3D
-Checking LAW/indochina-2004
-Checking LPnetlib/lp_dfl001
-Checking LPnetlib/lp_pds_10
-Checking LPnetlib/lp_shell
-Checking LPnetlib/lpi_galenet
-Checking MAWI/mawi_201512012345
-Checking ML_Graph/micromass_10NN
-Checking MathWorks/Kaufhold
-Checking Meszaros/cep1
-Checking Meszaros/fxm2-6
-Checking Meszaros/model4
-Checking Meszaros/plddb
-Checking Meszaros/sctap1-2r
-Checking Mittelmann/neos3
-Checking Mycielski/mycielskian12
-Checking Nasa/nasa1824 rhs0
-Checking Nemeth/nemeth24
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: overflow encountered in divide
-  x = x + r / d
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: overflow encountered in add
-  x = x + r / d
-Checking Oberwolfach/LF10000
-Checking Oberwolfach/t3dh_e
-Checking Pajek/Cities
-Checking Pajek/GD97_c
-Checking Pajek/Zewail
-Checking Pothen/tandem_vtx
-Checking Qaplib/lp_nug05
-Checking Rajat/rajat22
-Checking Rommes/bips98_1142
-Checking SNAP/as-735
-Checking SNAP/p2p-Gnutella31
-Checking Sandia/ASIC_320ks
-Checking Sandia/adder_dcop_30
-Checking Sandia/adder_dcop_62
-Checking Sandia/fpga_dcop_23 rhs0
-Checking Sandia/mult_dcop_01 rhs0
-Checking Sandia/oscil_dcop_30 rhs0
-Checking Schenk/nlpkkt200
-Checking Schenk_IBMNA/c-31 rhs0
-Checking Schenk_IBMNA/c-66 rhs0
-Checking Schmid/thermal1 rhs0
-Checking TAMU_SmartGridCenter/ACTIVSg10K
-Checking TSOPF/TSOPF_RS_b162_c3 rhs0
-Checking TSOPF/TSOPF_RS_b162_c3 rhs1
-Checking TSOPF/TSOPF_RS_b162_c3 rhs2
-Checking TSOPF/TSOPF_RS_b162_c3 rhs3
-Checking TSOPF/TSOPF_RS_b162_c3 rhs4
-Checking TSOPF/TSOPF_RS_b162_c3 rhs5
-Checking TSOPF/TSOPF_RS_b162_c3 rhs6
-Checking TSOPF/TSOPF_RS_b162_c3 rhs7
-Checking TSOPF/TSOPF_RS_b162_c3 rhs8
-Checking TSOPF/TSOPF_RS_b162_c3 rhs9
-Checking TSOPF/TSOPF_RS_b162_c3 rhs10
-Checking TSOPF/TSOPF_RS_b162_c3 rhs11
-Checking TSOPF/TSOPF_RS_b162_c3 rhs12
-Checking TSOPF/TSOPF_RS_b162_c3 rhs13
-Checking TSOPF/TSOPF_RS_b162_c3 rhs14
-Checking TSOPF/TSOPF_RS_b162_c3 rhs15
-Checking TSOPF/TSOPF_RS_b162_c3 rhs16
-Checking TSOPF/TSOPF_RS_b162_c3 rhs17
-Checking TSOPF/TSOPF_RS_b162_c3 rhs18
-Checking TSOPF/TSOPF_RS_b162_c3 rhs19
-Checking TSOPF/TSOPF_RS_b162_c3 rhs20
-Checking TSOPF/TSOPF_RS_b162_c3 rhs21
-Checking TSOPF/TSOPF_RS_b162_c3 rhs22
-Checking TSOPF/TSOPF_RS_b162_c3 rhs23
-Checking TSOPF/TSOPF_RS_b162_c3 rhs24
-Checking TSOPF/TSOPF_RS_b162_c3 rhs25
-Checking TSOPF/TSOPF_RS_b162_c3 rhs26
-Checking TSOPF/TSOPF_RS_b162_c3 rhs27
-Checking TSOPF/TSOPF_RS_b162_c3 rhs28
-Checking TSOPF/TSOPF_RS_b162_c3 rhs29
-Checking TSOPF/TSOPF_RS_b162_c3 rhs30
-Checking TSOPF/TSOPF_RS_b162_c3 rhs31
-Checking TSOPF/TSOPF_RS_b162_c3 rhs32
-Checking TSOPF/TSOPF_RS_b162_c3 rhs33
-Checking TSOPF/TSOPF_RS_b162_c3 rhs34
-Checking TSOPF/TSOPF_RS_b162_c3 rhs35
-Checking TSOPF/TSOPF_RS_b162_c3 rhs36
-Checking TSOPF/TSOPF_RS_b162_c3 rhs37
-Checking TSOPF/TSOPF_RS_b162_c3 rhs38
-Checking TSOPF/TSOPF_RS_b162_c3 rhs39
-Checking TSOPF/TSOPF_RS_b162_c3 rhs40
-Checking TSOPF/TSOPF_RS_b162_c3 rhs41
-Checking TSOPF/TSOPF_RS_b162_c3 rhs42
-Checking TSOPF/TSOPF_RS_b162_c3 rhs43
-Checking TSOPF/TSOPF_RS_b162_c3 rhs44
-Checking TSOPF/TSOPF_RS_b162_c3 rhs45
-Checking TSOPF/TSOPF_RS_b162_c3 rhs46
-Checking TSOPF/TSOPF_RS_b162_c3 rhs47
-Checking TSOPF/TSOPF_RS_b162_c3 rhs48
-Checking VDOL/freeFlyingRobot_12 rhs0
-Checking VDOL/lowThrust_12 rhs0
-Checking VDOL/spaceStation_2 rhs0
-Zd_Jac3:   0%|          | 0/20931660 [00:00<?, ?B/s]Zd_Jac3:   1%|▏         | 278528/20931660 [00:00<00:08, 2368916.36B/s]Zd_Jac3:   4%|▍         | 819200/20931660 [00:00<00:05, 3884626.58B/s]Zd_Jac3:   7%|▋         | 1458176/20931660 [00:00<00:04, 4814333.23B/s]Zd_Jac3:  10%|█         | 2195456/20931660 [00:00<00:03, 5628903.04B/s]Zd_Jac3:  15%|█▍        | 3047424/20931660 [00:00<00:02, 6454859.00B/s]Zd_Jac3:  18%|█▊        | 3801088/20931660 [00:00<00:02, 6792038.41B/s]Zd_Jac3:  23%|██▎       | 4751360/20931660 [00:00<00:02, 7642531.50B/s]Zd_Jac3:  27%|██▋       | 5668864/20931660 [00:00<00:01, 8112007.09B/s]Zd_Jac3:  32%|███▏      | 6635520/20931660 [00:00<00:01, 8584091.97B/s]Zd_Jac3:  37%|███▋      | 7700480/20931660 [00:01<00:01, 9212766.28B/s]Zd_Jac3:  42%|████▏     | 8749056/20931660 [00:01<00:01, 9597256.00B/s]Zd_Jac3:  48%|████▊     | 9945088/20931660 [00:01<00:01, 10149583.83B/s]Zd_Jac3:  54%|█████▍    | 11354112/20931660 [00:01<00:00, 11297673.93B/s]Zd_Jac3:  60%|█████▉    | 12500992/20931660 [00:01<00:00, 11325098.33B/s]Zd_Jac3:  66%|██████▋   | 13893632/20931660 [00:01<00:00, 12079750.88B/s]Zd_Jac3:  72%|███████▏  | 15106048/20931660 [00:01<00:00, 12053928.76B/s]Zd_Jac3:  79%|███████▉  | 16613376/20931660 [00:01<00:00, 12946822.72B/s]Zd_Jac3:  87%|████████▋ | 18137088/20931660 [00:01<00:00, 13606558.15B/s]Zd_Jac3:  94%|█████████▍| 19726336/20931660 [00:01<00:00, 14269773.74B/s]Zd_Jac3: 20938752B [00:02, 10286920.26B/s]                               
-Checking VanVelzen/Zd_Jac3 rhs0
-Checking Zhao/Zhao1
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:376: RuntimeWarning: divide by zero encountered in scalar divide
-  alpha = rr / xp.vecdot(p, Ap)[()]
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:390: RuntimeWarning: invalid value encountered in add
-  p = r + beta * p
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:490: RuntimeWarning: divide by zero encountered in scalar divide
-  alpha = rho / xp.vecdot(p, Ap)
-/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:504: RuntimeWarning: invalid value encountered in add
-  p = z + beta * p
----------------------------------------
-Begin Slurm Epilog: Sep-03-2026 14:43:28
-Job ID:        12790532
-Array Job ID:  12790465_1
-User ID:       wahrens6
-Account:       gts-wahrens6
-Job name:      saps-scrape-matrices
-Resources:     cpu=16,mem=256G,node=1
-Rsrc Used:     cput=06:56:48,vmem=0,walltime=00:26:03,mem=26107816K,energy_used=0
-Partition:     cpu-medium
-QOS:           inferno
-Nodes:         atl1-1-01-004-5-2
----------------------------------------

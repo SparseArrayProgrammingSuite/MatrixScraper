@@ -1,0 +1,108 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-03-2026 16:34:51
+Job ID:    12796226
+User ID:   wahrens6
+Account:   gts-wahrens6
+Job name:  saps-scrape-matrices
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+Selected 90 of 2904 SuiteSparse search results for chunk 28/32.
+Skipping AG-Monien/stufe-10; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping Andrianov/pf2177; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping Bai/dw256B; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping Bai/rbsb480; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs1; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs2; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs3; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs4; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs5; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs6; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs7; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs8; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs9; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs10; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs11; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs12; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs13; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs14; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs15; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs16; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs17; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs18; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs19; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs20; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs21; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs22; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs23; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs24; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs25; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs26; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs27; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs28; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs29; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs30; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs31; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs32; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs33; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs34; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs35; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs36; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs37; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs38; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs39; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs40; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs41; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs42; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs43; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs44; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs45; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs46; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs47; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs48; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs49; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs50; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs51; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs52; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs53; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs54; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs55; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs56; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs57; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs58; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs59; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs60; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs61; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs62; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs63; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs64; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs65; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs66; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs67; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs68; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs69; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs70; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs71; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs72; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs73; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs74; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs75; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs76; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs77; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs78; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs79; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs80; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs81; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs82; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs83; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs84; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Skipping BenElechi/BenElechi1 rhs85; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-27.jsonl
+Checking BenElechi/BenElechi1 rhs86
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:336: RuntimeWarning: overflow encountered in multiply
+  return xp.sqrt(xp.sum(xp.multiply(v, v)))
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
+  sqnorm = x.dot(x)
+Checking BenElechi/BenElechi1 rhs87

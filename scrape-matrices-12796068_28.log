@@ -1,0 +1,113 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-03-2026 16:35:04
+Job ID:    12796245
+User ID:   wahrens6
+Account:   gts-wahrens6
+Job name:  saps-scrape-matrices
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+Selected 90 of 2904 SuiteSparse search results for chunk 29/32.
+Skipping AG-Monien/ukerbe1; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Arenas/PGPgiantcompo; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Bai/dw4096; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Bai/rdb1250; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Bindel/ted_A; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Boeing/msc01440; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Bydder/mri1; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Chevron/Chevron2; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping DIMACS10/belgium_osm; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping DIMACS10/fe_4elt2; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping DIMACS10/ky2010; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping DIMACS10/rgg_n_2_20_s0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping DIMACS10/vsp_vibrobox_scagr7-2c_rlfddd; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping DRIVCAV/cavity10 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping FEMLAB/poisson3Db rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping FIDAP/ex36; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Freescale/nxp1; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping GHS_indef/c-72 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping GHS_indef/tuma1; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping GHS_psdef/vanbody; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Goodwin/Goodwin_127; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Gset/G13; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Gset/G42; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Guettel/TEM181302; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping HB/bcsstk06; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping HB/bcsstm05; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping HB/can_1072; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping HB/dwt_2680; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping HB/fs_760_1; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping HB/jagmesh9; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping HB/mbeaflw; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping HB/sherman1 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping HB/will57; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Hollinger/g7jac020; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Hollinger/jan99jac120sc rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping JGD_BIBD/bibd_12_4; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping JGD_Forest/TF19; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping JGD_GL7d/GL7d12; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping JGD_Homology/ch5-5-b4; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping JGD_Homology/cis-n4c6-b15; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping JGD_Homology/n2c6-b6; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping JGD_Homology/n4c5-b5; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping JGD_Kocay/Trec7; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping JGD_Relat/rel9; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping JGD_Trefethen/Trefethen_20b; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping LAW/dblp-2010; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping LPnetlib/lp_czprob; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping LPnetlib/lp_osa_14; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping LPnetlib/lp_sctap1; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping LPnetlib/lpi_cplex1; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Lourakis/bundle1; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping ML_Graph/indianpines_10NN; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Mallya/lhr71c; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Meszaros/aircraft; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Meszaros/df2177; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Meszaros/mod2; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Meszaros/p6000; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Meszaros/scsd8-2b; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Mittelmann/fome20; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Muite/Chebyshev4; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping NYPA/Maragal_7 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Nemeth/nemeth19; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Norris/stomach; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Oberwolfach/t2dal_a; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping PARSEC/benzene; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Pajek/GD96_b; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Pajek/Tina_DisCog; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Pothen/shuttle_eddy; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping QLi/crashbasis; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Rajat/rajat17; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Rommes/bauru5727; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping SNAP/Oregon-2; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping SNAP/p2p-Gnutella08; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping SNAP/wiki-talk-temporal; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Sandia/adder_dcop_25; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Sandia/adder_dcop_57; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Sandia/fpga_dcop_18 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Sandia/fpga_dcop_50 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Sandia/oscil_dcop_25 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Sandia/oscil_dcop_57 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Schenk_IBMNA/c-26 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Schenk_IBMNA/c-61 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Schenk_ISEI/para-5 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping Stevenson/LargeRegFile; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping TSOPF/TSOPF_FS_b39_c30 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping VDOL/dynamicSoaringProblem_7 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping VDOL/kineticBatchReactor_8 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping VDOL/spaceStation_10 rhs0; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping VLSI/vas_stokes_1M; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+Skipping YCheng/psse2; already present in /storage/scratch1/7/wahrens6/MatrixScraper/results-28.jsonl
+---------------------------------------
+Begin Slurm Epilog: Sep-03-2026 16:35:11
+Job ID:        12796245
+Array Job ID:  12796068_28
+User ID:       wahrens6
+Account:       gts-wahrens6
+Job name:      saps-scrape-matrices
+Resources:     cpu=16,mem=256G,node=1
+Rsrc Used:     cput=00:02:24,vmem=0,walltime=00:00:09,mem=87476K,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-01-004-22-2
+---------------------------------------
