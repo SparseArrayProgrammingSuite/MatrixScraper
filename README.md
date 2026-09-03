@@ -23,7 +23,7 @@ poetry run python scrape_matrices.py
 ```
 
 Solver convergence uses `rel_tol=1e-6`. The `max_iter` value is `100`,
-except Jacobi uses `1000`.
+except Jacobi and LSQR use `1000`.
 
 Run on Slurm:
 

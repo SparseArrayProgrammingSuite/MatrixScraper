@@ -115,7 +115,11 @@ ACCEPTED_MATRIX_KINDS = frozenset(
 
 
 def _matrix_kind(matrix: Any) -> str:
-    return str(getattr(matrix, "kind", "")).strip().lower()
+    return _normalize_matrix_kind(getattr(matrix, "kind", ""))
+
+
+def _normalize_matrix_kind(matrix_kind: Any) -> str:
+    return str(matrix_kind).strip().lower()
 
 
 @dataclass(frozen=True)
@@ -347,6 +351,7 @@ SOLVERS = {
         dataset_cls=LSQRDataset,
         square_required=False,
         residual_kind="least_squares",
+        max_iter=1000,
         accepted_kinds=LSQR_MATRIX_KINDS,
     ),
     "gmres": SolverSpec(
@@ -394,14 +399,26 @@ def _least_squares_residual(
     gradient_norm = np.linalg.norm(gradient)
     b_norm = np.linalg.norm(b)
     atb_norm = np.linalg.norm(A.T @ b)
+    A_norm = np.linalg.norm(A.data)
+    x_norm = np.linalg.norm(x)
     relative_residual = residual_norm / max(b_norm, 1e-300)
     relative_gradient = gradient_norm / max(atb_norm, 1e-300)
+    lsqr_residual_threshold = (
+        tolerance * A_norm * x_norm / max(b_norm, 1e-300) + tolerance
+    )
+    lsqr_gradient_ratio = gradient_norm / max(A_norm * residual_norm, 1e-300)
+    residual_converged = relative_residual <= lsqr_residual_threshold
+    gradient_converged = lsqr_gradient_ratio <= tolerance
     return {
         "residual_norm": _safe_float(residual_norm),
         "relative_residual": _safe_float(relative_residual),
         "gradient_norm": _safe_float(gradient_norm),
         "relative_gradient": _safe_float(relative_gradient),
-        "converged": bool(relative_residual < tolerance),
+        "lsqr_residual_threshold": _safe_float(lsqr_residual_threshold),
+        "lsqr_gradient_ratio": _safe_float(lsqr_gradient_ratio),
+        "residual_converged": bool(residual_converged),
+        "gradient_converged": bool(gradient_converged),
+        "converged": bool(residual_converged or gradient_converged),
     }
 
 
@@ -488,6 +505,11 @@ def _chunk_items(items: list[Any], chunk_count: int, chunk_index: int) -> list[A
 def _search_matrices(args: argparse.Namespace) -> list[Any]:
     matrices = list(ssgetpy.search(limit=-1))
     found_count = len(matrices)
+    if args.matrix_kind:
+        accepted_kinds = {_normalize_matrix_kind(kind) for kind in args.matrix_kind}
+        matrices = [
+            matrix for matrix in matrices if _matrix_kind(matrix) in accepted_kinds
+        ]
     matrices.sort(key=lambda matrix: (matrix.group, matrix.name))
     if args.shuffle:
         random.Random(args.seed).shuffle(matrices)
@@ -571,6 +593,14 @@ def main() -> int:
         action="append",
         choices=SOLVER_NAMES,
         help="Solver to run. Repeat to run multiple solvers. Defaults to all solvers.",
+    )
+    parser.add_argument(
+        "--matrix-kind",
+        action="append",
+        help=(
+            "Only inspect SuiteSparse entries with this matrix kind. Repeat to "
+            "include multiple kinds."
+        ),
     )
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--shuffle", action="store_true")
