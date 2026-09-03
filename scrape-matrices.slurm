@@ -8,9 +8,11 @@
 
 set -euo pipefail
 
-scraper_directory="${MATRIX_SCRAPER_REPO_DIRECTORY:-${SLURM_SUBMIT_DIR:-}}"
-if [[ -z "$scraper_directory" ]]; then
-  script_directory=$(cd -- "$(dirname -- "$0")" && pwd)
+launch_directory="${SLURM_SUBMIT_DIR:-$PWD}"
+script_directory=$(cd -- "$(dirname -- "$0")" && pwd)
+scraper_directory="${MATRIX_SCRAPER_REPO_DIRECTORY:-$launch_directory}"
+if [[ ! -f "$scraper_directory/scrape_matrices.py" ]] &&
+  [[ -f "$script_directory/scrape_matrices.py" ]]; then
   scraper_directory="$script_directory"
 fi
 
@@ -25,7 +27,7 @@ else
   chunk_count="${SAPS_SCRAPE_CHUNK_COUNT:-1}"
 fi
 
-output_dir="${SAPS_SCRAPE_OUTPUT_DIR:-$scraper_directory/.saps/outputs/matrix-scraper}"
+output_dir="${SAPS_SCRAPE_OUTPUT_DIR:-$launch_directory}"
 data_dir="${SAPS_SCRAPE_DATA_DIR:-$scraper_directory/data/suitesparse}"
 output_file="$output_dir/results-${chunk_index}.jsonl"
 
