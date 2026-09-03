@@ -106,3 +106,133 @@ Checking BenElechi/BenElechi1 rhs86
 /storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
   sqnorm = x.dot(x)
 Checking BenElechi/BenElechi1 rhs87
+Checking BenElechi/BenElechi1 rhs88
+Checking BenElechi/BenElechi1 rhs89
+Checking BenElechi/BenElechi1 rhs90
+Checking BenElechi/BenElechi1 rhs91
+Checking BenElechi/BenElechi1 rhs92
+Checking BenElechi/BenElechi1 rhs93
+Checking BenElechi/BenElechi1 rhs94
+Checking BenElechi/BenElechi1 rhs95
+Checking BenElechi/BenElechi1 rhs96
+Checking BenElechi/BenElechi1 rhs97
+Checking BenElechi/BenElechi1 rhs98
+Checking BenElechi/BenElechi1 rhs99
+Checking Boeing/msc01050
+Checking Buss/connectus
+Checking Chevron/Chevron1
+Checking DIMACS10/az2010
+Checking DIMACS10/europe_osm
+Checking DIMACS10/ks2010
+Checking DIMACS10/rgg_n_2_19_s0
+Checking DIMACS10/vsp_south31_slptsk
+Checking DRIVCAV/cavity09 rhs0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: divide by zero encountered in divide
+  output = r / M
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: invalid value encountered in divide
+  output = r / M
+Checking FEMLAB/poisson3Da rhs0
+Checking FIDAP/ex35
+Checking Freescale/memchip
+Checking GHS_indef/c-71 rhs0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: overflow encountered in divide
+  x = x + r / d
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: invalid value encountered in add
+  x = x + r / d
+Checking GHS_indef/stokes64s
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:490: RuntimeWarning: invalid value encountered in vecdot
+  alpha = rho / xp.vecdot(p, Ap)
+Checking GHS_psdef/torsion1
+Checking Goodwin/Goodwin_095
+Checking Gset/G12
+Checking Gset/G41
+Checking Guettel/TEM152078
+Checking HB/bcsstk05
+Checking HB/bcsstm04
+Checking HB/can_1054
+Checking HB/dwt_245
+Checking HB/fs_680_3
+Checking HB/jagmesh8
+Checking HB/mbeacxc
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:376: RuntimeWarning: divide by zero encountered in scalar divide
+  alpha = rr / xp.vecdot(p, Ap)[()]
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:377: RuntimeWarning: invalid value encountered in multiply
+  x = x + alpha * p
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:378: RuntimeWarning: invalid value encountered in multiply
+  r = r - alpha * Ap
+Checking HB/saylr4
+Checking HB/will199
+Checking Hollinger/g7jac010sc rhs0
+Checking Hollinger/jan99jac120 rhs0
+Checking JGD_BIBD/bibd_11_5
+Checking JGD_Forest/TF18
+Checking JGD_GL7d/GL7d11
+Checking JGD_Homology/ch5-5-b3
+Checking JGD_Homology/cis-n4c6-b14
+Checking JGD_Homology/n2c6-b5
+Checking JGD_Homology/n4c5-b4
+Checking JGD_Kocay/Trec6
+Checking JGD_Relat/rel8
+Checking JGD_Trefethen/Trefethen_200b
+Checking LAW/cnr-2000
+Checking LPnetlib/lp_cycle
+Checking LPnetlib/lp_osa_07
+Checking LPnetlib/lp_scsd8
+Checking LPnetlib/lpi_chemcom
+Checking LiuWenzhuo/powersim rhs0
+Checking ML_Graph/har_10NN
+Checking Mallya/lhr71 rhs0
+Checking Meszaros/air06
+Checking Meszaros/deter8
+Checking Meszaros/lpl3
+Checking Meszaros/p2756
+Checking Meszaros/scrs8-2r
+Checking Mittelmann/fome13
+Checking Muite/Chebyshev3
+Checking NYPA/Maragal_6 rhs0
+Checking Nemeth/nemeth18
+Checking Norris/lung2
+t2dal:   0%|          | 0/196178 [00:00<?, ?B/s]t2dal: 196608B [00:00, 2406579.51B/s]           
+Checking Oberwolfach/t2dal
+Checking PARSEC/SiO2
+Checking Pajek/GD96_a
+Checking Pajek/Tina_DisCal
+pwt:   0%|          | 0/598792 [00:00<?, ?B/s]pwt:  41%|████      | 245760/598792 [00:00<00:00, 2427152.27B/s]pwt: 606208B [00:00, 3591439.49B/s]                             
+Checking Pothen/pwt
+Checking QCD/conf6_0-8x8-80
+Checking Rajat/rajat16
+Checking Rommes/S80PI_n1
+Checking SNAP/Oregon-1
+Checking SNAP/p2p-Gnutella06
+Checking SNAP/wiki-Vote
+Checking Sandia/adder_dcop_24
+Checking Sandia/adder_dcop_56
+Checking Sandia/fpga_dcop_17 rhs0
+Checking Sandia/fpga_dcop_49 rhs0
+Checking Sandia/oscil_dcop_24 rhs0
+Checking Sandia/oscil_dcop_56 rhs0
+Checking Schenk_IBMNA/c-25 rhs0
+Checking Schenk_IBMNA/c-60 rhs0
+Checking Schenk_ISEI/para-4 rhs0
+Checking Springer/ESOC
+Checking TSOPF/TSOPF_FS_b39_c19 rhs0
+Checking VDOL/dynamicSoaringProblem_6 rhs0
+Checking VDOL/kineticBatchReactor_7 rhs0
+Checking VDOL/spaceStation_1 rhs0
+Checking VLSI/test1
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: overflow encountered in add
+  x = x + r / d
+Checking YCheng/psse1
+---------------------------------------
+Begin Slurm Epilog: Sep-03-2026 16:59:39
+Job ID:        12796226
+Array Job ID:  12796068_27
+User ID:       wahrens6
+Account:       gts-wahrens6
+Job name:      saps-scrape-matrices
+Resources:     cpu=16,mem=256G,node=1
+Rsrc Used:     cput=06:37:20,vmem=0,walltime=00:24:50,mem=2395256K,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-02-003-14-2
+---------------------------------------
