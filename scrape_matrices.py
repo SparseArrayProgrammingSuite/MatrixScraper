@@ -61,6 +61,8 @@ SOLVER_NAMES = (
 
 LSQR_MATRIX_KINDS = frozenset({"least squares problem"})
 
+MAX_SUITESPARSE_RHS_PER_MATRIX = 100
+
 ACCEPTED_MATRIX_KINDS = frozenset(
     {
         "tomography problem",
@@ -156,12 +158,12 @@ def _rhs_variants_from_shape(
     if rows == expected_length:
         return [
             RHSVariant("suitesparse", index, cols, rhs_shape)
-            for index in range(cols)
+            for index in range(min(cols, MAX_SUITESPARSE_RHS_PER_MATRIX))
         ]
     if cols == expected_length:
         return [
             RHSVariant("suitesparse", index, rows, rhs_shape)
-            for index in range(rows)
+            for index in range(min(rows, MAX_SUITESPARSE_RHS_PER_MATRIX))
         ]
     if rows * cols == expected_length:
         return [RHSVariant("suitesparse", 0, 1, rhs_shape)]
