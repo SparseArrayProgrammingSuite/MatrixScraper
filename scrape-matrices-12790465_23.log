@@ -93,3 +93,76 @@ Checking Koutsovasilis/F1 rhs14
 Checking Koutsovasilis/F1 rhs15
 Checking Koutsovasilis/F1 rhs16
 Checking Koutsovasilis/F1 rhs17
+Checking Koutsovasilis/F1 rhs18
+Checking Koutsovasilis/F1 rhs19
+Checking Koutsovasilis/F1 rhs20
+Checking Koutsovasilis/F1 rhs21
+Checking Koutsovasilis/F1 rhs22
+Checking Koutsovasilis/F1 rhs23
+Checking Koutsovasilis/F1 rhs24
+Checking Koutsovasilis/F1 rhs25
+Checking Koutsovasilis/F1 rhs26
+Checking Koutsovasilis/F1 rhs27
+Checking Koutsovasilis/F1 rhs28
+Checking Koutsovasilis/F1 rhs29
+Checking Koutsovasilis/F1 rhs30
+Checking Koutsovasilis/F1 rhs31
+Checking Koutsovasilis/F1 rhs32
+Checking LPnetlib/lp_cre_a
+Checking LPnetlib/lp_lotfi
+Checking LPnetlib/lp_scorpion
+Checking LPnetlib/lpi_bgindy
+Checking Lee/fem_hifreq_circuit
+Checking ML_Graph/dataset18mfeatmorphological_10NN
+Checking Mallya/lhr17 rhs0
+Checking Meszaros/air02
+Checking Meszaros/deter4
+Checking Meszaros/l9
+Checking Meszaros/p0282
+Checking Meszaros/scfxm1-2b
+Checking Mittelmann/cont11_l
+Checking Morandini/rotor1
+Checking NYPA/Maragal_2 rhs0
+Checking Nemeth/nemeth14
+Checking Norris/heart1
+Checking Oberwolfach/spiral
+Checking PARSEC/Si87H76
+Checking Pajek/GD06_theory
+Checking Pajek/SmallW
+Checking Pothen/mesh2em5
+Checking QCD/conf6_0-4x4-20
+Checking Rajat/rajat12
+Checking Rommes/S20PI_n1
+Checking Rothberg/struct4
+Checking SNAP/loc-Brightkite
+Checking SNAP/web-NotreDame
+Checking Sandia/adder_dcop_20
+Checking Sandia/adder_dcop_52
+Checking Sandia/fpga_dcop_13 rhs0
+Checking Sandia/fpga_dcop_45 rhs0
+Checking Sandia/oscil_dcop_20 rhs0
+Checking Sandia/oscil_dcop_52 rhs0
+Checking Schenk_IBMNA/c-21 rhs0
+Checking Schenk_IBMNA/c-53 rhs0
+Checking Schenk_ISEI/igbt3 rhs0
+Checking Simon/venkat50 rhs0
+Checking TSOPF/TSOPF_FS_b300 rhs0
+Checking VDOL/dynamicSoaringProblem_2 rhs0
+Checking VDOL/kineticBatchReactor_3 rhs0
+Checking VDOL/spaceShuttleEntry_1 rhs0
+Checking VLSI/radiation
+Checking Williams/pdb1HYS
+Checking vanHeukelum/cage9
+---------------------------------------
+Begin Slurm Epilog: Sep-03-2026 15:49:22
+Job ID:        12791111
+Array Job ID:  12790465_23
+User ID:       wahrens6
+Account:       gts-wahrens6
+Job name:      saps-scrape-matrices
+Resources:     cpu=16,mem=256G,node=1
+Rsrc Used:     cput=22:12:32,vmem=0,walltime=01:23:17,mem=2807612K,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-02-002-10-2
+---------------------------------------
