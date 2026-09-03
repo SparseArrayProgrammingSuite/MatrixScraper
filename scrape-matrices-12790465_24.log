@@ -1,0 +1,140 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-03-2026 14:26:14
+Job ID:    12791112
+User ID:   wahrens6
+Account:   gts-wahrens6
+Job name:  saps-scrape-matrices
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+Selected 90 of 2904 SuiteSparse search results for chunk 25/32.
+Checking AG-Monien/se
+Checking Andrianov/net50
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:336: RuntimeWarning: overflow encountered in multiply
+  return xp.sqrt(xp.sum(xp.multiply(v, v)))
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: invalid value encountered in add
+  x = x + r / d
+Checking Bai/dw1024
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: overflow encountered in divide
+  x = x + r / d
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
+  sqnorm = x.dot(x)
+Checking Bai/qh768
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: divide by zero encountered in divide
+  output = r / M
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: invalid value encountered in divide
+  output = r / M
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:490: RuntimeWarning: invalid value encountered in vecdot
+  alpha = rho / xp.vecdot(p, Ap)
+Checking Belcastro/human_gene1
+Checking Boeing/crystm03
+Checking Brogan/specular
+Checking Chen/pkustk12
+Checking DIMACS10/ar2010
+Checking DIMACS10/delaunay_n22
+Checking DIMACS10/kron_g500-logn19
+Checking DIMACS10/rgg_n_2_16_s0
+Checking DIMACS10/vsp_msc10848_300sep_100in_1Kout
+Checking DRIVCAV/cavity06 rhs0
+Checking Engwirda/airfoil_2d
+Checking FIDAP/ex31
+Checking Freescale/FullChip
+Checking GHS_indef/c-68 rhs0
+Checking GHS_indef/spmsrtls
+Checking GHS_psdef/s3dkq4m2
+Checking Goodwin/Goodwin_040
+Checking Gset/G1
+Checking Gset/G39
+Checking Gset/G7
+Checking HB/bcsstk02
+Checking HB/bcsstm01
+Checking HB/bp_400
+Checking HB/dwt_209
+Checking HB/fs_541_4
+Checking HB/jagmesh5
+Checking HB/lund_b
+Checking HB/rgg010
+Checking HB/west0989
+Checking Hohn/sinc15 rhs0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:376: RuntimeWarning: divide by zero encountered in scalar divide
+  alpha = rr / xp.vecdot(p, Ap)[()]
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:377: RuntimeWarning: invalid value encountered in multiply
+  x = x + alpha * p
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:378: RuntimeWarning: invalid value encountered in multiply
+  r = r - alpha * Ap
+Checking Hollinger/jan99jac080sc rhs0
+Checking IPSO/OPF_6000 rhs0
+Checking JGD_Forest/TF15
+Checking JGD_GL6/GL6_D_8
+Checking JGD_Homology/ch4-4-b3
+Checking JGD_Homology/ch8-8-b5
+Checking JGD_Homology/n2c6-b2
+Checking JGD_Homology/n4c5-b11
+Checking JGD_Kocay/Trec3
+Checking JGD_Relat/rel5
+Checking JGD_Trefethen/Trefethen_2000
+F2:   0%|          | 0/29996851 [00:00<?, ?B/s]F2:   1%|          | 311296/29996851 [00:00<00:11, 2692697.27B/s]F2:   3%|▎         | 868352/29996851 [00:00<00:07, 4152398.15B/s]F2:   5%|▌         | 1507328/29996851 [00:00<00:05, 4945224.40B/s]F2:   8%|▊         | 2260992/29996851 [00:00<00:04, 5589592.72B/s]F2:  10%|█         | 3129344/29996851 [00:00<00:04, 6186103.60B/s]F2:  13%|█▎        | 4046848/29996851 [00:00<00:03, 7106480.64B/s]F2:  16%|█▋        | 4882432/29996851 [00:00<00:03, 7094465.92B/s]F2:  19%|█▉        | 5849088/29996851 [00:00<00:03, 7836328.67B/s]F2:  23%|██▎       | 6832128/29996851 [00:00<00:02, 8408836.20B/s]F2:  26%|██▌       | 7798784/29996851 [00:01<00:02, 8761689.58B/s]F2:  29%|██▉       | 8765440/29996851 [00:01<00:02, 8934906.37B/s]F2:  33%|███▎      | 9994240/29996851 [00:01<00:02, 9410365.78B/s]F2:  38%|███▊      | 11354112/29996851 [00:01<00:01, 9967481.74B/s]F2:  42%|████▏     | 12713984/29996851 [00:01<00:01, 10970913.86B/s]F2:  46%|████▌     | 13828096/29996851 [00:01<00:01, 10752237.54B/s]F2:  51%|█████     | 15220736/29996851 [00:01<00:01, 11639808.00B/s]F2:  55%|█████▍    | 16400384/29996851 [00:01<00:01, 11289717.22B/s]F2:  59%|█████▉    | 17743872/29996851 [00:01<00:01, 11897756.57B/s]F2:  64%|██████▎   | 19070976/29996851 [00:02<00:00, 12286160.51B/s]F2:  68%|██████▊   | 20414464/29996851 [00:02<00:00, 12602396.66B/s]F2:  72%|███████▏  | 21692416/29996851 [00:02<00:00, 11883601.99B/s]F2:  77%|███████▋  | 23019520/29996851 [00:02<00:00, 12265114.86B/s]F2:  81%|████████▏ | 24379392/29996851 [00:02<00:00, 12625866.87B/s]F2:  86%|████████▌ | 25739264/29996851 [00:02<00:00, 12890681.15B/s]F2:  90%|█████████ | 27099136/29996851 [00:02<00:00, 13086493.36B/s]F2:  95%|█████████▌| 28590080/29996851 [00:02<00:00, 13343615.18B/s]F2: 29999104B [00:02, 10483616.56B/s]                               
+Checking Koutsovasilis/F2
+Checking LPnetlib/lp_cre_b
+Checking LPnetlib/lp_maros
+Checking LPnetlib/lp_scrs8
+Checking LPnetlib/lpi_bgprtr
+li:   0%|          | 0/10269766 [00:00<?, ?B/s]li:   1%|▏         | 131072/10269766 [00:00<00:09, 1099907.59B/s]li:   2%|▏         | 245760/10269766 [00:00<00:09, 1063663.14B/s]li:   6%|▌         | 638976/10269766 [00:00<00:04, 2277679.22B/s]li:  16%|█▌        | 1638400/10269766 [00:00<00:01, 5157091.17B/s]li:  30%|██▉       | 3080192/10269766 [00:00<00:00, 8360628.30B/s]li:  44%|████▍     | 4554752/10269766 [00:00<00:00, 10454773.09B/s]li:  57%|█████▋    | 5816320/10269766 [00:00<00:00, 11107146.95B/s]li:  69%|██████▉   | 7127040/10269766 [00:00<00:00, 11708644.01B/s]li:  83%|████████▎ | 8503296/10269766 [00:00<00:00, 12340239.82B/s]li:  97%|█████████▋| 10010624/10269766 [00:01<00:00, 13169608.66B/s]li: 10272768B [00:01, 9679812.81B/s]                                
+Checking Li/li
+Checking ML_Graph/dataset20mfeatpixel_10NN
+Checking Mallya/lhr17c
+Checking Meszaros/air03
+Checking Meszaros/deter5
+Checking Meszaros/large
+Checking Meszaros/p0291
+Checking Meszaros/scfxm1-2r
+Checking Mittelmann/cont1_l
+Checking Morandini/rotor2
+Checking NYPA/Maragal_3 rhs0
+Checking Nemeth/nemeth15
+Checking Norris/heart2
+t2dah:   0%|          | 0/1522174 [00:00<?, ?B/s]t2dah:  14%|█▍        | 212992/1522174 [00:00<00:00, 1968983.03B/s]t2dah:  44%|████▍     | 671744/1522174 [00:00<00:00, 3331036.75B/s]t2dah:  80%|███████▉  | 1212416/1522174 [00:00<00:00, 4055593.21B/s]t2dah: 1523712B [00:00, 4100759.94B/s]                              
+Checking Oberwolfach/t2dah
+Checking PARSEC/SiH4
+Checking Pajek/GD95_a
+Checking Pajek/Stranke94
+Checking Pothen/mesh3e1
+Checking QCD/conf6_0-4x4-30
+Checking Rajat/rajat13
+S40PI_n:   0%|          | 0/33604 [00:00<?, ?B/s]S40PI_n: 49152B [00:00, 2962259.22B/s]           
+Checking Rommes/S40PI_n
+Checking Rucci/Rucci1
+Checking SNAP/loc-Gowalla
+Checking SNAP/web-Stanford
+Checking Sandia/adder_dcop_21
+Checking Sandia/adder_dcop_53
+Checking Sandia/fpga_dcop_14 rhs0
+Checking Sandia/fpga_dcop_46 rhs0
+Checking Sandia/oscil_dcop_21 rhs0
+Checking Sandia/oscil_dcop_53 rhs0
+Checking Schenk_IBMNA/c-22 rhs0
+Checking Schenk_IBMNA/c-54 rhs0
+Checking Schenk_ISEI/nmos3 rhs0
+Checking Sinclair/3Dspectralwave rhs0
+Checking TSOPF/TSOPF_FS_b300_c1 rhs0
+Checking VDOL/dynamicSoaringProblem_3 rhs0
+Checking VDOL/kineticBatchReactor_4 rhs0
+Checking VDOL/spaceShuttleEntry_2 rhs0
+ss:   0%|          | 0/155141302 [00:00<?, ?B/s]ss:   0%|          | 98304/155141302 [00:00<02:45, 938718.00B/s]ss:   0%|          | 409600/155141302 [00:00<01:10, 2190870.80B/s]ss:   1%|          | 1228800/155141302 [00:00<00:31, 4879738.15B/s]ss:   1%|▏         | 2228224/155141302 [00:00<00:23, 6502618.92B/s]ss:   2%|▏         | 3309568/155141302 [00:00<00:19, 7977094.69B/s]ss:   3%|▎         | 4407296/155141302 [00:00<00:16, 8953993.40B/s]ss:   4%|▎         | 5537792/155141302 [00:00<00:15, 9687873.78B/s]ss:   4%|▍         | 6586368/155141302 [00:00<00:14, 9933831.49B/s]ss:   5%|▍         | 7618560/155141302 [00:00<00:14, 9867474.13B/s]ss:   6%|▌         | 8765440/155141302 [00:01<00:14, 10342270.07B/s]ss:   6%|▋         | 9912320/155141302 [00:01<00:13, 10660299.26B/s]ss:   7%|▋         | 11042816/155141302 [00:01<00:13, 10844789.46B/s]ss:   8%|▊         | 12238848/155141302 [00:01<00:13, 10862699.48B/s]ss:   9%|▊         | 13434880/155141302 [00:01<00:12, 11180337.31B/s]ss:   9%|▉         | 14565376/155141302 [00:01<00:12, 11000723.85B/s]ss:  10%|█         | 15712256/155141302 [00:01<00:12, 11108374.01B/s]ss:  11%|█         | 16842752/155141302 [00:01<00:12, 11150809.56B/s]ss:  12%|█▏        | 18006016/155141302 [00:01<00:12, 11227392.62B/s]ss:  12%|█▏        | 19365888/155141302 [00:01<00:11, 11900899.30B/s]ss:  13%|█▎        | 20561920/155141302 [00:02<00:11, 11844377.03B/s]ss:  14%|█▍        | 21889024/155141302 [00:02<00:10, 12224534.48B/s]ss:  15%|█▍        | 23265280/155141302 [00:02<00:10, 12679286.52B/s]ss:  16%|█▌        | 24559616/155141302 [00:02<00:10, 12754033.93B/s]ss:  17%|█▋        | 25919488/155141302 [00:02<00:09, 12998357.10B/s]ss:  18%|█▊        | 27262976/155141302 [00:02<00:09, 13083171.71B/s]ss:  18%|█▊        | 28639232/155141302 [00:02<00:09, 13267472.05B/s]ss:  19%|█▉        | 29982720/155141302 [00:02<00:09, 13302399.99B/s]ss:  20%|██        | 31424512/155141302 [00:02<00:09, 13597345.83B/s]ss:  21%|██        | 32849920/155141302 [00:02<00:08, 13789920.58B/s]ss:  22%|██▏       | 34242560/155141302 [00:03<00:08, 13710554.91B/s]ss:  23%|██▎       | 35618816/155141302 [00:03<00:08, 13416512.54B/s]ss:  24%|██▍       | 36962304/155141302 [00:03<00:08, 13162691.50B/s]ss:  25%|██▍       | 38289408/155141302 [00:03<00:08, 13024187.29B/s]ss:  26%|██▌       | 39632896/155141302 [00:03<00:08, 13105259.25B/s]ss:  26%|██▋       | 40960000/155141302 [00:03<00:08, 12788758.43B/s]ss:  27%|██▋       | 42319872/155141302 [00:03<00:08, 13001573.45B/s]ss:  28%|██▊       | 43712512/155141302 [00:03<00:08, 13233912.02B/s]ss:  29%|██▉       | 45039616/155141302 [00:03<00:08, 13153802.81B/s]ss:  30%|██▉       | 46399488/155141302 [00:03<00:08, 13249880.65B/s]ss:  31%|███       | 47759360/155141302 [00:04<00:08, 13339026.82B/s]ss:  32%|███▏      | 49135616/155141302 [00:04<00:07, 13438537.00B/s]ss:  33%|███▎      | 50495488/155141302 [00:04<00:07, 13411720.37B/s]ss:  33%|███▎      | 51838976/155141302 [00:04<00:07, 13374072.89B/s]ss:  34%|███▍      | 53231616/155141302 [00:04<00:07, 13518101.91B/s]ss:  35%|███▌      | 54673408/155141302 [00:04<00:07, 13785488.77B/s]ss:  36%|███▌      | 56066048/155141302 [00:04<00:07, 13729802.84B/s]ss:  37%|███▋      | 57442304/155141302 [00:04<00:07, 13588225.68B/s]ss:  38%|███▊      | 58802176/155141302 [00:04<00:07, 13538337.94B/s]ss:  39%|███▉      | 60162048/155141302 [00:05<00:07, 13511718.45B/s]ss:  40%|███▉      | 61521920/155141302 [00:05<00:06, 13527047.23B/s]ss:  41%|████      | 62881792/155141302 [00:05<00:06, 13415307.19B/s]ss:  41%|████▏     | 64356352/155141302 [00:05<00:06, 13800928.99B/s]ss:  42%|████▏     | 65781760/155141302 [00:05<00:06, 13928412.65B/s]ss:  43%|████▎     | 67190784/155141302 [00:05<00:06, 13019257.62B/s]ss:  44%|████▍     | 68517888/155141302 [00:05<00:06, 13053606.07B/s]ss:  45%|████▌     | 69861376/155141302 [00:05<00:06, 13157729.17B/s]ss:  46%|████▌     | 71188480/155141302 [00:05<00:06, 12577244.24B/s]ss:  47%|████▋     | 72613888/155141302 [00:05<00:06, 13015332.39B/s]ss:  48%|████▊     | 74006528/155141302 [00:06<00:06, 13266831.01B/s]ss:  49%|████▊     | 75350016/155141302 [00:06<00:06, 12673502.12B/s]ss:  49%|████▉     | 76775424/155141302 [00:06<00:05, 13103037.63B/s]ss:  50%|█████     | 78200832/155141302 [00:06<00:05, 13418038.66B/s]ss:  51%|█████▏    | 79626240/155141302 [00:06<00:05, 13634435.90B/s]ss:  52%|█████▏    | 81002496/155141302 [00:06<00:05, 12969054.36B/s]ss:  53%|█████▎    | 82427904/155141302 [00:06<00:05, 13323871.44B/s]ss:  54%|█████▍    | 83804160/155141302 [00:06<00:05, 13416152.69B/s]ss:  55%|█████▍    | 85164032/155141302 [00:06<00:05, 13329753.69B/s]ss:  56%|█████▌    | 86638592/155141302 [00:06<00:04, 13741691.88B/s]ss:  57%|█████▋    | 88031232/155141302 [00:07<00:05, 13040420.26B/s]ss:  58%|█████▊    | 89358336/155141302 [00:07<00:05, 13051293.36B/s]ss:  58%|█████▊    | 90750976/155141302 [00:07<00:04, 13295737.29B/s]ss:  59%|█████▉    | 92094464/155141302 [00:07<00:04, 12681172.22B/s]ss:  60%|██████    | 93503488/155141302 [00:07<00:04, 13039884.45B/s]ss:  61%|██████    | 94945280/155141302 [00:07<00:04, 13435480.02B/s]ss:  62%|██████▏   | 96305152/155141302 [00:07<00:04, 12687193.89B/s]ss:  63%|██████▎   | 97763328/155141302 [00:07<00:04, 13192203.75B/s]ss:  64%|██████▍   | 99123200/155141302 [00:07<00:04, 13296220.08B/s]ss:  65%|██████▍   | 100466688/155141302 [00:08<00:04, 12690842.84B/s]ss:  66%|██████▌   | 101908480/155141302 [00:08<00:04, 13167211.60B/s]ss:  67%|██████▋   | 103301120/155141302 [00:08<00:03, 13382429.02B/s]ss:  67%|██████▋   | 104660992/155141302 [00:08<00:04, 12549249.88B/s]ss:  68%|██████▊   | 106070016/155141302 [00:08<00:03, 12965916.70B/s]ss:  69%|██████▉   | 107544576/155141302 [00:08<00:03, 13447359.88B/s]ss:  70%|███████   | 108904448/155141302 [00:08<00:03, 12861402.00B/s]ss:  71%|███████   | 110215168/155141302 [00:08<00:03, 12563634.79B/s]ss:  72%|███████▏  | 111493120/155141302 [00:08<00:03, 12390882.82B/s]ss:  73%|███████▎  | 112738304/155141302 [00:09<00:03, 12318837.24B/s]ss:  73%|███████▎  | 113983488/155141302 [00:09<00:03, 11645098.45B/s]ss:  74%|███████▍  | 115245056/155141302 [00:09<00:03, 11888351.19B/s]ss:  75%|███████▌  | 116523008/155141302 [00:09<00:03, 12090772.64B/s]ss:  76%|███████▌  | 117751808/155141302 [00:09<00:03, 11347864.89B/s]ss:  77%|███████▋  | 119144448/155141302 [00:09<00:02, 12048146.09B/s]ss:  78%|███████▊  | 120504320/155141302 [00:09<00:02, 12477157.61B/s]ss:  78%|███████▊  | 121765888/155141302 [00:09<00:02, 11928472.08B/s]ss:  79%|███████▉  | 122978304/155141302 [00:09<00:02, 11831671.93B/s]ss:  80%|████████  | 124174336/155141302 [00:10<00:02, 11635040.55B/s]ss:  81%|████████  | 125353984/155141302 [00:10<00:02, 11248758.13B/s]ss:  82%|████████▏ | 126681088/155141302 [00:10<00:02, 11817755.68B/s]ss:  83%|████████▎ | 127991808/155141302 [00:10<00:02, 12153034.72B/s]ss:  83%|████████▎ | 129220608/155141302 [00:10<00:02, 11489427.83B/s]ss:  84%|████████▍ | 130482176/155141302 [00:10<00:02, 11776932.91B/s]ss:  85%|████████▍ | 131776512/155141302 [00:10<00:01, 12091640.99B/s]ss:  86%|████████▌ | 133038080/155141302 [00:10<00:01, 12194920.50B/s]ss:  87%|████████▋ | 134266880/155141302 [00:10<00:01, 11490982.98B/s]ss:  87%|████████▋ | 135446528/155141302 [00:10<00:01, 11570377.91B/s]ss:  88%|████████▊ | 136757248/155141302 [00:11<00:01, 12009177.49B/s]ss:  89%|████████▉ | 138166272/155141302 [00:11<00:01, 12601082.16B/s]ss:  90%|████████▉ | 139444224/155141302 [00:11<00:01, 11904172.13B/s]ss:  91%|█████████ | 140804096/155141302 [00:11<00:01, 12372090.53B/s]ss:  92%|█████████▏| 142196736/155141302 [00:11<00:01, 12794649.49B/s]ss:  92%|█████████▏| 143491072/155141302 [00:11<00:00, 12262686.17B/s]ss:  93%|█████████▎| 144818176/155141302 [00:11<00:00, 12533540.57B/s]ss:  94%|█████████▍| 146210816/155141302 [00:11<00:00, 12907993.42B/s]ss:  95%|█████████▌| 147521536/155141302 [00:11<00:00, 12178420.02B/s]ss:  96%|█████████▌| 148930560/155141302 [00:12<00:00, 12694432.95B/s]ss:  97%|█████████▋| 150224896/155141302 [00:12<00:00, 12159463.46B/s]ss:  98%|█████████▊| 151617536/155141302 [00:12<00:00, 12617648.08B/s]ss:  99%|█████████▊| 152977408/155141302 [00:12<00:00, 12855492.59B/s]ss:  99%|█████████▉| 154288128/155141302 [00:12<00:00, 12139320.37B/s]ss: 155156480B [00:12, 12368312.76B/s]                                
+Checking VLSI/ss
+Checking Williams/webbase-1M
+---------------------------------------
+Begin Slurm Epilog: Sep-03-2026 14:32:22
+Job ID:        12791112
+Array Job ID:  12790465_24
+User ID:       wahrens6
+Account:       gts-wahrens6
+Job name:      saps-scrape-matrices
+Resources:     cpu=16,mem=256G,node=1
+Rsrc Used:     cput=01:38:40,vmem=0,walltime=00:06:10,mem=3542992K,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-03-003-29-2
+---------------------------------------

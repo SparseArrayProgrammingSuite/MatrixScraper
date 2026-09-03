@@ -1,0 +1,141 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-03-2026 14:23:17
+Job ID:    12791058
+User ID:   wahrens6
+Account:   gts-wahrens6
+Job name:  saps-scrape-matrices
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+Selected 91 of 2904 SuiteSparse search results for chunk 16/32.
+Checking AG-Monien/crack_dual
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: divide by zero encountered in divide
+  output = r / M
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: invalid value encountered in divide
+  output = r / M
+Checking Andrianov/ins2
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:336: RuntimeWarning: overflow encountered in multiply
+  return xp.sqrt(xp.sum(xp.multiply(v, v)))
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: invalid value encountered in add
+  x = x + r / d
+Checking Bai/cdde3
+Checking Bai/olm2000
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
+  sqnorm = x.dot(x)
+Checking Bai/tols90
+Checking Boeing/bcsstm36
+Checking Botonakis/thermomech_dK
+Checking Chen/pkustk03
+Checking DIMACS10/598a
+Checking DIMACS10/delaunay_n13
+Checking DIMACS10/hugetric-00020
+Checking DIMACS10/nv2010
+Checking DIMACS10/vsp_bcsstk30_500sep_10in_1Kout
+Checking DNVS/trdheim
+Checking Dattorro/EternityII_Etilde
+Checking FIDAP/ex22
+Checking FlowIPM22/uni_chimera_i5
+Checking GHS_indef/boyd1 rhs0
+Checking GHS_indef/ncvxqp1
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:490: RuntimeWarning: invalid value encountered in vecdot
+  alpha = rho / xp.vecdot(p, Ap)
+Checking GHS_psdef/jnlbrng1
+Checking Gleich/wikipedia-20051105
+Checking Grund/d_dyn rhs0
+Checking Gset/G30
+Checking Gset/G6
+Checking HB/bcspwr03
+Checking HB/bcsstk25
+Checking HB/beaflw
+Checking HB/cegb3024
+Checking HB/dwt_992
+Checking HB/impcol_a
+Checking HB/lshp2233
+Checking HB/plat362
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: overflow encountered in divide
+  x = x + r / d
+Checking HB/well1850 rhs0
+Checking Hamrle/Hamrle3 rhs0
+Checking Hollinger/g7jac200
+Checking IBM_EDA/dc2 rhs0
+Checking JGD_BIBD/bibd_9_5
+Checking JGD_G5/IG5-17
+Checking JGD_Groebner/f855_mat9_I
+Checking JGD_Homology/ch7-9-b1
+Checking JGD_Homology/mk12-b3
+Checking JGD_Homology/n3c6-b3
+Checking JGD_Homology/n4c6-b9
+Checking JGD_Margulies/kneser_8_3_1
+Checking JGD_SPG/EX3
+Checking Janna/Serena
+Checking LPnetlib/lp_bandm
+Checking LPnetlib/lp_grow22
+Checking LPnetlib/lp_sc205
+Checking LPnetlib/lp_stocfor3
+Checking LPnetlib/lpi_refinery
+Checking ML_Graph/Vehicle_10NN
+Checking Mallya/lhr07 rhs0
+Checking McRae/ecology2
+Checking Meszaros/de063157
+Checking Meszaros/gen4
+Checking Meszaros/nsct
+Checking Meszaros/rosen2
+Checking Meszaros/t0331-4l
+Checking Mittelmann/rail582
+Checking Mycielski/mycielskian7
+Checking Nemeth/nemeth06
+Checking Newman/lesmis
+Checking Oberwolfach/gyro_k
+Checking PARSEC/Ge99H100
+Checking Pajek/GD00_c
+Checking Pajek/Ragusa16
+Checking Pothen/bodyy4
+Checking QCD/conf5_0-4x4-14
+Checking Rajat/rajat04
+Checking Rommes/M20PI_n1
+Checking Ronis/xenon1
+Checking SNAP/com-LiveJournal
+Checking SNAP/soc-sign-epinions
+Checking Sandia/adder_dcop_12
+Checking Sandia/adder_dcop_44
+Checking Sandia/fpga_dcop_05 rhs0
+Checking Sandia/fpga_dcop_37 rhs0
+Checking Sandia/oscil_dcop_12 rhs0
+Checking Sandia/oscil_dcop_44 rhs0
+Checking Schenk_AFE/af_shell5 rhs0
+Checking Schenk_IBMNA/c-45 rhs0
+barrier2-1:   0%|          | 0/23900318 [00:00<?, ?B/s]barrier2-1:   1%|          | 294912/23900318 [00:00<00:08, 2815718.07B/s]barrier2-1:   6%|▌         | 1343488/23900318 [00:00<00:03, 7235186.13B/s]barrier2-1:  10%|█         | 2457600/23900318 [00:00<00:02, 8963790.89B/s]barrier2-1:  16%|█▌        | 3735552/23900318 [00:00<00:01, 10188770.84B/s]barrier2-1:  21%|██▏       | 5111808/23900318 [00:00<00:01, 11416878.54B/s]barrier2-1:  26%|██▋       | 6291456/23900318 [00:00<00:01, 11512825.61B/s]barrier2-1:  32%|███▏      | 7684096/23900318 [00:00<00:01, 12290736.65B/s]barrier2-1:  37%|███▋      | 8929280/23900318 [00:00<00:01, 12269607.93B/s]barrier2-1:  43%|████▎     | 10371072/23900318 [00:00<00:01, 12923404.66B/s]barrier2-1:  49%|████▉     | 11829248/23900318 [00:01<00:00, 13404045.29B/s]barrier2-1:  56%|█████▌    | 13271040/23900318 [00:01<00:00, 13690477.27B/s]barrier2-1:  61%|██████▏   | 14680064/23900318 [00:01<00:00, 13808271.55B/s]barrier2-1:  68%|██████▊   | 16171008/23900318 [00:01<00:00, 13962589.12B/s]barrier2-1:  74%|███████▍  | 17727488/23900318 [00:01<00:00, 14261041.51B/s]barrier2-1:  81%|████████  | 19333120/23900318 [00:01<00:00, 14793032.67B/s]barrier2-1:  87%|████████▋ | 20905984/23900318 [00:01<00:00, 15032166.00B/s]barrier2-1:  94%|█████████▍| 22413312/23900318 [00:01<00:00, 15000040.52B/s]barrier2-1: 23904256B [00:01, 13126524.06B/s]                               
+Checking Schenk_ISEI/barrier2-1 rhs0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:490: RuntimeWarning: divide by zero encountered in scalar divide
+  alpha = rho / xp.vecdot(p, Ap)
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:504: RuntimeWarning: invalid value encountered in add
+  p = z + beta * p
+Checking Simon/raefsky1 rhs0
+Checking TKK/tube2 rhs0
+Checking Toledo/deltaX
+Checking VDOL/goddardRocketProblem_2 rhs0
+Checking VDOL/reorientation_1 rhs0
+Checking VDOL/tumorAntiAngiogenesis_7 rhs0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:376: RuntimeWarning: divide by zero encountered in scalar divide
+  alpha = rr / xp.vecdot(p, Ap)[()]
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:377: RuntimeWarning: invalid value encountered in multiply
+  x = x + alpha * p
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:378: RuntimeWarning: invalid value encountered in multiply
+  r = r - alpha * Ap
+Checking Wang/wang4
+Checking vanHeukelum/cage14
+---------------------------------------
+Begin Slurm Epilog: Sep-03-2026 14:40:47
+Job ID:        12791058
+Array Job ID:  12790465_15
+User ID:       wahrens6
+Account:       gts-wahrens6
+Job name:      saps-scrape-matrices
+Resources:     cpu=16,mem=256G,node=1
+Rsrc Used:     cput=04:40:48,vmem=0,walltime=00:17:33,mem=4983136K,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-01-003-4-1
+---------------------------------------

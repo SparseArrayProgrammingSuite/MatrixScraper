@@ -1,0 +1,133 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-03-2026 14:23:20
+Job ID:    12791073
+User ID:   wahrens6
+Account:   gts-wahrens6
+Job name:  saps-scrape-matrices
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+Selected 91 of 2904 SuiteSparse search results for chunk 20/32.
+Checking AG-Monien/grid1_dual
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: divide by zero encountered in divide
+  output = r / M
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: invalid value encountered in divide
+  output = r / M
+Checking Andrianov/net100
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:336: RuntimeWarning: overflow encountered in multiply
+  return xp.sqrt(xp.sum(xp.multiply(v, v)))
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: invalid value encountered in add
+  x = x + r / d
+Checking Bai/ck104
+Checking Bai/pde2961
+Checking Barabasi/NotreDame_www
+Checking Boeing/crystk01
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: overflow encountered in divide
+  x = x + r / d
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
+  sqnorm = x.dot(x)
+Checking Bourchtein/atmosmodl rhs0
+Checking Bourchtein/atmosmodl rhs1
+Checking Chen/pkustk07
+Checking DIMACS10/NACA0015
+Checking DIMACS10/delaunay_n17
+Checking DIMACS10/in2010
+Checking DIMACS10/or2010
+Checking DIMACS10/vsp_c-60_data_cti_cs4
+Checking DRIVCAV/cavity01 rhs0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:490: RuntimeWarning: invalid value encountered in vecdot
+  alpha = rho / xp.vecdot(p, Ap)
+Checking Dziekonski/dielFilterV2real rhs0
+Checking FIDAP/ex26
+Checking Fluorem/PR02R rhs0
+Checking GHS_indef/c-55 rhs0
+Checking GHS_indef/ncvxqp9
+Checking GHS_psdef/oilpan
+Checking Goodwin/Goodwin_010
+Checking Grund/meg4
+Checking Gset/G34
+Checking Gset/G63
+Checking HB/bcspwr07
+Checking HB/bcsstk29
+Checking HB/bp_1000
+Checking HB/dwt_1007
+Checking HB/fs_183_4
+Checking HB/impcol_e
+Checking HB/lshp_265
+Checking HB/pores_2
+Checking HB/west0167
+Checking Harvard_Seismology/JP
+Checking Hollinger/jan99jac040 rhs0
+Checking INPRO/msdoor
+Checking JGD_Forest/TF10
+Checking JGD_G5/IG5-8
+Checking JGD_Homology/D6-6
+Checking JGD_Homology/ch7-9-b5
+Checking JGD_Homology/mk9-b1
+Checking JGD_Homology/n3c6-b7
+Checking JGD_Kocay/Trec10
+Checking JGD_Margulies/wheel_601
+Checking JGD_Taha/abtaha1
+Checking Kamvar/Stanford_Berkeley
+Checking LPnetlib/lp_bnl2
+Checking LPnetlib/lp_ken_07
+Checking LPnetlib/lp_scagr7
+Checking LPnetlib/lp_wood1p
+Checking LeGresley/LeGresley_2508 rhs0
+Checking ML_Graph/cnae9_10NN
+Checking Mallya/lhr11 rhs0
+Checking Meszaros/aa3
+Checking Meszaros/deter0
+Checking Meszaros/karted
+Checking Meszaros/p0033
+Checking Meszaros/sc205-2r
+Checking Meszaros/ulevimin
+Checking Mittelmann/watson_1
+Checking ND/nd24k
+Checking Nemeth/nemeth10
+Checking Newman/power
+Checking Oberwolfach/rail_1357
+Checking PARSEC/Si2
+Checking Pajek/GD01_c
+Checking Pajek/Sandi_authors
+Checking Pothen/mesh1e1
+Checking QCD/conf5_4-8x8-05
+Checking Rajat/rajat08
+Checking Rommes/M80PI_n1
+Checking Rothberg/cfd1
+Checking SNAP/email-Eu-core
+Checking SNAP/sx-superuser
+Checking Sandia/adder_dcop_16
+Checking Sandia/adder_dcop_48
+Checking Sandia/fpga_dcop_09 rhs0
+Checking Sandia/fpga_dcop_41 rhs0
+Checking Sandia/oscil_dcop_16 rhs0
+Checking Sandia/oscil_dcop_48 rhs0
+Checking Schenk_AFE/af_shell9 rhs0
+Checking Schenk_IBMNA/c-49 rhs0
+Checking Schenk_ISEI/barrier2-2 rhs0
+Checking Simon/raefsky5 rhs0
+Checking TOKAMAK/utm5940 rhs0
+Checking UTEP/Dubcova3
+Checking VDOL/hangGlider_4 rhs0
+Checking VDOL/reorientation_5 rhs0
+Checking VLSI/mosfet2
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: overflow encountered in add
+  x = x + r / d
+Checking Williams/consph
+Checking vanHeukelum/cage5
+---------------------------------------
+Begin Slurm Epilog: Sep-03-2026 14:35:26
+Job ID:        12791073
+Array Job ID:  12790465_19
+User ID:       wahrens6
+Account:       gts-wahrens6
+Job name:      saps-scrape-matrices
+Resources:     cpu=16,mem=256G,node=1
+Rsrc Used:     cput=03:14:08,vmem=0,walltime=00:12:08,mem=3661928K,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-02-004-13-2
+---------------------------------------

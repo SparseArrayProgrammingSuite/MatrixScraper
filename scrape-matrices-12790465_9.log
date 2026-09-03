@@ -76,3 +76,81 @@ Checking JGD_Homology/n4c6-b3
 Checking JGD_Margulies/flower_7_1
 Checking JGD_SL6/D_7
 Checking Janna/Long_Coup_dt0
+Checking LPnetlib/lp_80bau3b
+Checking LPnetlib/lp_fit2p
+Checking LPnetlib/lp_pilotnov
+Checking LPnetlib/lp_stair
+Checking LPnetlib/lpi_klein3
+Checking ML_Graph/Fashion_MNIST_norm_10NN
+Checking ML_Graph/worms20_10NN
+Checking MathWorks/pivtol
+Checking Meszaros/crew1
+Checking Meszaros/gams60am
+Checking Meszaros/nemsemm1
+Checking Meszaros/refine
+Checking Meszaros/stat96v4
+Checking Mittelmann/pds-80
+Checking Mycielski/mycielskian2
+Checking Negre/dendrimer
+Checking Newman/cond-mat-2003
+Checking Oberwolfach/filter2D
+Checking PARSEC/Ga10As10H30
+Checking Pajek/Erdos981
+Checking Pajek/HEP-th-new
+Checking Pajek/patents_main
+Checking Priebel/208bit
+Checking Quaglino/viscoplastic1 rhs0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: overflow encountered in divide
+  x = x + r / d
+Checking Rajat/rajat30
+Checking Rommes/nopss_11k
+Checking SNAP/cit-HepPh
+Checking SNAP/soc-Slashdot0902
+Checking Sandia/adder_dcop_06
+Checking Sandia/adder_dcop_38
+Checking Sandia/adder_trans_01
+Checking Sandia/fpga_dcop_31 rhs0
+Checking Sandia/oscil_dcop_06 rhs0
+Checking Sandia/oscil_dcop_38 rhs0
+Checking Schenk_AFE/af_5_k101 rhs0
+Checking Schenk_IBMNA/c-39 rhs0
+Checking Schenk_IBMSDS/2D_54019_highK rhs0
+Checking Shen/shermanACd
+Checking TKK/s4dkt3m2
+Checking TSOPF/TSOPF_RS_b39_c19 rhs0
+Checking TSOPF/TSOPF_RS_b39_c19 rhs1
+Checking TSOPF/TSOPF_RS_b39_c19 rhs2
+Checking TSOPF/TSOPF_RS_b39_c19 rhs3
+Checking TSOPF/TSOPF_RS_b39_c19 rhs4
+Checking TSOPF/TSOPF_RS_b39_c19 rhs5
+Checking TSOPF/TSOPF_RS_b39_c19 rhs6
+Checking TSOPF/TSOPF_RS_b39_c19 rhs7
+Checking TSOPF/TSOPF_RS_b39_c19 rhs8
+Checking TSOPF/TSOPF_RS_b39_c19 rhs9
+Checking TSOPF/TSOPF_RS_b39_c19 rhs10
+Checking TSOPF/TSOPF_RS_b39_c19 rhs11
+Checking TSOPF/TSOPF_RS_b39_c19 rhs12
+Checking TSOPF/TSOPF_RS_b39_c19 rhs13
+Checking TSOPF/TSOPF_RS_b39_c19 rhs14
+Checking TSOPF/TSOPF_RS_b39_c19 rhs15
+Checking TSOPF/TSOPF_RS_b39_c19 rhs16
+Checking TSOPF/TSOPF_RS_b39_c19 rhs17
+Checking TSOPF/TSOPF_RS_b39_c19 rhs18
+Checking VDOL/freeFlyingRobot_5 rhs0
+Checking VDOL/lowThrust_8 rhs0
+Checking VDOL/tumorAntiAngiogenesis_1 rhs0
+Checking Vavasis/av41092
+Checking Zitney/rdist2
+---------------------------------------
+Begin Slurm Epilog: Sep-03-2026 14:26:10
+Job ID:        12790764
+Array Job ID:  12790465_9
+User ID:       wahrens6
+Account:       gts-wahrens6
+Job name:      saps-scrape-matrices
+Resources:     cpu=16,mem=256G,node=1
+Rsrc Used:     cput=02:10:56,vmem=0,walltime=00:08:11,mem=5839648K,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-03-003-29-2
+---------------------------------------

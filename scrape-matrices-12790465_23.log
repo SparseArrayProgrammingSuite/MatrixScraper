@@ -1,0 +1,94 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-03-2026 14:26:07
+Job ID:    12791111
+User ID:   wahrens6
+Account:   gts-wahrens6
+Job name:  saps-scrape-matrices
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+Selected 91 of 2904 SuiteSparse search results for chunk 24/32.
+Checking AG-Monien/netz4504_dual
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: divide by zero encountered in divide
+  output = r / M
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: invalid value encountered in divide
+  output = r / M
+Checking Andrianov/net4-1
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:336: RuntimeWarning: overflow encountered in multiply
+  return xp.sqrt(xp.sum(xp.multiply(v, v)))
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: invalid value encountered in add
+  x = x + r / d
+Checking Bai/cryg2500
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: overflow encountered in divide
+  x = x + r / d
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
+  sqnorm = x.dot(x)
+Checking Bai/qh1484
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:490: RuntimeWarning: invalid value encountered in vecdot
+  alpha = rho / xp.vecdot(p, Ap)
+Checking Bates/sls
+Checking Boeing/crystm02
+Checking Brethour/coater2
+Checking Chen/pkustk11
+Checking DIMACS10/al2010
+Checking DIMACS10/delaunay_n21
+Checking DIMACS10/kron_g500-logn18
+Checking DIMACS10/rgg_n_2_15_s0
+Checking DIMACS10/vsp_model1_crew1_cr42_south31
+Checking DRIVCAV/cavity05 rhs0
+Checking Embree/ifiss_mat
+Checking FIDAP/ex3
+Checking Freescale/Freescale2
+Checking GHS_indef/c-63 rhs0
+Checking GHS_indef/sparsine
+Checking GHS_psdef/ramage02
+Checking Goodwin/Goodwin_030
+Checking Grund/poli_large
+Checking Gset/G38
+Checking Gset/G67
+Checking HB/bcsstk01
+Checking HB/bcsstk33
+Checking HB/bp_200
+Checking HB/dwt_198
+Checking HB/fs_541_3
+Checking HB/jagmesh4
+Checking HB/lund_a
+Checking HB/psmigr_3
+Checking HB/west0655
+Checking Hohn/sinc12 rhs0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:376: RuntimeWarning: divide by zero encountered in scalar divide
+  alpha = rr / xp.vecdot(p, Ap)[()]
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:377: RuntimeWarning: invalid value encountered in multiply
+  x = x + alpha * p
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:378: RuntimeWarning: invalid value encountered in multiply
+  r = r - alpha * Ap
+Checking Hollinger/jan99jac080 rhs0
+Checking IPSO/OPF_3754 rhs0
+Checking JGD_Forest/TF14
+Checking JGD_GL6/GL6_D_7
+Checking JGD_Homology/ch4-4-b2
+Checking JGD_Homology/ch8-8-b4
+Checking JGD_Homology/n2c6-b10
+Checking JGD_Homology/n4c5-b10
+Checking JGD_Kocay/Trec14
+Checking JGD_Relat/rel4
+Checking JGD_Trefethen/Trefethen_200
+Checking Koutsovasilis/F1 rhs0
+Checking Koutsovasilis/F1 rhs1
+Checking Koutsovasilis/F1 rhs2
+Checking Koutsovasilis/F1 rhs3
+Checking Koutsovasilis/F1 rhs4
+Checking Koutsovasilis/F1 rhs5
+Checking Koutsovasilis/F1 rhs6
+Checking Koutsovasilis/F1 rhs7
+Checking Koutsovasilis/F1 rhs8
+Checking Koutsovasilis/F1 rhs9
+Checking Koutsovasilis/F1 rhs10
+Checking Koutsovasilis/F1 rhs11
+Checking Koutsovasilis/F1 rhs12
+Checking Koutsovasilis/F1 rhs13
+Checking Koutsovasilis/F1 rhs14
+Checking Koutsovasilis/F1 rhs15
+Checking Koutsovasilis/F1 rhs16

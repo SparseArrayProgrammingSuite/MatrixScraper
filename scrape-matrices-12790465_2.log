@@ -14,3 +14,169 @@ Checking AG-Monien/3elt_dual
 /storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: invalid value encountered in divide
   output = r / M
 Checking AMD/G3_circuit
+Checking Averous/epb2
+Checking Bai/lop163
+Checking Bai/rdb3200l
+Checking Bodendiek/CurlCurl_0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:336: RuntimeWarning: overflow encountered in multiply
+  return xp.sqrt(xp.sum(xp.multiply(v, v)))
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: invalid value encountered in add
+  x = x + r / d
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
+  sqnorm = x.dot(x)
+Checking Boeing/nasa4704
+Checking CPM/cz10228
+Checking Cunningham/k3plates
+Checking DIMACS10/co2010
+Checking DIMACS10/fl2010
+Checking DIMACS10/me2010
+Checking DIMACS10/road_central
+Checking DIMACS10/wv2010
+Checking DRIVCAV/cavity16 rhs0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:490: RuntimeWarning: invalid value encountered in vecdot
+  alpha = rho / xp.vecdot(p, Ap)
+Checking FIDAP/ex1
+Checking FIDAP/ex7
+Checking GAP/GAP-web
+Checking GHS_indef/darcy003
+Checking GHS_psdef/bmw7st_1
+Checking Garon/garon1
+Checking Grund/b1_ss rhs0
+Checking Gset/G19
+Checking Gset/G48
+Checking HB/494_bus
+Checking HB/bcsstk12
+Checking HB/bcsstm11
+Checking HB/can_256
+Checking HB/dwt_492
+Checking HB/gent113
+Checking HB/lns_3937
+Checking HB/nnc666
+Checking HB/shl_200
+Checking HB/young3c
+Checking Hollinger/g7jac060sc
+Checking Hollinger/mark3jac060sc
+Checking JGD_BIBD/bibd_16_8
+Checking JGD_Franz/Franz4
+Checking JGD_GL7d/GL7d18
+Checking JGD_Homology/ch7-6-b1
+Checking JGD_Homology/lutz30-23-b6
+Checking JGD_Homology/n3c4-b3
+Checking JGD_Homology/n4c6-b10
+Checking JGD_Margulies/cat_ears_3_4
+Checking JGD_Relat/relat7b
+Checking Janna/Cube_Coup_dt0
+Checking LAW/it-2004
+Checking LPnetlib/lp_e226
+Checking LPnetlib/lp_pds_20
+Checking LPnetlib/lp_ship04l
+Checking LPnetlib/lpi_gosh
+Checking MAWI/mawi_201512020000
+Checking ML_Graph/mnist_test_norm_10NN
+Checking MathWorks/Kuu
+Checking Meszaros/ch
+Checking Meszaros/fxm3_16
+Checking Meszaros/model5
+Checking Meszaros/pltexpa
+Checking Meszaros/seymourl
+Checking Mittelmann/nug08-3rd
+Checking Mycielski/mycielskian13
+Checking Nasa/nasa2146 rhs0
+Checking Nemeth/nemeth25
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: overflow encountered in divide
+  x = x + r / d
+LFAT5:   0%|          | 0/1190 [00:00<?, ?B/s]LFAT5: 16384B [00:00, 103649286.18B/s]        
+Checking Oberwolfach/LFAT5
+t3dl:   0%|          | 0/1964012 [00:00<?, ?B/s]t3dl:   9%|▉         | 180224/1964012 [00:00<00:01, 1430812.99B/s]t3dl:  33%|███▎      | 638976/1964012 [00:00<00:00, 3000961.74B/s]t3dl:  56%|█████▌    | 1097728/1964012 [00:00<00:00, 3547614.95B/s]t3dl:  83%|████████▎ | 1638400/1964012 [00:00<00:00, 4166954.58B/s]t3dl: 1966080B [00:00, 4010618.61B/s]                              
+Checking Oberwolfach/t3dl
+Checking Pajek/EAT_RS
+Checking Pajek/GD98_a
+Checking Pajek/dictionary28
+Checking PowerSystem/power197k
+Checking Qaplib/lp_nug06
+Checking Rajat/rajat23
+Checking Rommes/bips98_1450
+Checking SNAP/as-Skitter
+Checking SNAP/roadNet-CA
+Checking Sandia/ASIC_680k
+Checking Sandia/adder_dcop_31
+Checking Sandia/adder_dcop_63
+Checking Sandia/fpga_dcop_24 rhs0
+Checking Sandia/mult_dcop_02 rhs0
+Checking Sandia/oscil_dcop_31 rhs0
+Checking Schenk/nlpkkt240
+Checking Schenk_IBMNA/c-32 rhs0
+Checking Schenk_IBMNA/c-66b rhs0
+Checking Schmid/thermal2 rhs0
+Checking TAMU_SmartGridCenter/ACTIVSg2000
+Checking TSOPF/TSOPF_RS_b162_c4 rhs0
+Checking TSOPF/TSOPF_RS_b162_c4 rhs1
+Checking TSOPF/TSOPF_RS_b162_c4 rhs2
+Checking TSOPF/TSOPF_RS_b162_c4 rhs3
+Checking TSOPF/TSOPF_RS_b162_c4 rhs4
+Checking TSOPF/TSOPF_RS_b162_c4 rhs5
+Checking TSOPF/TSOPF_RS_b162_c4 rhs6
+Checking TSOPF/TSOPF_RS_b162_c4 rhs7
+Checking TSOPF/TSOPF_RS_b162_c4 rhs8
+Checking TSOPF/TSOPF_RS_b162_c4 rhs9
+Checking TSOPF/TSOPF_RS_b162_c4 rhs10
+Checking TSOPF/TSOPF_RS_b162_c4 rhs11
+Checking TSOPF/TSOPF_RS_b162_c4 rhs12
+Checking TSOPF/TSOPF_RS_b162_c4 rhs13
+Checking TSOPF/TSOPF_RS_b162_c4 rhs14
+Checking TSOPF/TSOPF_RS_b162_c4 rhs15
+Checking TSOPF/TSOPF_RS_b162_c4 rhs16
+Checking TSOPF/TSOPF_RS_b162_c4 rhs17
+Checking TSOPF/TSOPF_RS_b162_c4 rhs18
+Checking TSOPF/TSOPF_RS_b162_c4 rhs19
+Checking TSOPF/TSOPF_RS_b162_c4 rhs20
+Checking TSOPF/TSOPF_RS_b162_c4 rhs21
+Checking TSOPF/TSOPF_RS_b162_c4 rhs22
+Checking TSOPF/TSOPF_RS_b162_c4 rhs23
+Checking TSOPF/TSOPF_RS_b162_c4 rhs24
+Checking TSOPF/TSOPF_RS_b162_c4 rhs25
+Checking TSOPF/TSOPF_RS_b162_c4 rhs26
+Checking TSOPF/TSOPF_RS_b162_c4 rhs27
+Checking TSOPF/TSOPF_RS_b162_c4 rhs28
+Checking TSOPF/TSOPF_RS_b162_c4 rhs29
+Checking TSOPF/TSOPF_RS_b162_c4 rhs30
+Checking TSOPF/TSOPF_RS_b162_c4 rhs31
+Checking TSOPF/TSOPF_RS_b162_c4 rhs32
+Checking TSOPF/TSOPF_RS_b162_c4 rhs33
+Checking TSOPF/TSOPF_RS_b162_c4 rhs34
+Checking TSOPF/TSOPF_RS_b162_c4 rhs35
+Checking TSOPF/TSOPF_RS_b162_c4 rhs36
+Checking TSOPF/TSOPF_RS_b162_c4 rhs37
+Checking TSOPF/TSOPF_RS_b162_c4 rhs38
+Checking TSOPF/TSOPF_RS_b162_c4 rhs39
+Checking TSOPF/TSOPF_RS_b162_c4 rhs40
+Checking TSOPF/TSOPF_RS_b162_c4 rhs41
+Checking TSOPF/TSOPF_RS_b162_c4 rhs42
+Checking TSOPF/TSOPF_RS_b162_c4 rhs43
+Checking TSOPF/TSOPF_RS_b162_c4 rhs44
+Checking TSOPF/TSOPF_RS_b162_c4 rhs45
+Checking TSOPF/TSOPF_RS_b162_c4 rhs46
+Checking TSOPF/TSOPF_RS_b162_c4 rhs47
+Checking TSOPF/TSOPF_RS_b162_c4 rhs48
+Checking VDOL/freeFlyingRobot_13 rhs0
+Checking VDOL/lowThrust_13 rhs0
+Checking VDOL/spaceStation_3 rhs0
+Checking VanVelzen/Zd_Jac3_db rhs0
+Checking Zhao/Zhao2
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: overflow encountered in add
+  x = x + r / d
+---------------------------------------
+Begin Slurm Epilog: Sep-03-2026 15:01:24
+Job ID:        12790533
+Array Job ID:  12790465_2
+User ID:       wahrens6
+Account:       gts-wahrens6
+Job name:      saps-scrape-matrices
+Resources:     cpu=16,mem=256G,node=1
+Rsrc Used:     cput=11:43:44,vmem=0,walltime=00:43:59,mem=44737572K,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-01-004-27-2
+---------------------------------------

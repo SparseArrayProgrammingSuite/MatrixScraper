@@ -74,3 +74,85 @@ Checking JGD_Homology/n4c6-b5
 Checking JGD_Margulies/flower_8_1
 Checking JGD_SL6/D_9
 Checking Janna/ML_Geer
+Checking LPnetlib/lp_afiro
+Checking LPnetlib/lp_gfrd_pnc
+Checking LPnetlib/lp_qap15
+Checking LPnetlib/lp_standgub
+Checking LPnetlib/lpi_pang
+Checking ML_Graph/JapaneseVowelsSmall_10NN
+Checking Mallya/lhr01 rhs0
+Checking MaxPlanck/shallow_water1
+Checking Meszaros/dbic1
+Checking Meszaros/ge
+Checking Meszaros/nemspmm1
+Checking Meszaros/rlfdual
+Checking Meszaros/stoch_aircraft
+Checking Mittelmann/rail2586
+Checking Mycielski/mycielskian3
+Checking Nemeth/nemeth02
+Checking Newman/dolphins
+Checking Oberwolfach/flowmeter0
+Checking PARSEC/Ga3As3H12
+Checking Pajek/Erdos991
+Checking Pajek/Journals
+Checking Pereyra/landmark
+Checking Puri/ABACUS_shell_ld rhs0
+Checking Rajat/Raj1
+Checking Raju/laminar_duct3D rhs0
+Checking Rommes/ww_vref_6405
+Checking SNAP/cit-Patents
+Checking SNAP/soc-sign-Slashdot090216
+Checking Sandia/adder_dcop_08
+Checking Sandia/adder_dcop_40
+Checking Sandia/fpga_dcop_01 rhs0
+Checking Sandia/fpga_dcop_33 rhs0
+Checking Sandia/oscil_dcop_08 rhs0
+Checking Sandia/oscil_dcop_40 rhs0
+Checking Schenk_AFE/af_shell10
+Checking Schenk_IBMNA/c-41 rhs0
+Checking Schenk_IBMSDS/3D_51448_3D rhs0
+Checking Shyy/shyy41
+Checking TKK/t2d_q4 rhs0
+Checking TSOPF/TSOPF_RS_b39_c7 rhs0
+Checking TSOPF/TSOPF_RS_b39_c7 rhs1
+Checking TSOPF/TSOPF_RS_b39_c7 rhs2
+Checking TSOPF/TSOPF_RS_b39_c7 rhs3
+Checking TSOPF/TSOPF_RS_b39_c7 rhs4
+Checking TSOPF/TSOPF_RS_b39_c7 rhs5
+Checking TSOPF/TSOPF_RS_b39_c7 rhs6
+Checking TSOPF/TSOPF_RS_b39_c7 rhs7
+Checking TSOPF/TSOPF_RS_b39_c7 rhs8
+Checking TSOPF/TSOPF_RS_b39_c7 rhs9
+Checking TSOPF/TSOPF_RS_b39_c7 rhs10
+Checking TSOPF/TSOPF_RS_b39_c7 rhs11
+Checking TSOPF/TSOPF_RS_b39_c7 rhs12
+Checking TSOPF/TSOPF_RS_b39_c7 rhs13
+Checking TSOPF/TSOPF_RS_b39_c7 rhs14
+Checking TSOPF/TSOPF_RS_b39_c7 rhs15
+Checking TSOPF/TSOPF_RS_b39_c7 rhs16
+Checking TSOPF/TSOPF_RS_b39_c7 rhs17
+Checking TSOPF/TSOPF_RS_b39_c7 rhs18
+Checking VDOL/freeFlyingRobot_7 rhs0
+Checking VDOL/orbitRaising_1 rhs0
+Checking VDOL/tumorAntiAngiogenesis_3 rhs0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:376: RuntimeWarning: divide by zero encountered in scalar divide
+  alpha = rr / xp.vecdot(p, Ap)[()]
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:377: RuntimeWarning: invalid value encountered in multiply
+  x = x + alpha * p
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/cg.py:378: RuntimeWarning: invalid value encountered in multiply
+  r = r - alpha * Ap
+Checking Wang/swang2
+Checking vanHeukelum/cage10
+---------------------------------------
+Begin Slurm Epilog: Sep-03-2026 14:34:04
+Job ID:        12790766
+Array Job ID:  12790465_11
+User ID:       wahrens6
+Account:       gts-wahrens6
+Job name:      saps-scrape-matrices
+Resources:     cpu=16,mem=256G,node=1
+Rsrc Used:     cput=04:17:20,vmem=0,walltime=00:16:05,mem=8352616K,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-03-003-31-2
+---------------------------------------

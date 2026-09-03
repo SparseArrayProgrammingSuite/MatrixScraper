@@ -24,3 +24,206 @@ Checking Bodendiek/CurlCurl_3
   return xp.sqrt(xp.sum(xp.multiply(v, v)))
 /storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
   sqnorm = x.dot(x)
+Checking Boeing/pct20stif
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: invalid value encountered in add
+  x = x + r / d
+Checking CPM/cz20468
+Checking Cunningham/qa8fm
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: overflow encountered in divide
+  x = x + r / d
+Checking DIMACS10/coPapersCiteseer
+Checking DIMACS10/great-britain_osm
+Checking DIMACS10/mo2010
+Checking DIMACS10/sd2010
+Checking DNVS/fcondp2
+Checking DRIVCAV/cavity19 rhs0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:490: RuntimeWarning: invalid value encountered in vecdot
+  alpha = rho / xp.vecdot(p, Ap)
+Checking FIDAP/ex11
+Checking FlowIPM22/Spielman_k100
+Checking GHS_indef/a5esindl
+Checking GHS_indef/dtoc
+Checking GHS_psdef/copter2
+Checking GenBank/kmer_P1a
+Checking Grund/bayer01
+Checking Gset/G21
+Checking Gset/G50
+Checking HB/abb313
+Checking HB/bcsstk15
+Checking HB/bcsstm19
+Checking HB/can_445
+Checking HB/dwt_59
+Checking HB/gre_115
+Checking HB/lnsp_131
+Checking HB/nos3
+Checking HB/steam1
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:490: RuntimeWarning: divide by zero encountered in scalar divide
+  alpha = rho / xp.vecdot(p, Ap)
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:504: RuntimeWarning: invalid value encountered in add
+  p = z + beta * p
+Checking HVDC/hvdc1 rhs0
+Checking Hollinger/g7jac100
+Checking Hollinger/mark3jac100
+Checking JGD_BIBD/bibd_17_4b
+Checking JGD_Franz/Franz7
+Checking JGD_GL7d/GL7d21
+Checking JGD_Homology/ch7-6-b4
+Checking JGD_Homology/mk10-b2
+Checking JGD_Homology/n3c5-b2
+Checking JGD_Homology/n4c6-b13
+Checking JGD_Margulies/flower_4_1
+Checking JGD_SL6/D_10
+Checking Janna/Fault_639
+Checking LAW/uk-2002
+Checking LPnetlib/lp_finnis
+Checking LPnetlib/lp_pilot4
+Checking LPnetlib/lp_ship08s
+Checking LPnetlib/lpi_itest2
+Checking MAWI/mawi_201512020330
+Checking ML_Graph/plantstexture_10NN
+Checking MathWorks/Pd_rhs
+Checking Meszaros/complex
+Checking Meszaros/gams10a
+Checking Meszaros/model8
+Checking Meszaros/progas
+Checking Meszaros/south31
+Checking Mittelmann/pds-40
+Checking Mycielski/mycielskian16
+Checking Nasa/nasasrb rhs0
+Checking Newman/as-22july06
+Checking Oberwolfach/boneS01
+Checking Oberwolfach/windscreen
+Checking Pajek/EVA
+Checking Pajek/GD99_b
+Checking Pajek/football
+Checking Priebel/145bit
+Checking Qaplib/lp_nug12
+Checking Rajat/rajat26
+Checking Rommes/juba40k
+Checking SNAP/ca-CondMat
+Checking SNAP/soc-Epinions1
+Checking Sandia/adder_dcop_02
+Checking Sandia/adder_dcop_34
+Checking Sandia/adder_dcop_66
+Checking Sandia/fpga_dcop_27 rhs0
+Checking Sandia/oscil_dcop_02 rhs0
+Checking Sandia/oscil_dcop_34 rhs0
+Checking Schenk_AFE/af_1_k101 rhs0
+Checking Schenk_IBMNA/c-35 rhs0
+Checking Schenk_IBMNA/c-73 rhs0
+Checking Schulthess/N_reactome
+Checking TKK/cyl6 rhs0
+Checking TKK/cyl6 rhs1
+Checking TKK/cyl6 rhs2
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs0
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs1
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs2
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs3
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs4
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs5
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs6
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs7
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs8
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs9
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs10
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs11
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs12
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs13
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs14
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs15
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs16
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs17
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs18
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs19
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs20
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs21
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs22
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs23
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs24
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs25
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs26
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs27
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs28
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs29
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs30
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs31
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs32
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs33
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs34
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs35
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs36
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs37
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs38
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs39
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs40
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs41
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs42
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs43
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs44
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs45
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs46
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs47
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs48
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs49
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs50
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs51
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs52
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs53
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs54
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs55
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs56
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs57
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs58
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs59
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs60
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs61
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs62
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs63
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs64
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs65
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs66
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs67
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs68
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs69
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs70
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs71
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs72
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs73
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs74
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs75
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs76
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs77
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs78
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs79
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs80
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs81
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs82
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs83
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs84
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs85
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs86
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs87
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs88
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs89
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs90
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs91
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs92
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs93
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs94
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs95
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs96
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs97
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs98
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs99
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs100
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs101
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs102
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs103
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs104
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs105
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs106
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs107
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs108
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs109
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs110
+Checking TSOPF/TSOPF_RS_b2383_c1 rhs111

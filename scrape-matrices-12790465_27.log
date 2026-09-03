@@ -1,0 +1,55 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-03-2026 14:27:17
+Job ID:    12791123
+User ID:   wahrens6
+Account:   gts-wahrens6
+Job name:  saps-scrape-matrices
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+Selected 90 of 2904 SuiteSparse search results for chunk 28/32.
+Checking AG-Monien/stufe-10
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: divide by zero encountered in divide
+  output = r / M
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: invalid value encountered in divide
+  output = r / M
+Checking Andrianov/pf2177
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:336: RuntimeWarning: overflow encountered in multiply
+  return xp.sqrt(xp.sum(xp.multiply(v, v)))
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: invalid value encountered in add
+  x = x + r / d
+Checking Bai/dw256B
+Checking Bai/rbsb480
+Checking BenElechi/BenElechi1 rhs0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
+  sqnorm = x.dot(x)
+Checking BenElechi/BenElechi1 rhs1
+Checking BenElechi/BenElechi1 rhs2
+Checking BenElechi/BenElechi1 rhs3
+Checking BenElechi/BenElechi1 rhs4
+Checking BenElechi/BenElechi1 rhs5
+Checking BenElechi/BenElechi1 rhs6
+Checking BenElechi/BenElechi1 rhs7
+Checking BenElechi/BenElechi1 rhs8
+Checking BenElechi/BenElechi1 rhs9
+Checking BenElechi/BenElechi1 rhs10
+Checking BenElechi/BenElechi1 rhs11
+Checking BenElechi/BenElechi1 rhs12
+Checking BenElechi/BenElechi1 rhs13
+Checking BenElechi/BenElechi1 rhs14
+Checking BenElechi/BenElechi1 rhs15
+Checking BenElechi/BenElechi1 rhs16
+Checking BenElechi/BenElechi1 rhs17
+Checking BenElechi/BenElechi1 rhs18
+Checking BenElechi/BenElechi1 rhs19
+Checking BenElechi/BenElechi1 rhs20
+Checking BenElechi/BenElechi1 rhs21
+Checking BenElechi/BenElechi1 rhs22
+Checking BenElechi/BenElechi1 rhs23
+Checking BenElechi/BenElechi1 rhs24
+Checking BenElechi/BenElechi1 rhs25
+Checking BenElechi/BenElechi1 rhs26
+Checking BenElechi/BenElechi1 rhs27
+Checking BenElechi/BenElechi1 rhs28

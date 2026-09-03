@@ -75,3 +75,328 @@ Checking JGD_Homology/n4c6-b11
 Checking JGD_Margulies/cat_ears_4_1
 Checking JGD_Relat/relat8
 Checking Janna/Cube_Coup_dt6
+Checking LAW/ljournal-2008
+Checking LPnetlib/lp_etamacro
+Checking LPnetlib/lp_perold
+Checking LPnetlib/lp_ship04s
+Checking LPnetlib/lpi_gran
+Checking MAWI/mawi_201512020030
+Checking ML_Graph/optdigits_10NN
+Checking MathWorks/Muu
+Checking Meszaros/co5
+Checking Meszaros/fxm3_6
+Checking Meszaros/model6
+Checking Meszaros/primagaz
+Checking Meszaros/slptsk
+Checking Mittelmann/pds-100
+Checking Mycielski/mycielskian14
+Checking Nasa/nasa2910
+Checking Nemeth/nemeth26
+Checking Oberwolfach/LFAT5000
+Checking Oberwolfach/t3dl_a
+Checking Pajek/EAT_SR
+Checking Pajek/GD98_b
+Checking Pajek/divorce
+Checking Precima/analytics
+Checking Qaplib/lp_nug07
+Checking Rajat/rajat24
+Checking Rommes/bips98_606
+Checking SNAP/as-caida
+Checking SNAP/roadNet-PA
+Checking Sandia/ASIC_680ks
+Checking Sandia/adder_dcop_32
+Checking Sandia/adder_dcop_64
+Checking Sandia/fpga_dcop_25 rhs0
+Checking Sandia/mult_dcop_03 rhs0
+Checking Sandia/oscil_dcop_32 rhs0
+Checking Schenk/nlpkkt80
+Checking Schenk_IBMNA/c-33 rhs0
+Checking Schenk_IBMNA/c-67 rhs0
+Checking Schulthess/N_biocarta
+Checking TAMU_SmartGridCenter/ACTIVSg70K
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs0
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs1
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs2
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs3
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs4
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs5
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs6
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs7
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs8
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs9
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs10
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs11
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs12
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs13
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs14
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs15
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs16
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs17
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs18
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs19
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs20
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs21
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs22
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs23
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs24
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs25
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs26
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs27
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs28
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs29
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs30
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs31
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs32
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs33
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs34
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs35
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs36
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs37
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs38
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs39
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs40
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs41
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs42
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs43
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs44
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs45
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs46
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs47
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs48
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs49
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs50
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs51
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs52
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs53
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs54
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs55
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs56
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs57
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs58
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs59
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs60
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs61
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs62
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs63
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs64
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs65
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs66
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs67
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs68
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs69
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs70
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs71
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs72
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs73
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs74
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs75
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs76
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs77
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs78
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs79
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs80
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs81
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs82
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs83
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs84
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs85
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs86
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs87
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs88
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs89
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs90
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs91
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs92
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs93
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs94
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs95
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs96
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs97
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs98
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs99
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs100
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs101
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs102
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs103
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs104
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs105
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs106
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs107
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs108
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs109
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs110
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs111
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs112
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs113
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs114
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs115
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs116
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs117
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs118
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs119
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs120
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs121
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs122
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs123
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs124
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs125
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs126
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs127
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs128
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs129
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs130
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs131
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs132
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs133
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs134
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs135
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs136
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs137
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs138
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs139
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs140
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs141
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs142
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs143
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs144
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs145
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs146
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs147
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs148
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs149
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs150
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs151
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs152
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs153
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs154
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs155
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs156
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs157
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs158
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs159
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs160
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs161
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs162
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs163
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs164
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs165
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs166
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs167
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs168
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs169
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs170
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs171
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs172
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs173
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs174
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs175
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs176
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs177
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs178
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs179
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs180
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs181
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs182
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs183
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs184
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs185
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs186
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs187
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs188
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs189
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs190
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs191
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs192
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs193
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs194
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs195
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs196
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs197
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs198
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs199
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs200
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs201
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs202
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs203
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs204
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs205
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs206
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs207
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs208
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs209
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs210
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs211
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs212
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs213
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs214
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs215
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs216
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs217
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs218
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs219
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs220
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs221
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs222
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs223
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs224
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs225
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs226
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs227
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs228
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs229
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs230
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs231
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs232
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs233
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs234
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs235
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs236
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs237
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs238
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs239
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs240
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs241
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs242
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs243
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs244
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs245
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs246
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs247
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs248
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs249
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs250
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs251
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs252
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs253
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs254
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs255
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs256
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs257
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs258
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs259
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs260
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs261
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs262
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs263
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs264
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs265
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs266
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs267
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs268
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs269
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs270
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs271
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs272
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs273
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs274
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs275
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs276
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs277
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs278
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs279
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs280
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs281
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs282
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs283
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs284
+Checking TSOPF/TSOPF_RS_b2052_c1 rhs285

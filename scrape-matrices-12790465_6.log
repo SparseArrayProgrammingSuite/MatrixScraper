@@ -26,3 +26,242 @@ Checking Bai/rdb800l
 Checking Bodendiek/CurlCurl_4
 /storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: invalid value encountered in add
   x = x + r / d
+Checking Boeing/pwtk
+Checking CPM/cz2548
+Checking Cylshell/s1rmq4m1
+Checking DIMACS10/coPapersDBLP
+Checking DIMACS10/hi2010
+Checking DIMACS10/ms2010
+Checking DIMACS10/smallworld
+Checking DNVS/fullb
+Checking DRIVCAV/cavity20 rhs0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:490: RuntimeWarning: invalid value encountered in vecdot
+  alpha = rho / xp.vecdot(p, Ap)
+Checking FIDAP/ex12
+Checking FlowIPM22/Spielman_k200
+Checking GHS_indef/aug2d
+Checking GHS_indef/exdata_1
+Checking GHS_psdef/crankseg_1
+Checking GenBank/kmer_U1a
+Checking Grund/bayer02 rhs0
+Checking Gset/G22
+Checking Gset/G51
+Checking HB/arc130
+Checking HB/bcsstk16
+Checking HB/bcsstm20
+Checking HB/can_61
+Checking HB/dwt_592
+Checking HB/gre_185
+Checking HB/lnsp_511
+Checking HB/nos4
+Checking HB/steam2
+Checking HVDC/hvdc2 rhs0
+Checking Hollinger/g7jac100sc
+Checking Hollinger/mark3jac100sc
+Checking JGD_BIBD/bibd_17_8
+Checking JGD_Franz/Franz8
+Checking JGD_GL7d/GL7d22
+Checking JGD_Homology/ch7-6-b5
+Checking JGD_Homology/mk10-b3
+Checking JGD_Homology/n3c5-b3
+Checking JGD_Homology/n4c6-b14
+Checking JGD_Margulies/flower_4_4
+Checking JGD_SL6/D_11
+Checking Janna/Flan_1565
+Checking LAW/uk-2005
+Checking LPnetlib/lp_fit1d
+Checking LPnetlib/lp_pilot87
+Checking LPnetlib/lp_ship12l
+Checking LPnetlib/lpi_itest6
+fp:   0%|          | 0/5336648 [00:00<?, ?B/s]fp:   6%|▌         | 294912/5336648 [00:00<00:01, 2932274.28B/s]fp:  24%|██▍       | 1294336/5336648 [00:00<00:00, 7073415.06B/s]fp:  48%|████▊     | 2572288/5336648 [00:00<00:00, 9654506.63B/s]fp:  70%|██████▉   | 3719168/5336648 [00:00<00:00, 10332232.49B/s]fp:  99%|█████████▊| 5259264/5336648 [00:00<00:00, 12145642.32B/s]fp: 5341184B [00:00, 10528537.98B/s]                              
+Checking MKS/fp
+Checking ML_Graph/semeion_10NN
+Checking MathWorks/QRpivot
+Checking Meszaros/cq5
+Checking Meszaros/gams10am
+Checking Meszaros/model9
+Checking Meszaros/qiulp
+Checking Meszaros/stat96v1
+Checking Mittelmann/pds-50
+Checking Mycielski/mycielskian17
+Checking Nasa/pwt
+Checking Newman/astro-ph
+Checking Oberwolfach/boneS10
+Checking Okunbor/aft01
+Checking Pajek/Erdos02
+Checking Pajek/GD99_c
+Checking Pajek/geom
+Checking Priebel/162bit
+Checking Qaplib/lp_nug15
+Checking Rajat/rajat27
+Checking Rommes/mimo28x28_system
+Checking SNAP/ca-GrQc
+Checking SNAP/soc-LiveJournal1
+Checking Sandia/adder_dcop_03
+Checking Sandia/adder_dcop_35
+Checking Sandia/adder_dcop_67
+Checking Sandia/fpga_dcop_28 rhs0
+Checking Sandia/oscil_dcop_03 rhs0
+Checking Sandia/oscil_dcop_35 rhs0
+Checking Schenk_AFE/af_2_k101 rhs0
+Checking Schenk_IBMNA/c-36 rhs0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: overflow encountered in divide
+  x = x + r / d
+Checking Schenk_IBMNA/c-73b rhs0
+Checking Shen/e40r0100
+Checking TKK/engine rhs0
+Checking TSOPF/TSOPF_RS_b300_c1 rhs0
+Checking TSOPF/TSOPF_RS_b300_c1 rhs1
+Checking TSOPF/TSOPF_RS_b300_c1 rhs2
+Checking TSOPF/TSOPF_RS_b300_c1 rhs3
+Checking TSOPF/TSOPF_RS_b300_c1 rhs4
+Checking TSOPF/TSOPF_RS_b300_c1 rhs5
+Checking TSOPF/TSOPF_RS_b300_c1 rhs6
+Checking TSOPF/TSOPF_RS_b300_c1 rhs7
+Checking TSOPF/TSOPF_RS_b300_c1 rhs8
+Checking TSOPF/TSOPF_RS_b300_c1 rhs9
+Checking TSOPF/TSOPF_RS_b300_c1 rhs10
+Checking TSOPF/TSOPF_RS_b300_c1 rhs11
+Checking TSOPF/TSOPF_RS_b300_c1 rhs12
+Checking TSOPF/TSOPF_RS_b300_c1 rhs13
+Checking TSOPF/TSOPF_RS_b300_c1 rhs14
+Checking TSOPF/TSOPF_RS_b300_c1 rhs15
+Checking TSOPF/TSOPF_RS_b300_c1 rhs16
+Checking TSOPF/TSOPF_RS_b300_c1 rhs17
+Checking TSOPF/TSOPF_RS_b300_c1 rhs18
+Checking TSOPF/TSOPF_RS_b300_c1 rhs19
+Checking TSOPF/TSOPF_RS_b300_c1 rhs20
+Checking TSOPF/TSOPF_RS_b300_c1 rhs21
+Checking TSOPF/TSOPF_RS_b300_c1 rhs22
+Checking TSOPF/TSOPF_RS_b300_c1 rhs23
+Checking TSOPF/TSOPF_RS_b300_c1 rhs24
+Checking TSOPF/TSOPF_RS_b300_c1 rhs25
+Checking TSOPF/TSOPF_RS_b300_c1 rhs26
+Checking TSOPF/TSOPF_RS_b300_c1 rhs27
+Checking TSOPF/TSOPF_RS_b300_c1 rhs28
+Checking TSOPF/TSOPF_RS_b300_c1 rhs29
+Checking TSOPF/TSOPF_RS_b300_c1 rhs30
+Checking TSOPF/TSOPF_RS_b300_c1 rhs31
+Checking TSOPF/TSOPF_RS_b300_c1 rhs32
+Checking TSOPF/TSOPF_RS_b300_c1 rhs33
+Checking TSOPF/TSOPF_RS_b300_c1 rhs34
+Checking TSOPF/TSOPF_RS_b300_c1 rhs35
+Checking TSOPF/TSOPF_RS_b300_c1 rhs36
+Checking TSOPF/TSOPF_RS_b300_c1 rhs37
+Checking TSOPF/TSOPF_RS_b300_c1 rhs38
+Checking TSOPF/TSOPF_RS_b300_c1 rhs39
+Checking TSOPF/TSOPF_RS_b300_c1 rhs40
+Checking TSOPF/TSOPF_RS_b300_c1 rhs41
+Checking TSOPF/TSOPF_RS_b300_c1 rhs42
+Checking TSOPF/TSOPF_RS_b300_c1 rhs43
+Checking TSOPF/TSOPF_RS_b300_c1 rhs44
+Checking TSOPF/TSOPF_RS_b300_c1 rhs45
+Checking TSOPF/TSOPF_RS_b300_c1 rhs46
+Checking TSOPF/TSOPF_RS_b300_c1 rhs47
+Checking TSOPF/TSOPF_RS_b300_c1 rhs48
+Checking TSOPF/TSOPF_RS_b300_c1 rhs49
+Checking TSOPF/TSOPF_RS_b300_c1 rhs50
+Checking TSOPF/TSOPF_RS_b300_c1 rhs51
+Checking TSOPF/TSOPF_RS_b300_c1 rhs52
+Checking TSOPF/TSOPF_RS_b300_c1 rhs53
+Checking TSOPF/TSOPF_RS_b300_c1 rhs54
+Checking TSOPF/TSOPF_RS_b300_c1 rhs55
+Checking TSOPF/TSOPF_RS_b300_c1 rhs56
+Checking TSOPF/TSOPF_RS_b300_c1 rhs57
+Checking TSOPF/TSOPF_RS_b300_c1 rhs58
+Checking TSOPF/TSOPF_RS_b300_c1 rhs59
+Checking TSOPF/TSOPF_RS_b300_c1 rhs60
+Checking TSOPF/TSOPF_RS_b300_c1 rhs61
+Checking TSOPF/TSOPF_RS_b300_c1 rhs62
+Checking TSOPF/TSOPF_RS_b300_c1 rhs63
+Checking TSOPF/TSOPF_RS_b300_c1 rhs64
+Checking TSOPF/TSOPF_RS_b300_c1 rhs65
+Checking TSOPF/TSOPF_RS_b300_c1 rhs66
+Checking TSOPF/TSOPF_RS_b300_c1 rhs67
+Checking TSOPF/TSOPF_RS_b300_c1 rhs68
+Checking TSOPF/TSOPF_RS_b300_c1 rhs69
+Checking TSOPF/TSOPF_RS_b300_c1 rhs70
+Checking TSOPF/TSOPF_RS_b300_c1 rhs71
+Checking TSOPF/TSOPF_RS_b300_c1 rhs72
+Checking TSOPF/TSOPF_RS_b300_c1 rhs73
+Checking TSOPF/TSOPF_RS_b300_c1 rhs74
+Checking TSOPF/TSOPF_RS_b300_c1 rhs75
+Checking TSOPF/TSOPF_RS_b300_c1 rhs76
+Checking TSOPF/TSOPF_RS_b300_c1 rhs77
+Checking TSOPF/TSOPF_RS_b300_c1 rhs78
+Checking TSOPF/TSOPF_RS_b300_c1 rhs79
+Checking TSOPF/TSOPF_RS_b300_c1 rhs80
+Checking TSOPF/TSOPF_RS_b300_c1 rhs81
+Checking TSOPF/TSOPF_RS_b300_c1 rhs82
+Checking TSOPF/TSOPF_RS_b300_c1 rhs83
+Checking TSOPF/TSOPF_RS_b300_c1 rhs84
+Checking TSOPF/TSOPF_RS_b300_c1 rhs85
+Checking TSOPF/TSOPF_RS_b300_c1 rhs86
+Checking TSOPF/TSOPF_RS_b300_c1 rhs87
+Checking TSOPF/TSOPF_RS_b300_c1 rhs88
+Checking TSOPF/TSOPF_RS_b300_c1 rhs89
+Checking TSOPF/TSOPF_RS_b300_c1 rhs90
+Checking TSOPF/TSOPF_RS_b300_c1 rhs91
+Checking TSOPF/TSOPF_RS_b300_c1 rhs92
+Checking TSOPF/TSOPF_RS_b300_c1 rhs93
+Checking TSOPF/TSOPF_RS_b300_c1 rhs94
+Checking TSOPF/TSOPF_RS_b300_c1 rhs95
+Checking TSOPF/TSOPF_RS_b300_c1 rhs96
+Checking TSOPF/TSOPF_RS_b300_c1 rhs97
+Checking TSOPF/TSOPF_RS_b300_c1 rhs98
+Checking TSOPF/TSOPF_RS_b300_c1 rhs99
+Checking TSOPF/TSOPF_RS_b300_c1 rhs100
+Checking TSOPF/TSOPF_RS_b300_c1 rhs101
+Checking TSOPF/TSOPF_RS_b300_c1 rhs102
+Checking TSOPF/TSOPF_RS_b300_c1 rhs103
+Checking TSOPF/TSOPF_RS_b300_c1 rhs104
+Checking TSOPF/TSOPF_RS_b300_c1 rhs105
+Checking TSOPF/TSOPF_RS_b300_c1 rhs106
+Checking TSOPF/TSOPF_RS_b300_c1 rhs107
+Checking TSOPF/TSOPF_RS_b300_c1 rhs108
+Checking TSOPF/TSOPF_RS_b300_c1 rhs109
+Checking TSOPF/TSOPF_RS_b300_c1 rhs110
+Checking TSOPF/TSOPF_RS_b300_c1 rhs111
+Checking TSOPF/TSOPF_RS_b300_c1 rhs112
+Checking TSOPF/TSOPF_RS_b300_c1 rhs113
+Checking TSOPF/TSOPF_RS_b300_c1 rhs114
+Checking TSOPF/TSOPF_RS_b300_c1 rhs115
+Checking TSOPF/TSOPF_RS_b300_c1 rhs116
+Checking TSOPF/TSOPF_RS_b300_c1 rhs117
+Checking TSOPF/TSOPF_RS_b300_c1 rhs118
+Checking TSOPF/TSOPF_RS_b300_c1 rhs119
+Checking TSOPF/TSOPF_RS_b300_c1 rhs120
+Checking TSOPF/TSOPF_RS_b300_c1 rhs121
+Checking TSOPF/TSOPF_RS_b300_c1 rhs122
+Checking TSOPF/TSOPF_RS_b300_c1 rhs123
+Checking TSOPF/TSOPF_RS_b300_c1 rhs124
+Checking TSOPF/TSOPF_RS_b300_c1 rhs125
+Checking TSOPF/TSOPF_RS_b300_c1 rhs126
+Checking TSOPF/TSOPF_RS_b300_c1 rhs127
+Checking TSOPF/TSOPF_RS_b300_c1 rhs128
+Checking TSOPF/TSOPF_RS_b300_c1 rhs129
+Checking TSOPF/TSOPF_RS_b300_c1 rhs130
+Checking TSOPF/TSOPF_RS_b300_c1 rhs131
+Checking TSOPF/TSOPF_RS_b300_c1 rhs132
+Checking TSOPF/TSOPF_RS_b300_c1 rhs133
+Checking TSOPF/TSOPF_RS_b300_c1 rhs134
+Checking TSOPF/TSOPF_RS_b300_c1 rhs135
+Checking TSOPF/TSOPF_RS_b300_c1 rhs136
+Checking VDOL/freeFlyingRobot_2 rhs0
+Checking VDOL/lowThrust_5 rhs0
+Checking VDOL/spaceStation_7 rhs0
+Checking VanVelzen/std1_Jac2_db rhs0
+Checking Zitney/hydr1c
+---------------------------------------
+Begin Slurm Epilog: Sep-03-2026 14:52:53
+Job ID:        12790761
+Array Job ID:  12790465_6
+User ID:       wahrens6
+Account:       gts-wahrens6
+Job name:      saps-scrape-matrices
+Resources:     cpu=16,mem=256G,node=1
+Rsrc Used:     cput=09:18:24,vmem=0,walltime=00:34:54,mem=8754448K,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-01-004-14-1
+---------------------------------------

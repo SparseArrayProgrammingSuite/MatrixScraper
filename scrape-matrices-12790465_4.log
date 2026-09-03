@@ -31,3 +31,100 @@ Checking Bodendiek/CurlCurl_2
 Checking Boeing/pcrystk03
 Checking CPM/cz148
 Checking Cunningham/qa8fk
+Checking DIMACS10/coAuthorsDBLP
+Checking DIMACS10/germany_osm
+Checking DIMACS10/mn2010
+Checking DIMACS10/sc2010
+Checking DNVS/crplat2
+Checking DRIVCAV/cavity18 rhs0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:490: RuntimeWarning: invalid value encountered in vecdot
+  alpha = rho / xp.vecdot(p, Ap)
+Checking FIDAP/ex10hs
+Checking FIDAP/ex9
+Checking GHS_indef/a2nnsnsl
+Checking GHS_indef/dixmaanl
+Checking GHS_psdef/copter1
+Checking GenBank/kmer_A2a
+Checking Grund/b_dyn rhs0
+Checking Gset/G20
+Checking Gset/G5
+Checking HB/685_bus
+Checking HB/bcsstk14
+Checking HB/bcsstm13
+Checking HB/can_292
+Checking HB/dwt_512
+Checking HB/gre_1107
+Checking HB/lnsp3937
+Checking HB/nos2
+Checking HB/sstmodel
+Checking HB/zenios
+Checking Hollinger/g7jac080sc
+Checking Hollinger/mark3jac080sc
+Checking JGD_BIBD/bibd_17_4
+Checking JGD_Franz/Franz6
+Checking JGD_GL7d/GL7d20
+Checking JGD_Homology/ch7-6-b3
+Checking JGD_Homology/mk10-b1
+Checking JGD_Homology/n3c5-b1
+Checking JGD_Homology/n4c6-b12
+Checking JGD_Margulies/cat_ears_4_4
+Checking JGD_Relat/relat9
+Checking Janna/Emilia_923
+Checking LAW/sk-2005
+Checking LPnetlib/lp_fffff800
+Checking LPnetlib/lp_pilot
+Checking LPnetlib/lp_ship08l
+Checking LPnetlib/lpi_greenbea
+Checking MAWI/mawi_201512020130
+Checking ML_Graph/plantsmargin_12NN
+Checking MathWorks/Pd
+Checking Meszaros/co9
+Checking Meszaros/fxm4_6
+Checking Meszaros/model7
+Checking Meszaros/problem
+Checking Meszaros/small
+Checking Mittelmann/pds-30
+Checking Mycielski/mycielskian15
+Checking Nasa/nasa4704
+Checking Newman/adjnoun
+Checking Oberwolfach/bone010
+Checking Oberwolfach/t3dl_e
+Checking Pajek/EPA
+Checking Pajek/GD98_c
+Checking Pajek/foldoc
+Checking Priebel/130bit
+Checking Qaplib/lp_nug08
+Checking Rajat/rajat25
+Checking Rommes/descriptor_xingo6u
+Checking SNAP/ca-AstroPh
+Checking SNAP/roadNet-TX
+Checking Sandia/adder_dcop_01
+Checking Sandia/adder_dcop_33
+Checking Sandia/adder_dcop_65
+Checking Sandia/fpga_dcop_26 rhs0
+Checking Sandia/oscil_dcop_01 rhs0
+Checking Sandia/oscil_dcop_33 rhs0
+Checking Schenk_AFE/af_0_k101 rhs0
+Checking Schenk_IBMNA/c-34 rhs0
+Checking Schenk_IBMNA/c-67b rhs0
+Checking Schulthess/N_pid
+Checking TKK/cbuckle
+Checking TSOPF/TSOPF_RS_b2383
+Checking VDOL/freeFlyingRobot_15 rhs0
+Checking VDOL/lowThrust_3 rhs0
+Checking VDOL/spaceStation_5 rhs0
+Checking VanVelzen/Zd_Jac6_db rhs0
+Checking Zitney/extr1b
+---------------------------------------
+Begin Slurm Epilog: Sep-03-2026 14:36:13
+Job ID:        12790535
+Array Job ID:  12790465_4
+User ID:       wahrens6
+Account:       gts-wahrens6
+Job name:      saps-scrape-matrices
+Resources:     cpu=16,mem=256G,node=1
+Rsrc Used:     cput=05:00:48,vmem=0,walltime=00:18:48,mem=5208952K,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-02-003-12-2
+---------------------------------------

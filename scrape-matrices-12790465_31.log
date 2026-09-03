@@ -1,0 +1,133 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-03-2026 14:27:50
+Job ID:    12790465
+User ID:   wahrens6
+Account:   gts-wahrens6
+Job name:  saps-scrape-matrices
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+Selected 90 of 2904 SuiteSparse search results for chunk 32/32.
+Checking AG-Monien/whitaker3
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: divide by zero encountered in divide
+  output = r / M
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:528: RuntimeWarning: invalid value encountered in divide
+  output = r / M
+Checking Arenas/jazz
+Checking Bai/dwb512
+Checking Bai/rdb200l
+Checking Bindel/ted_A_unscaled
+Checking Boeing/msc23052
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:336: RuntimeWarning: overflow encountered in multiply
+  return xp.sqrt(xp.sum(xp.multiply(v, v)))
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/numpy/linalg/_linalg.py:2792: RuntimeWarning: overflow encountered in dot
+  sqnorm = x.dot(x)
+Checking CEMW/tmt_sym
+Checking Clark/tomographic1
+Checking DIMACS10/channel-500x100x100-b050
+Checking DIMACS10/fe_rotor
+Checking DIMACS10/m14b
+Checking DIMACS10/rgg_n_2_23_s0
+Checking DIMACS10/wi2010
+Checking DRIVCAV/cavity13 rhs0
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/preconditioned_cg.py:490: RuntimeWarning: invalid value encountered in vecdot
+  alpha = rho / xp.vecdot(p, Ap)
+Checking FEMLAB/sme3Db rhs0
+Checking FIDAP/ex40
+Checking GAP/GAP-road
+Checking GHS_indef/copter2
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: overflow encountered in divide
+  x = x + r / d
+Checking GHS_psdef/apache1
+Checking Gaertner/big
+Checking Graham/graham1
+Checking Gset/G16
+Checking Gset/G45
+Checking Gupta/gupta2
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: invalid value encountered in add
+  x = x + r / d
+Checking HB/bcsstk09
+Checking HB/bcsstm08
+Checking HB/can_187
+Checking HB/dwt_346
+Checking HB/gemat1
+Checking HB/jpwh_991
+Checking HB/mcfe
+Checking HB/sherman4 rhs0
+Checking HB/wm3
+Checking Hollinger/g7jac040sc
+Checking Hollinger/mark3jac040
+Checking JGD_BIBD/bibd_14_7
+Checking JGD_Franz/Franz11
+Checking JGD_GL7d/GL7d15
+Checking JGD_Homology/ch6-6-b3
+Checking JGD_Homology/cis-n4c6-b4
+Checking JGD_Homology/n2c6-b9
+Checking JGD_Homology/n4c5-b8
+Checking JGD_Margulies/cat_ears_2_1
+Checking JGD_Relat/relat5
+Checking JGD_Trefethen/Trefethen_700
+Checking LAW/hollywood-2009
+Checking LPnetlib/lp_degen2
+Checking LPnetlib/lp_pds_02
+Checking LPnetlib/lp_share1b
+Checking LPnetlib/lpi_ex73a
+Checking Luong/photogrammetry
+Checking ML_Graph/kmnist_norm_10NN
+Checking Martin/marine1 rhs0
+Checking Meszaros/car4
+Checking Meszaros/farm
+Checking Meszaros/model2
+Checking Meszaros/pf2177
+Checking Meszaros/sctap1-2b
+Checking Mittelmann/neos1
+Checking Mycielski/mycielskian10
+Checking Nasa/barth4
+Checking Nemeth/nemeth22
+Checking Norris/torso3
+/storage/home/hcoda1/7/wahrens6/.cache/pypoetry/virtualenvs/matrix-scraper-6ttVeZdD-py3.14/lib/python3.14/site-packages/saps/benchmarks/jacobi.py:354: RuntimeWarning: overflow encountered in add
+  x = x + r / d
+t3dh:   0%|          | 0/34242027 [00:00<?, ?B/s]t3dh:   1%|          | 245760/34242027 [00:00<00:15, 2222574.24B/s]t3dh:   2%|▏         | 671744/34242027 [00:00<00:10, 3165452.93B/s]t3dh:   3%|▎         | 1081344/34242027 [00:00<00:09, 3474519.11B/s]t3dh:   5%|▍         | 1589248/34242027 [00:00<00:08, 4066417.06B/s]t3dh:   6%|▌         | 2080768/34242027 [00:00<00:07, 4355882.87B/s]t3dh:   8%|▊         | 2719744/34242027 [00:00<00:06, 4840308.65B/s]t3dh:  10%|█         | 3457024/34242027 [00:00<00:05, 5465915.33B/s]t3dh:  12%|█▏        | 4128768/34242027 [00:00<00:05, 5823673.15B/s]t3dh:  14%|█▍        | 4915200/34242027 [00:00<00:04, 6437374.87B/s]t3dh:  17%|█▋        | 5701632/34242027 [00:01<00:04, 6842345.44B/s]t3dh:  19%|█▉        | 6504448/34242027 [00:01<00:03, 7193637.34B/s]t3dh:  21%|██▏       | 7307264/34242027 [00:01<00:03, 7430040.07B/s]t3dh:  24%|██▎       | 8110080/34242027 [00:01<00:03, 7608022.62B/s]t3dh:  26%|██▋       | 9011200/34242027 [00:01<00:03, 7973660.93B/s]t3dh:  29%|██▉       | 10076160/34242027 [00:01<00:02, 8741751.59B/s]t3dh:  32%|███▏      | 10960896/34242027 [00:01<00:02, 8767992.04B/s]t3dh:  35%|███▌      | 12075008/34242027 [00:01<00:02, 9448507.84B/s]t3dh:  38%|███▊      | 13123584/34242027 [00:01<00:02, 9493416.33B/s]t3dh:  42%|████▏     | 14270464/34242027 [00:01<00:01, 10034621.75B/s]t3dh:  45%|████▌     | 15433728/34242027 [00:02<00:01, 10495703.72B/s]t3dh:  48%|████▊     | 16580608/34242027 [00:02<00:01, 10769298.13B/s]t3dh:  52%|█████▏    | 17727488/34242027 [00:02<00:01, 10917690.42B/s]t3dh:  55%|█████▌    | 18874368/34242027 [00:02<00:01, 11078581.18B/s]t3dh:  59%|█████▉    | 20168704/34242027 [00:02<00:01, 11602448.83B/s]t3dh:  62%|██████▏   | 21397504/34242027 [00:02<00:01, 11768767.06B/s]t3dh:  66%|██████▋   | 22708224/34242027 [00:02<00:00, 12122954.64B/s]t3dh:  70%|███████   | 24035328/34242027 [00:02<00:00, 12420680.64B/s]t3dh:  74%|███████▍  | 25329664/34242027 [00:02<00:00, 12555154.30B/s]t3dh:  78%|███████▊  | 26624000/34242027 [00:02<00:00, 12636629.62B/s]t3dh:  82%|████████▏ | 27967488/34242027 [00:03<00:00, 12870709.69B/s]t3dh:  86%|████████▌ | 29310976/34242027 [00:03<00:00, 13015556.76B/s]t3dh:  90%|████████▉ | 30670848/34242027 [00:03<00:00, 13163827.94B/s]t3dh:  94%|█████████▎| 32030720/34242027 [00:03<00:00, 13292804.37B/s]t3dh:  98%|█████████▊| 33406976/34242027 [00:03<00:00, 13405250.14B/s]t3dh: 34242560B [00:03, 9675611.07B/s]                                
+Checking Oberwolfach/t3dh
+Checking Pajek/CSphd
+Checking Pajek/GD97_a
+Checking Pajek/Wordnet3
+Checking Pothen/sphere3
+Checking QY/case39 rhs0
+Checking Rajat/rajat20
+Checking Rommes/bips07_2476
+Checking SNAP/amazon0505
+Checking SNAP/p2p-Gnutella25
+Checking Sandia/ASIC_100ks
+Checking Sandia/adder_dcop_28
+Checking Sandia/adder_dcop_60
+Checking Sandia/fpga_dcop_21 rhs0
+Checking Sandia/fpga_trans_02 rhs0
+Checking Sandia/oscil_dcop_28 rhs0
+Checking Schenk/nlpkkt120
+Checking Schenk_IBMNA/c-29 rhs0
+Checking Schenk_IBMNA/c-64b rhs0
+Checking Schenk_ISEI/para-8 rhs0
+Checking Sybrandt/MOLIERE_2016
+Checking TSOPF/TSOPF_FS_b9_c6 rhs0
+Checking VDOL/freeFlyingRobot_10 rhs0
+Checking VDOL/lowThrust_10 rhs0
+Checking VDOL/spaceStation_13 rhs0
+Zd_Jac2:   0%|          | 0/18027845 [00:00<?, ?B/s]Zd_Jac2:   1%|          | 98304/18027845 [00:00<00:19, 907896.95B/s]Zd_Jac2:   1%|          | 212992/18027845 [00:00<00:18, 975423.17B/s]Zd_Jac2:   2%|▏         | 327680/18027845 [00:00<00:17, 1000858.44B/s]Zd_Jac2:   2%|▏         | 442368/18027845 [00:00<00:17, 1011436.27B/s]Zd_Jac2:   3%|▎         | 606208/18027845 [00:00<00:14, 1169559.39B/s]Zd_Jac2:   8%|▊         | 1458176/18027845 [00:00<00:04, 3473819.50B/s]Zd_Jac2:  15%|█▌        | 2785280/18027845 [00:00<00:02, 6485574.13B/s]Zd_Jac2:  23%|██▎       | 4210688/18027845 [00:00<00:01, 8769276.07B/s]Zd_Jac2:  31%|███       | 5619712/18027845 [00:00<00:01, 10351431.99B/s]Zd_Jac2:  40%|████      | 7290880/18027845 [00:01<00:00, 12263778.94B/s]Zd_Jac2:  49%|████▉     | 8863744/18027845 [00:01<00:00, 13269860.07B/s]Zd_Jac2:  58%|█████▊    | 10502144/18027845 [00:01<00:00, 14186064.24B/s]Zd_Jac2:  68%|██████▊   | 12255232/18027845 [00:01<00:00, 15177783.24B/s]Zd_Jac2:  77%|███████▋  | 13893632/18027845 [00:01<00:00, 15533119.17B/s]Zd_Jac2:  86%|████████▋ | 15581184/18027845 [00:01<00:00, 15897978.20B/s]Zd_Jac2:  96%|█████████▌| 17252352/18027845 [00:01<00:00, 16101575.54B/s]Zd_Jac2: 18038784B [00:01, 10521306.21B/s]                               
+Checking VanVelzen/Zd_Jac2 rhs0
+Checking Yoshiyasu/mesh_deform
+---------------------------------------
+Begin Slurm Epilog: Sep-03-2026 14:36:18
+Job ID:        12790465
+Array Job ID:  12790465_31
+User ID:       wahrens6
+Account:       gts-wahrens6
+Job name:      saps-scrape-matrices
+Resources:     cpu=16,mem=256G,node=1
+Rsrc Used:     cput=05:08:32,vmem=,walltime=00:19:17,mem=,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-02-002-15-2
+---------------------------------------
