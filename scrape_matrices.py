@@ -44,7 +44,7 @@ from saps.benchmarks.preconditioned_cg import (
     PreconditionedCGBenchmark,
     PreconditionedCGDataset,
 )
-from . import saps_scipy
+import saps_scipy
 xp = saps_scipy.xp
 
 
